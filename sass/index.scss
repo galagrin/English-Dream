@@ -18,6 +18,8 @@ $red: #ea5949;
 $indigo: #3e396f;
 // Имена команды
 $orange: #e7ae0d;
+//Главная страница подзаголовок
+$darkblue:#4A2677;
 
 // Fonts
 $title: "CaveatRegular", sans-serif;
@@ -33,3 +35,152 @@ $df: flex;
 $big-display: 1600px;
 $tablet: 768px;
 $mobile: 360px;
+
+// Cтили header start
+.header {
+    width: 96%;
+    height: 90vh;
+    display: $dg;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10% 10% 1fr;
+    margin: 2%;
+    
+    /* display: flex;
+    
+    flex-wrap: wrap;
+    background-image: url(/homework/test_project/assets/images/Слой_x0020_1.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom ;
+    background-size: 80%; */
+}
+
+.header__logo {
+    max-width: 70%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: sticky; top: 0;
+}
+
+.header__menu {
+    grid-column: 2/3;
+    grid-row: 1;
+    display: $df;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+    position: sticky; top: 0;
+    background-color: $white;
+}
+
+.header__menu-item {
+    list-style-type: none;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    color:  $indigo;
+}
+
+.header__menu-link:visited {
+    color: $indigo;
+}
+
+.header__menu-link:hover {
+    color: $red;
+}
+
+.header__caption {
+    grid-column: 1/2;
+    grid-row: 3;
+    display: $df;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__link-social {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-image: url(/assets/images/home-page.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    display: $df;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header__caption-title {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 59%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $red;
+}
+
+.header__caption-text {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $darkblue;
+}
+
+
+.header__caption-btn {   /*Кнопка*/
+    display: $df;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 70%;
+    height: 55px;
+    background: $darkcyan;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+//Стили header end
+
+//Стили footer start
+.footer {
+    width: 100%;
+    display: $df;
+    background-color: $mint;
+    flex-direction: column;
+}
+.footer__upper-container, .footer__lower-container {
+    width: 90%;
+    display: $df;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.footer__upper-container-logo {
+    max-width: 70%;
+}
+
+.footer__lower-container-contacts_info, .footer__lower-container-contacts_mail, .footer__upper-container-contacts {
+    text-align: right;
+}
+
+
+// Стили footer end
