@@ -1,4 +1,26 @@
-.reviews{
+// Colors
+// цвета фона
+$white: #fff;
+$mint: #eaf4f1;
+// цвета кнопок, заголовкиб кругляшиб кнопки слайдеровб отзывы
+$darkcyan: #2a7d83;
+// меню хедера
+$blue: #2d4176;
+// меню хедера при наведении + все красные надписи
+$red: #ea5949;
+// более тёмный синий - цифры в о студии, и надписи в разговорном клубе + футер
+$indigo: #3e396f;
+// Имена команды
+$orange: #e7ae0d;
+
+// Display
+$dg: grid;
+$df: flex;
+
+// Screen-sizes
+$big-display: 1920px;
+$tablet: 1149px;
+$mobile: 769px;.reviews{
     border: black 1px solid;
     max-width: 1600px;
     width: 100%;
