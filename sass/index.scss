@@ -1,3 +1,9 @@
+/*Normalize*/
+@import "normalize";
+
+// Fonts on
+@import "fonts";
+
 // Colors
 // цвета фона
 $white: #fff;
@@ -13,11 +19,17 @@ $indigo: #3e396f;
 // Имена команды
 $orange: #e7ae0d;
 
+// Fonts
+$title: "CaveatRegular", sans-serif;
+$title-size: 64px;
+$main-font: "TSRemarker", sans-serif;
+$main-size: 32px;
+
 // Display
 $dg: grid;
 $df: flex;
 
 // Screen-sizes
-$big-display: 1920px;
-$tablet: 1149px;
-$mobile: 769px;
+$big-display: 1600px;
+$tablet: 768px;
+$mobile: 360px;
