@@ -102,20 +102,18 @@ body{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 10% 10% 1fr;
     margin: 2%;
-    
-    /* display: flex;
-    
-    flex-wrap: wrap;
-    background-image: url(/homework/test_project/assets/images/Слой_x0020_1.svg);
-    background-repeat: no-repeat;
-    background-position: right bottom ;
-    background-size: 80%; */
 }
 
 .header__logo {
-    max-width: 70%;
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 1/4;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/logo-back.svg);
+    background-size: 70%;
+}
+
+.header__logo-image{
+    max-width: 70%;
     position: sticky; top: 0;
 }
 
@@ -136,12 +134,17 @@ body{
 
 .header__menu-link {
     text-decoration: none;
-    color:  $indigo;
     font-family: $main-font;
+    font-weight: 400;
+    font-size: $main-size;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $blue;
 }
 
 .header__menu-link:visited {
-    color: $indigo;
+    color: $blue;
 }
 
 .header__menu-link:hover {
@@ -185,11 +188,15 @@ body{
 .header__caption-text {
     font-family: $main-font;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 125%;
     letter-spacing: -0.01em;
     text-align: center;
     color: $darkblue;
+}
+
+.header__caption-text_min {
+    font-size: $main-size;
 }
 
 
@@ -270,6 +277,26 @@ body{
 
 .footer__lower-container-contacts_info, .footer__lower-container-contacts_mail, .footer__upper-container-contacts {
     text-align: right;
+}
+
+.footer__lower-container-contacts_info, .footer__lower-container-contacts_mail {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: $main-size;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    color: $indigo;
+}
+
+
+.footer__upper-container-contacts {
+    font-family: $title;
+    font-weight: 400;
+    font-size: $title-size;
+    line-height: 78%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $indigo;
 }
 
 

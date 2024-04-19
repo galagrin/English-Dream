@@ -41,6 +41,22 @@ body {
 }
 
 /*Кнопка*/
+.header__caption-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #2a7d83;
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
 .test {
   display: flex;
   justify-content: space-between;
@@ -62,19 +78,18 @@ body {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 10% 10% 1fr;
   margin: 2%;
-  /* display: flex;
-
-  flex-wrap: wrap;
-  background-image: url(/homework/test_project/assets/images/Слой_x0020_1.svg);
-  background-repeat: no-repeat;
-  background-position: right bottom ;
-  background-size: 80%; */
 }
 
 .header__logo {
-  max-width: 70%;
   grid-column: 1/2;
-  grid-row: 1/2;
+  grid-row: 1/4;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/logo-back.svg);
+  background-size: 70%;
+}
+
+.header__logo-image {
+  max-width: 70%;
   position: sticky;
   top: 0;
 }
@@ -97,12 +112,17 @@ body {
 
 .header__menu-link {
   text-decoration: none;
-  color: #3e396f;
   font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 156%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #2d4176;
 }
 
 .header__menu-link:visited {
-  color: #3e396f;
+  color: #2d4176;
 }
 
 .header__menu-link:hover {
@@ -146,11 +166,15 @@ body {
 .header__caption-text {
   font-family: "TSRemarker", sans-serif;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 125%;
   letter-spacing: -0.01em;
   text-align: center;
   color: #4A2677;
+}
+
+.header__caption-text_min {
+  font-size: 32px;
 }
 
 .header__caption-btn { /*Кнопка*/
@@ -201,4 +225,23 @@ body {
 
 .footer__lower-container-contacts_info, .footer__lower-container-contacts_mail, .footer__upper-container-contacts {
   text-align: right;
+}
+
+.footer__lower-container-contacts_info, .footer__lower-container-contacts_mail {
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 156%;
+  letter-spacing: -0.01em;
+  color: #3e396f;
+}
+
+.footer__upper-container-contacts {
+  font-family: "CaveatRegular", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #3e396f;
 }/*# sourceMappingURL=index.css.map */
