@@ -1,14 +1,12 @@
-/*Normalize*/
-@import "normalize";
 
 // Fonts on
-@import "fonts";
+@import "./fonts";
 
 // Colors
 // цвета фона
 $white: #fff;
 $mint: #eaf4f1;
-// цвета кнопок, заголовкиб кругляшиб кнопки слайдеровб отзывы
+// цвета кнопок, заголовкиб кругляши, кнопки слайдеров, отзывы
 $darkcyan: #2a7d83;
 // меню хедера
 $blue: #2d4176;
@@ -36,151 +34,62 @@ $big-display: 1600px;
 $tablet: 768px;
 $mobile: 360px;
 
-// Cтили header start
-.header {
-    width: 96%;
-    height: 90vh;
-    display: $dg;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 10% 10% 1fr;
-    margin: 2%;
-    
-    /* display: flex;
-    
-    flex-wrap: wrap;
-    background-image: url(/homework/test_project/assets/images/Слой_x0020_1.svg);
-    background-repeat: no-repeat;
-    background-position: right bottom ;
-    background-size: 80%; */
-}
+* {
+    margin: 0;
+    padding: 0;
 
-.header__logo {
-    max-width: 70%;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    position: sticky; top: 0;
 }
-
-.header__menu {
-    grid-column: 2/3;
-    grid-row: 1;
+html {
+    box-sizing: border-box;
+}
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+// test
+.test{
     display: $df;
-    flex-direction: row;
-    text-decoration: none;
     justify-content: space-between;
-    position: sticky; top: 0;
-    background-color: $white;
+    font-family: $title;
+    color: $red;
+    font-size: $title-size;
 }
-
-.header__menu-item {
-    list-style-type: none;
-}
-
-.header__menu-link {
-    text-decoration: none;
-    color:  $indigo;
-}
-
-.header__menu-link:visited {
+.test1{
+    font-family: $main-font;
     color: $indigo;
+    font-size: $main-size;
 }
-
-.header__menu-link:hover {
-    color: $red;
-}
-
-.header__caption {
-    grid-column: 1/2;
-    grid-row: 3;
-    display: $df;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__link-social {
-    width: 100%;
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 2/4;
-    background-image: url(/assets/images/home-page.svg);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: contain;
-    display: $df;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.header__caption-title {
-    font-family: $main-font;
-    font-weight: 400;
-    font-size: 4em;
-    line-height: 59%;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: $red;
-}
-
-.header__caption-text {
-    font-family: $main-font;
-    font-weight: 400;
-    font-size: 2em;
-    line-height: 125%;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: $darkblue;
-}
+// Header styles start
 
 
-.header__caption-btn {   /*Кнопка*/
-    display: $df;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    width: 70%;
-    height: 55px;
-    background: $darkcyan;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 1.5em;
-    line-height: 125%;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-}
+// header styles end
+
+// О студии styles start
 
 
-//Стили header end
+// О студии styles end
 
-//Стили footer start
-.footer {
-    width: 100%;
-    display: $df;
-    background-color: $mint;
-    flex-direction: column;
-}
-.footer__upper-container, .footer__lower-container {
-    width: 90%;
-    display: $df;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding-left: 5%;
-    padding-right:5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-.footer__upper-container-logo {
-    max-width: 70%;
-}
-
-.footer__lower-container-contacts_info, .footer__lower-container-contacts_mail, .footer__upper-container-contacts {
-    text-align: right;
-}
+// Курсы styles start
 
 
-// Стили footer end
+// курсы styles end
+
+// наша команда styles start
+
+
+// наша команда styles end
+
+// speaking club styles start
+
+
+// speaking club styles end
+
+// отзывы  styles start
+
+
+// отзывы  styles end
+
+// footer styles start
+
+
+// footer club styles end
