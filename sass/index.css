@@ -40,6 +40,7 @@ body {
   text-decoration: none;
 }
 
+/*Кнопка*/
 .test {
   display: flex;
   justify-content: space-between;
