@@ -73,7 +73,73 @@ body{
 // курсы styles end
 
 // наша команда styles start
+.teamtitle{
+    text-align: center;
+    padding-bottom: 99px;
+    padding-top: 136px;
+    font-family: $title;
+    font-size: $title-size ;
+    color: $darkcyan;
+}
+.teamcards{
+    /* max-width: 607px;
+    width: 100%;
+    height: 999px; */
+    margin: 0 auto;
+}
+.teamcard__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 150px;
+    row-gap: 70px;
+    max-width: 607px;
+    width: 100%;
+    padding-left: 104px;
 
+}
+.teamcard__text{
+    ul {
+        list-style: none;
+        padding: 60px 29px 0 29px ;
+    }
+    ul li:before {
+        content:  "—";
+        position: relative;
+        left:-4px;
+        }
+    ul li {
+        font-family: $main-font;
+        font-size: 32px;
+        line-height: 87%;
+        color: #000;
+        padding-top: 20px;
+    }  
+
+    h2{
+        text-align: center;
+        font-family: $title;
+        font-size: 64px;
+        line-height: 78%;
+        color: $orange;
+        }
+}
+
+.teamcard__photo{
+text-align: center;
+margin-bottom: -145px;
+}
+
+.teamcard__photo img{
+    max-width: 290px;
+}
+
+.teamcard__text{
+border-radius: 44px;
+background: #eaf4f1;
+width: 607px;
+height: 711px;
+padding-top: 160px;
+}
 
 // наша команда styles end
 
