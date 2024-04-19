@@ -1,8 +1,12 @@
+
+// Fonts on
+@import "./fonts";
+
 // Colors
 // цвета фона
 $white: #fff;
 $mint: #eaf4f1;
-// цвета кнопок, заголовкиб кругляшиб кнопки слайдеровб отзывы
+// цвета кнопок, заголовкиб кругляши, кнопки слайдеров, отзывы
 $darkcyan: #2a7d83;
 // меню хедера
 $blue: #2d4176;
@@ -13,63 +17,95 @@ $indigo: #3e396f;
 // Имена команды
 $orange: #e7ae0d;
 
+// Fonts
+$title: "CaveatRegular", sans-serif;
+$title-size: 64px;
+$main-font: "TSRemarker", sans-serif;
+$main-size: 32px;
+
 // Display
 $dg: grid;
 $df: flex;
 
 // Screen-sizes
-$big-display: 1920px;
-$tablet: 1149px;
-$mobile: 769px;.reviews{
-    border: black 1px solid;
+$big-display: 1600px;
+$tablet: 768px;
+$mobile: 360px;
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+html {
+    box-sizing: border-box;
+}
+body{
     max-width: 1600px;
-    width: 100%;
-    height: 90%;
+    margin: 0 auto;
 }
 
-
-.reviews_content{
-    border: blue 1px solid;
-    width: 100%;
-    height: 100%;
-    padding: 135px 40px 100px 40px;
-    /* попробовать заменить на относительные единицы */
-    display: flex;
-    /* ФЛЕКС */
-    flex-direction: column;
-    align-items: center;
+/*Кнопка*/
+%button {   
+    display: $df;
     justify-content: center;
-    /* айтем и контент - центер */
-}
-
-
-.reviews_title{
-    border: red 1px solid;
-    width: 20%;
-    height: 8%;
-    display: flex;
-    /* ФЛЕКС */
-}
-
-
-.reviews_inscription{
-    border: green 1px solid;
-    width: 100%;
-    height: 100%;
-    padding: 3% 10% 3% 2%;
-    display: flex;
-    /* FLEX */
     align-items: center;
-    justify-content: center;
-    /* айтем и контент - центер */
-    font-family: 'Times New Roman', Times, serif ;
-    /* надо подключить шрифты */
+    border-radius: 20px;
+    background: $darkcyan;
+    font-family: $main-font;
     font-weight: 400;
-    font-size: 64px;
-    /* переведи в относительные единицы */
-    line-height: 78%;
+    font-size: $main-size;
+    line-height: 125%;
     letter-spacing: -0.01em;
     text-align: center;
-    color: #2a7d83;
-    /* используй препроцессор */
+    color: $white;
+    text-decoration: none;
 }
+
+// test
+.test{
+    display: $df;
+    justify-content: space-between;
+    font-family: $title;
+    color: $red;
+    font-size: $title-size;
+}
+.test1{
+    font-family: $main-font;
+    color: $indigo;
+    font-size: $main-size;
+}
+// Header styles start
+
+
+// header styles end
+
+// О студии styles start
+
+
+// О студии styles end
+
+// Курсы styles start
+
+
+// курсы styles end
+
+// наша команда styles start
+
+
+// наша команда styles end
+
+// speaking club styles start
+
+
+// speaking club styles end
+
+// отзывы  styles start
+
+
+// отзывы  styles end
+
+// footer styles start
+
+
+// footer club styles end
