@@ -44,6 +44,24 @@ body{
     max-width: 1600px;
     margin: 0 auto;
 }
+
+/*Кнопка*/
+%button {   
+    display: $df;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: $darkcyan;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: $main-size;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+}
+
 // test
 .test{
     display: $df;
