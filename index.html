@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./sass/normalize.css">
     <link rel="stylesheet" href="./sass/index.css">
     <!-- <link href="sass/fonts.css" rel="stylesheet"> -->
+
+    <!-- подключение свайпера -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <title>English Dream</title>
 </head>
 
@@ -59,31 +63,43 @@
                     отзывы
                 </h2>
             </div>
-            <div class="reviews_slider">
-                <div class="reviews_card">
-                    <p class="reviews_text">
-                        После месяца занятий — вижу положительные изменения у Демида. Он читает, переводит, знает гораздо больше слов. Он говорил, что вы берёте и школьную программу (вроде даже немного наперёд), поэтому когда ему задают домашку — он делает самостоятельно, без нервов, правда очень быстро! но пару раз проверяла — все знает, что задано! Вера 
-                    </p>
-                    <p class="reviews_signature">
-                        (мама Демида 8 лет , Москва)
-                    </p>
+            <div class="reviews_slider swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="reviews_card swiper-slide">
+                            <p class="reviews_text">
+                            После месяца занятий — вижу положительные изменения у Демида. Он читает, переводит, знает гораздо больше слов. Он говорил, что вы берёте и школьную программу (вроде даже немного наперёд), поэтому когда ему задают домашку — он делает самостоятельно, без нервов, правда очень быстро! но пару раз проверяла — все знает, что задано! Вера 
+                        </p>
+                        <p class="reviews_signature">
+                            (мама Демида 8 лет , Москва)
+                        </p>
+                    </div>
+                    <div class="reviews_card swiper-slide">
+                        <p class="reviews_text">
+                            Искала преподавателя для ребенка на лето, когда ребенок на даче. Чтобы обязательно очные занятия у нас. Виктория полностью оправдала ожидания. Время зря не тратит, каждая минута с пользой, занятия сбалансированные, и устная речь, и грамматика. Очень все пунктуально.
+                        </p>
+                        <p class="reviews_signature">
+                            Галина (мама Даниила 11 лет, Москва)
+                        </p>
+                    </div>
+                    <div class="reviews_card swiper-slide">
+                        <p class="reviews_text">
+                            Очень нравятся занятия с Викторией! Обратилась с определённым запросом, Виктория всё супер понятно объясняет, помогает, если возникают трудности. После занятий появляется мотивация двигаться дальше, и поднимается настроение Спасибо! :)
+                        </p>
+                        <p class="reviews_signature">
+                            Мария 34 года, Москва
+                        </p>
+                    </div>
+                    <div class="reviews_card swiper-slide">
+                        <p class="reviews_text">
+                            Очень нравятся занятия с Викторией! Обратилась с определённым запросом, Виктория всё супер понятно объясняет, помогает, если возникают трудности. После занятий появляется мотивация двигаться дальше, и поднимается настроение Спасибо! :)
+                        </p>
+                        <p class="reviews_signature">
+                            Мария 34 года, Москва
+                        </p>
+                    </div>
                 </div>
-                <div class="reviews_card">
-                    <p class="reviews_text">
-                        Искала преподавателя для ребенка на лето, когда ребенок на даче. Чтобы обязательно очные занятия у нас. Виктория полностью оправдала ожидания. Время зря не тратит, каждая минута с пользой, занятия сбалансированные, и устная речь, и грамматика. Очень все пунктуально.
-                    </p>
-                    <p class="reviews_signature">
-                        Галина (мама Даниила 11 лет, Москва)
-                    </p>
-                </div>
-                <div class="reviews_card">
-                    <p class="reviews_text">
-                        Очень нравятся занятия с Викторией! Обратилась с определённым запросом, Виктория всё супер понятно объясняет, помогает, если возникают трудности. После занятий появляется мотивация двигаться дальше, и поднимается настроение Спасибо! :)
-                    </p>
-                    <p class="reviews_signature">
-                        Мария 34 года, Москва
-                    </p>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <div class="reviews_button reviews_button__big">
                 <a href="#" class="button">
@@ -102,6 +118,29 @@
 
     </footer>
     <!-- footer end -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    var appendNumber = 4;
+    var prependNumber = 1;
+    </script>
 
 </body>
 

@@ -83,6 +83,7 @@ body {
 // speaking club styles end
 
 // отзывы  styles start
+
 .reviews{
     background-color: $white;
     // border: black 1px solid;
@@ -95,12 +96,15 @@ body {
 .reviews_title,
 .reviews_inscription,
 .reviews_slider,
-.reviews_card{
+.reviews_card,
+.swiper-wrapper,
+.swiper-slide{
     display: $df;
 }
 
 .reviews_content,
-.reviews_inscription{
+.reviews_inscription,
+.swiper-wrapper{
     align-items: center;
     justify-content: center;
 }
@@ -139,7 +143,8 @@ body {
     color: $darkcyan;
 }
 
-.reviews_slider{
+.reviews_slider,
+.swiper-wrapper{
     // border: palegreen 1px solid;
     width: 100%;
     height: 80%;
@@ -148,7 +153,8 @@ body {
     align-items: center;
 }
 
-.reviews_card{
+.reviews_card,
+.swiper-slide{
     // border: yellow 1px solid;
     flex-direction: column;
     flex-shrink: 1;
@@ -182,6 +188,12 @@ body {
     height: 98px;
     margin-top: 3%;
 }
+
+// .swiper,
+// .swiper-wrapper{
+    // height: 100%;
+    // border: purple solid 1px;
+// }
 
 // отзывы  styles end
 

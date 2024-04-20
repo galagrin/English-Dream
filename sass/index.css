@@ -53,12 +53,15 @@ body {
 .reviews_title,
 .reviews_inscription,
 .reviews_slider,
-.reviews_card {
+.reviews_card,
+.swiper-wrapper,
+.swiper-slide {
   display: flex;
 }
 
 .reviews_content,
-.reviews_inscription {
+.reviews_inscription,
+.swiper-wrapper {
   align-items: center;
   justify-content: center;
 }
@@ -91,7 +94,8 @@ body {
   color: #2a7d83;
 }
 
-.reviews_slider {
+.reviews_slider,
+.swiper-wrapper {
   width: 100%;
   height: 80%;
   flex-direction: row;
@@ -99,7 +103,8 @@ body {
   align-items: center;
 }
 
-.reviews_card {
+.reviews_card,
+.swiper-slide {
   flex-direction: column;
   flex-shrink: 1;
   align-items: flex-start;
