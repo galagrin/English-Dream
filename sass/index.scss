@@ -102,9 +102,9 @@ body{
     color: $darkcyan;
 }
 .teamcards{
-    /* max-width: 607px;
-    width: 100%;
-    height: 999px; */
+    // max-width: 607px;
+    // width: 100%;
+    // height: 999px;
     margin: 0 auto;
 }
 .teamcard__wrapper{
@@ -112,9 +112,15 @@ body{
     grid-template-columns: 1fr 1fr;
     column-gap: 150px;
     row-gap: 70px;
-    max-width: 607px;
-    width: 100%;
+    max-width: 1600px;
+    
     padding-left: 104px;
+    padding-right: 104px;
+
+}
+.teamcard__content{
+    max-width: 607px;
+
 
 }
 .teamcard__text{
@@ -145,8 +151,8 @@ body{
 }
 
 .teamcard__photo{
-text-align: center;
-margin-bottom: -145px;
+    text-align: center;
+    margin-bottom: -145px;
 }
 
 .teamcard__photo img{
@@ -154,11 +160,73 @@ margin-bottom: -145px;
 }
 
 .teamcard__text{
-border-radius: 44px;
-background: #eaf4f1;
-width: 607px;
-height: 711px;
-padding-top: 160px;
+    border-radius: 44px;
+    background: #eaf4f1;
+    height: 711px;
+    padding-top: 160px;
+}
+// Swiper
+.swipesection {
+    display: none;
+}
+.swiper{
+    width: 769pxpx;
+    margin: 0 auto;
+
+}
+.mySwiper{
+    max-width: 769px;
+    width: 100%;
+    height: 999px;
+}
+.swiper__text{
+    background: #eaf4f1;
+    width: 470px;
+    max-height: 911px;
+    height: 75%;
+    border-radius: 44px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    ul {
+        list-style: none;
+        padding: 20px 20px 0 25px ;}
+
+
+    ul li:before {
+        content:  "—";
+        position: relative;
+        left:-4px;
+    }
+    ul li {
+        list-style: none;
+        font-family: $main-font;
+        font-size: 32px;
+        line-height: 87%;
+        color: #000;
+        padding-top: 20px;
+    } 
+    h2{
+        padding-top: 50px;
+        text-align: center;
+        font-family: $title;
+        font-size: 48px;
+        line-height: 104%;
+        color: $orange;
+}
+}
+.swiper__photo{
+    text-align: center;
+    margin-bottom: -105px;
+
+}
+.swiper__photo img{
+    max-width: 225px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color:black;
 }
 
 // наша команда styles end
@@ -178,3 +246,29 @@ padding-top: 160px;
 
 // footer club styles end
 
+// Медиа запросы секций Наша команда и Swiper 
+@media screen and (max-width: 768px){
+    .swipesection{
+        display: flex;
+        justify-content: center;
+    }
+    .teamcards_container{
+        display: none;
+    }
+    .teamtitle{
+        font-size:48px ;
+        padding-top: 120px;
+    }
+}
+@media screen and (min-width: 768px){
+    .swipesection,
+    .swiper,
+    .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-pagination {
+        display: none;
+    }
+    .teamcards_container{
+        display: block;
+    }
+}
