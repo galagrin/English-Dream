@@ -243,6 +243,13 @@ body {
         } 
     }
 }
+@media screen and (max-width: 1028px){
+    .teamcard__wrapper{
+        column-gap: 50px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
     
 @media screen and (max-width: 800px){
     .swipesection{

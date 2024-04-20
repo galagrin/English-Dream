@@ -172,6 +172,14 @@ body {
     padding-top: 0;
   }
 }
+@media screen and (max-width: 1028px) {
+  .teamcard__wrapper {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
 @media screen and (max-width: 800px) {
   .swipesection {
     display: flex;
