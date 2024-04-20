@@ -1,4 +1,3 @@
-
 // Fonts on
 @import "./fonts";
 
@@ -17,7 +16,7 @@ $indigo: #3e396f;
 // Имена команды
 $orange: #e7ae0d;
 //Главная страница подзаголовок
-$darkblue:#4A2677;
+$darkblue: #4a2677;
 
 // Fonts
 $title: "CaveatRegular", sans-serif;
@@ -35,79 +34,58 @@ $tablet: 768px;
 $mobile: 360px;
 
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-body{
-    max-width: 1600px;
-    margin: 0 auto;
+body {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /*Кнопка*/
-%button {   
-    display: $df;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background: $darkcyan;
-    font-family: $main-font;
-    font-weight: 400;
-    font-size: $main-size;
-    line-height: 125%;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: $white;
-    text-decoration: none;
+%button {
+  display: $df;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: $darkcyan;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $main-size;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
 }
 
-// test
-.test{
-    display: $df;
-    justify-content: space-between;
-    font-family: $title;
-    color: $red;
-    font-size: $title-size;
-}
-.test1{
-    font-family: $main-font;
-    color: $indigo;
-    font-size: $main-size;
-}
 // Header styles start
-
 
 // header styles end
 
 // О студии styles start
 
-
 // О студии styles end
 
 // Курсы styles start
-
 
 // курсы styles end
 
 // наша команда styles start
 
-
 // наша команда styles end
 
 // speaking club styles start
-
 
 // speaking club styles end
 
 // отзывы  styles start
 
-
 // отзывы  styles end
 
 // footer styles start
-
 
 // footer club styles end
