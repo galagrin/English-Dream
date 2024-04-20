@@ -24,20 +24,6 @@ body {
 }
 
 /*Кнопка*/
-.test {
-  display: flex;
-  justify-content: space-between;
-  font-family: "CaveatRegular", sans-serif;
-  color: #ea5949;
-  font-size: 64px;
-}
-
-.test1 {
-  font-family: "TSRemarker", sans-serif;
-  color: #3e396f;
-  font-size: 32px;
-}
-
 .teamtitle {
   text-align: center;
   padding-bottom: 99px;
