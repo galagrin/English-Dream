@@ -15,8 +15,7 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,46 +44,44 @@ body {
 
 .reviews {
   background-color: #fff;
-  border: black 1px solid;
   max-width: 1600px;
   width: 100%;
   height: 80%;
 }
 
+.reviews_content,
+.reviews_title,
+.reviews_inscription,
+.reviews_slider,
+.reviews_card {
+  display: flex;
+}
+
+.reviews_content,
+.reviews_inscription {
+  align-items: center;
+  justify-content: center;
+}
+
 .reviews_content {
-  border: blue 1px solid;
   max-width: 1600px;
   width: 100%;
   height: 100%;
   padding: 135px 40px 100px 40px;
   /* попробовать заменить на относительные единицы */
-  display: flex;
-  /* ФЛЕКС*/
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* айтем и контент - центер */
 }
 
 .reviews_title {
-  border: red 1px solid;
   width: 20%;
   height: 8%;
-  display: flex;
   padding-bottom: 5%;
-  /* ФЛЕКС */
 }
 
 .reviews_inscription {
-  border: green 1px solid;
   width: 100%;
   height: 100%;
   padding: 3% 10% 3% 2%;
-  display: flex;
-  /* FLEX*/
-  align-items: center;
-  justify-content: center;
-  /* айтем и контент - центер */
   font-family: "CaveatRegular", sans-serif;
   font-weight: 400;
   font-size: 64px;
@@ -95,19 +92,14 @@ body {
 }
 
 .reviews_slider {
-  border: palegreen 1px solid;
   width: 100%;
   height: 80%;
-  display: flex;
-  /* FLEX */
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
 .reviews_card {
-  border: yellow 1px solid;
-  display: flex;
   flex-direction: column;
   flex-shrink: 1;
   align-items: flex-start;
