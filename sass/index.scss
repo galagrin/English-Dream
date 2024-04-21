@@ -67,6 +67,109 @@ body {
 // header styles end
 
 // О студии styles start
+.studio {
+  display: $dg;
+  background-color: $mint;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+.studio__title {
+  color: $darkcyan;
+  font-family: $title;
+  font-size: 3.5rem;
+  place-self: center;
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+.studio__img {
+  max-width: 100%;
+  display: block;
+  grid-column: 1/4;
+  grid-row: 2/9;
+  padding: 7%;
+}
+.studio__text_director{
+  color: orange;
+  font-family: $title;
+  font-size: 4rem;
+  grid-column: 4/7;
+  grid-row: 3/4;
+  place-self: center;
+}
+.studio__text_idea{
+  color: rgba(74, 38, 119, 1);
+  grid-column: 4/7;
+  grid-row: 4/5;
+  place-self: center;
+  font-family: $main-font;
+  font-size: 2rem;
+}
+.studio__text_ENGLISH{
+  color: $red;
+  grid-column: 4/7;
+  grid-row: 5/6;
+  justify-self: end;
+  align-self: center;
+  font-family: $main-font;
+  font-size: 5.25rem;
+  padding-right: 10%;
+}
+.studio__text_dream{
+  color: rgba(74, 38, 119, 1);
+  grid-column: 4/7;
+  grid-row: 6/7;
+  place-self: center;
+  font-family: $main-font;
+  font-size: 2rem;
+}
+.studio__text_15{
+  color: $indigo;
+  grid-column: 4/5;
+  grid-row: 7/8;
+  place-self: center;
+  font-family: $main-font;
+  font-size: 4.5rem;
+}
+.studio__text_yers{
+  color: $red;
+  grid-column: 4/5;
+  grid-row: 8/9;
+  place-self: center;
+  font-family: $main-font;
+  font-size: 2.25rem;
+}
+.studio__text_12000{
+  color: $indigo;
+  grid-column: 5/6;
+  grid-row: 7/8;
+  place-self: center;
+  font-family: $main-font;
+  font-size: 4.5rem;
+}
+.studio__text_lessons{
+  color: $red;
+  grid-column: 5/6;
+  grid-row: 8/9;
+  place-self: center;
+  font-family: $main-font;
+  font-size: 2.25rem;
+}
+.studio__text_500{
+  color: $indigo;
+  grid-column: 6/7;
+  grid-row: 7/8;
+  place-self: center;
+  font-family: $main-font;
+  font-size: 4.5rem;
+}
+.studio__text_students{
+  color: $red;
+  grid-column: 6/7;
+  grid-row: 8/9;
+  place-self: center;
+  font-family: $main-font;
+  font-size: 2.25rem;
+}
 
 // О студии styles end
 
