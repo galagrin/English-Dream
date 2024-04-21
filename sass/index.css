@@ -97,7 +97,7 @@ body {
 }
 
 .swiper {
-  width: 769pxpx;
+  width: 769px;
   margin: 0 auto;
 }
 
@@ -152,9 +152,13 @@ body {
   max-width: 225px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: black;
+.swiper-button-next::after,
+.swiper-button-prev:after {
+  color: #2a7d83;
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: #2a7d83;
 }
 
 @media screen and (max-width: 1287px) {

@@ -152,7 +152,7 @@ body {
     display: none;
 }
 .swiper{
-    width: 769pxpx;
+    width: 769px;
     margin: 0 auto;
 
 }
@@ -206,9 +206,13 @@ body {
 .swiper__photo img{
     max-width: 225px;
 }
-.swiper-button-next,
-.swiper-button-prev {
-    color:black;
+.swiper-button-next::after, 
+.swiper-button-prev:after,{
+    color: $darkcyan;
+}
+    
+.swiper-pagination >.swiper-pagination-bullet-active {
+    background-color: $darkcyan;
 }
 
 // наша команда styles end
