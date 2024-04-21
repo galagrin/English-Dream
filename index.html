@@ -11,7 +11,7 @@
     <!-- <link href="sass/fonts.css" rel="stylesheet"> -->
 
     <!-- подключение свайпера -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>English Dream</title>
 </head>
@@ -63,7 +63,7 @@
                     отзывы
                 </h2>
             </div>
-            <div class="reviews_slider">
+            <div #swiperRef="" class="reviews_slider">
                 <div class="swiper_wrapper">
                     <div class="reviews_card">
                         <p class="reviews_text">
@@ -90,7 +90,7 @@
                     </p>
                 </div>
             </div> 
-            <!-- GANGE CLASS NAME -->
+            <!-- CLASS NAME -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             </div>
@@ -117,19 +117,18 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".reviews_slider", { 
+        var swiper = new Swiper(".reviews_slider", {
         slidesPerView: 3,
         centeredSlides: true,
         spaceBetween: 30,
-        navigation: { 
+        navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        }
-    }); 
-
-    var appendNumber = 4; 
-    var prependNumber = 1;
-
+        },
+        });
+    
+        var appendNumber = 4;
+        var prependNumber = 1;
     </script>
 
 </body>
