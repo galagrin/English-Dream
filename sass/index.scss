@@ -160,6 +160,13 @@ body {
     // добавить паддинги?
 }
 
+.swiper-button-next,
+.swiper-button-prev{
+    padding-top: 10%;
+}
+
+
+
 .reviews_card{
     // border: yellow 1px solid;
     flex-direction: column;
