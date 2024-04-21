@@ -115,14 +115,17 @@ body{
 
 .header__logo-image-container {
     grid-column: 1/2;
-
     grid-row: 1/2;
     display: $df;
-    padding-left: 20%;
+    padding-left: 10%;
     position: sticky; top: 0;
     backdrop-filter: 200px;
+    // background-color :  rgb(255, 255, 255, 0.8);
+}
+
+.header__logo-image-container.top-of-page {
+    // background-color: transparent;
     background-color :  rgb(255, 255, 255, 0.8);
-   
 }
 
 .header__logo-image {
