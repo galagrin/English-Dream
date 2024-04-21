@@ -112,9 +112,21 @@ body{
     background-size: 70%;
 }
 
-.header__logo-image{
-    max-width: 70%;
+
+.header__logo-image-container {
+    grid-column: 1/2;
+
+    grid-row: 1/2;
+    display: $df;
+    padding-left: 20%;
     position: sticky; top: 0;
+    backdrop-filter: 200px;
+    background-color :  rgb(255, 255, 255, 0.8);
+   
+}
+
+.header__logo-image {
+   
 }
 
 .header__menu {
