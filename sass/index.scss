@@ -96,7 +96,8 @@ body {
 .reviews_title,
 .reviews_inscription,
 .reviews_slider,
-.reviews_card{
+.reviews_card,
+.swiper_wrapper{
     display: $df;
 }
 
@@ -141,12 +142,22 @@ body {
 }
 
 .reviews_slider{
-    // border: palegreen 1px solid;
+    border: palegreen 1px solid;
     width: 100%;
     height: 80%;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.swiper_wrapper{
+    border: #4a2677 1px solid;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    // добавить паддинги?
 }
 
 .reviews_card{
