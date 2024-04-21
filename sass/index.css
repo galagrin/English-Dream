@@ -53,8 +53,8 @@ body {
 .reviews_content,
 .reviews_title,
 .reviews_inscription,
-.reviews_slider,
 .reviews_card,
+.reviews_slider,
 .swiper-wrapper,
 .swiper-slide {
   display: flex;
@@ -85,6 +85,7 @@ body {
 }
 
 .reviews_inscription {
+  border: green 1px solid;
   width: 100%;
   height: 100%;
   padding: 3% 10% 3% 2%;
@@ -98,7 +99,8 @@ body {
 }
 
 .reviews_slider,
-.swiper-wrapper {
+.mySwiper {
+  border: palegreen 1px solid;
   width: 100%;
   height: 80%;
   flex-direction: row;
@@ -106,8 +108,15 @@ body {
   align-items: center;
 }
 
+.swiper-wrapper {
+  border: fuchsia 1px solid;
+  width: 100%;
+  height: 100%;
+}
+
 .reviews_card,
 .swiper-slide {
+  border: yellow 1px solid;
   flex-direction: column;
   flex-shrink: 1;
   align-items: flex-start;
@@ -133,4 +142,9 @@ body {
   width: 419px;
   height: 98px;
   margin-top: 3%;
+}
+
+.mySwiper {
+  position: relative;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */
