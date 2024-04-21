@@ -97,14 +97,12 @@ body {
 .reviews_inscription,
 .reviews_card,
 .reviews_slider,
-.swiper-wrapper,
-.swiper-slide{
+.swiper-wrapper{
     display: $df;
 }
 
 .reviews_content,
-.reviews_inscription,
-.swiper-wrapper{
+.reviews_inscription{
     align-items: center;
     justify-content: center;
 }
@@ -143,8 +141,7 @@ body {
     color: $darkcyan;
 }
 
-.reviews_slider,
-.mySwiper{
+.reviews_slider{
     border: palegreen 1px solid;
     width: 100%;
     height: 80%;
@@ -159,8 +156,7 @@ body {
     height: 100%;
 }
 
-.reviews_card,
-.swiper-slide{
+.reviews_card{
     border: yellow 1px solid;
     flex-direction: column;
     flex-shrink: 1;
@@ -182,6 +178,10 @@ body {
     line-height: 117%;
     color: #000;
 }
+
+// .reviews_signature{
+    // padding-top: 30%;
+// }
 
 .reviews_button,
 .button,

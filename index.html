@@ -63,9 +63,9 @@
                     отзывы
                 </h2>
             </div>
-            <div class="reviews_slider swiper mySwiper">
+            <div class="reviews_slider">
                 <div class="swiper-wrapper">
-                    <div class="reviews_card swiper-slide">
+                    <div class="reviews_card">
                             <p class="reviews_text">
                             После месяца занятий — вижу положительные изменения у Демида. Он читает, переводит, знает гораздо больше слов. Он говорил, что вы берёте и школьную программу (вроде даже немного наперёд), поэтому когда ему задают домашку — он делает самостоятельно, без нервов, правда очень быстро! но пару раз проверяла — все знает, что задано! Вера 
                         </p>
@@ -124,14 +124,10 @@
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".reviews_slider", {
         slidesPerView: 3,
         centeredSlides: true,
         spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
