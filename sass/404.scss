@@ -1,0 +1,61 @@
+// Fonts on
+@import "./fonts";
+// Colors
+// цвета фона
+$white: #fff;
+$mint: #eaf4f1;
+// цвета кнопок, заголовкиб кругляши, кнопки слайдеров, отзывы
+$darkcyan: #2a7d83;
+// меню хедера
+$blue: #2d4176;
+// меню хедера при наведении + все красные надписи
+$red: #ea5949;
+// более тёмный синий - цифры в о студии, и надписи в разговорном клубе + футер
+$indigo: #3e396f;
+// Имена команды
+$orange: #e7ae0d;
+//Главная страница подзаголовок
+$darkblue: #4a2677;
+
+// Fonts
+$title: "CaveatRegular", sans-serif;
+$title-size: 64px;
+$main-font: "TSRemarker", sans-serif;
+$main-size: 32px;
+// Display
+$dg: grid;
+$df: flex;
+
+// Screen-sizes
+$big-display: 1600px;
+$tablet: 768px;
+$mobile: 360px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/*Кнопка*/
+%button {
+  display: $df;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: $darkcyan;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $main-size;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+}

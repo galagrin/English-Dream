@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "CaveatRegular";
+  font-weight: 400;
+  src: url(../assets/fonts/Caveat-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "TSRemarker";
+  font-weight: 400;
+  src: url(../assets/fonts/TSRemarkerRegular.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/*Кнопка*//*# sourceMappingURL=404.css.map */
