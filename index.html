@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="./assets/images/main-logo.svg" type="image/svg+xml">
     <!-- <link href="sass/index.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./sass/normalize.css">
@@ -63,9 +64,10 @@
                     отзывы
                 </h2>
             </div>
-            <div #swiperRef="" class="reviews_slider">
-                <div class="swiper_wrapper">
-                    <div class="reviews_card">
+            <div class="reviews_slider">
+                <div class="swiper-wrapper">
+                    <!-- swiper_wrapper -->
+                    <div class="reviews_card swiper-slide">
                         <p class="reviews_text">
                             После месяца занятий — вижу положительные изменения у Демида. Он читает, переводит, знает гораздо больше слов. Он говорил, что вы берёте и школьную программу (вроде даже немного наперёд), поэтому когда ему задают домашку — он делает самостоятельно, без нервов, правда очень быстро! но пару раз проверяла — все знает, что задано!  
                         </p>
@@ -73,26 +75,35 @@
                             Вера (мама Демида 8 лет , Москва)
                         </p>
                     </div>
-                <div class="reviews_card">
-                    <p class="reviews_text">
-                        Искала преподавателя для ребенка на лето, когда ребенок на даче. Чтобы обязательно очные занятия у нас. Виктория полностью оправдала ожидания. Время зря не тратит, каждая минута с пользой, занятия сбалансированные, и устная речь, и грамматика. Очень все пунктуально.
-                    </p>
-                    <p class="reviews_signature">
-                        Галина (мама Даниила 11 лет, Москва)
-                    </p>
-                </div>
-                <div class="reviews_card">
-                    <p class="reviews_text">
-                        Очень нравятся занятия с Викторией! Обратилась с определённым запросом, Виктория всё супер понятно объясняет, помогает, если возникают трудности. После занятий появляется мотивация двигаться дальше, и поднимается настроение Спасибо! :)
-                    </p>
-                    <p class="reviews_signature">
-                        Мария 34 года, Москва
-                    </p>
-                </div>
-            </div> 
+                    <div class="reviews_card swiper-slide">
+                        <p class="reviews_text">
+                            Искала преподавателя для ребенка на  лето, когда ребенок на даче. Чтобы обязательно очные занятия у нас. Виктория полностью оправдала ожидания. Время зря не тратит, каждая минута с пользой, занятия сбалансированные, и устная речь, и грамматика. Очень все пунктуально.
+                        </p>
+                        <p class="reviews_signature">
+                            Галина (мама Даниила 11 лет, Москва)
+                        </p>
+                    </div>
+                    <div class="reviews_card swiper-slide">
+                        <p class="reviews_text">
+                            Очень нравятся занятия с Викторией! Обратилась с определённым запросом, Виктория всё супер понятно объясняет, помогает, если возникают трудности. После занятий появляется мотивация двигаться дальше, и поднимается настроение Спасибо! :)
+                        </p>
+                        <p class="reviews_signature">
+                            Мария 34 года, Москва
+                        </p>
+                    </div>
+                    <div class="reviews_card swiper-slide">
+                        <p class="reviews_text">
+                            Очень нравятся занятия с Викторией! Обратилась с определённым запросом, Виктория всё супер понятно объясняет, помогает, если возникают трудности. После занятий появляется мотивация двигаться дальше, и поднимается настроение Спасибо! :)
+                        </p>
+                        <p class="reviews_signature">
+                            Мария 34 года, Москва
+                        </p>
+                    </div>
+                </div> 
             <!-- CLASS NAME -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
             </div>
             <div class="reviews_button reviews_button__big">
                 <a href="#" class="button">
@@ -115,20 +126,22 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".reviews_slider", {
         slidesPerView: 3,
-        centeredSlides: true,
         spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
         });
-    
-        var appendNumber = 4;
-        var prependNumber = 1;
     </script>
 
 </body>
