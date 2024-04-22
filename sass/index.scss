@@ -128,10 +128,6 @@ body{
     background-color :  rgb(255, 255, 255, 0.8);
 }
 
-.header__logo-image {
-   
-}
-
 .header__menu {
     grid-column: 2/3;
     grid-row: 1;
@@ -164,6 +160,14 @@ body{
 
 .header__menu-link:hover {
     color: $red;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+.header__menu-gamburger {
+    opacity: 0;
 }
 
 .header__caption {
@@ -316,3 +320,170 @@ body{
 
 
 // footer styles end
+
+/*Адаптивность для мобильного начало*/
+
+@media screen  and (max-width: 426px){
+    .body {
+        max-width: 425px;
+}
+    /*Хедер старт*/
+    /*Гамбургер меню старт*/
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu{
+    visibility: visible;
+    right: 0;
+}
+
+.menu__btn {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:$blue;
+    transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: fit-content;
+    margin-top: 2%;
+    border-radius: 20px;
+    padding: 80px 0;
+    padding-right: 0;
+    padding-bottom: 1%;
+    list-style: none;
+    background-color: $mint;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+}
+.header__menu-gamburger {
+    opacity: 1;
+    display: block;
+    padding: 1%;
+    text-decoration: none;
+    transition-duration: .25s;
+    text-align: center;
+    font-size: 2em;
+    color: $darkcyan;
+    font-family: $title;
+}
+
+.header__menu-item {
+    display: block;
+    padding: 3%;
+    text-decoration: none;
+    transition-duration: .25s;
+    text-align: center;
+}
+
+.header__menu-item:hover {
+    background-color:  rgb(255, 255, 255, 0.8);
+    }
+
+    /*Гамбургер меню конец*/
+
+.header__link-social_icon {
+    width: 70%;
+}
+
+.header__caption-title {
+    font-size: 1.5em;
+}
+
+.header__caption-text {
+    font-size: 0.9375em;
+}
+
+.header__caption-btn {   /*Кнопка на мобильном*/
+    @extend %button;
+    font-size: 1em;
+    width: 100%;
+    height: 55px;
+}
+
+.header {
+    box-sizing: border-box;
+    height: 50vh;
+    grid-template-columns: 48% 52%;
+}
+
+.header__logo {
+    background-size: 100%;
+}
+
+.header__logo-image {
+    width: 70%;
+}
+
+.header__menu-link {
+    font-size: 1em;
+}
+
+    /*Хедер конец/
+
+    /*Футер старт*/
+.footer__upper-container-logo {
+    max-width: 30%;
+}
+
+.footer__lower-container-contacts_info, .footer__lower-container-contacts_mail {
+    font-size: 1em;
+}
+
+.footer__upper-container-contacts {
+    font-size: 2em;
+}
+
+.footer__lower-container_social-link-icon {
+    width: 30%;
+}
+    /*Футер конец*/
+}
