@@ -93,18 +93,15 @@ body {
 }
 
 .reviews_slider {
-  border: palegreen 1px solid;
   max-width: 1600px;
   width: 90%;
 }
 
-.swiper-wrapper {
-  border: #ea5949 1px solid;
+.swiper-slide-first {
+  margin-left: 1.5%;
 }
 
 .reviews_card {
-  border: yellow 1px solid;
-  position: relative;
   flex-shrink: 1;
   width: 419px;
   height: 478px;

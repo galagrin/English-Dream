@@ -142,7 +142,7 @@ body {
     }
     
     .reviews_slider{
-    border: palegreen 1px solid;
+    // border: palegreen 1px solid;
     max-width: 1600px;
     width: 90%;
     // height: 80%;
@@ -153,16 +153,19 @@ body {
     }
 
 
-    .swiper-wrapper{
-        border: #ea5949 1px solid;
-        // width: 100%;
-        // margin-left: 0;
+    // .swiper-wrapper{
+        // border: #ea5949 1px solid;
+    // }
+
+    .swiper-slide-first{
+        margin-left: 1.5%;
     }
     
+    
     .reviews_card{
-    border: yellow 1px solid;
+    // border: yellow 1px solid;
     // flex-direction: column;
-    position: relative;
+    // position: relative;
     flex-shrink: 1;
     // align-items: flex-start;
     // justify-content: space-between;
