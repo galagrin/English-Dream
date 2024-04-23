@@ -93,15 +93,19 @@ body {
 }
 
 .reviews_slider {
+  border: palegreen 1px solid;
   max-width: 1600px;
   width: 90%;
 }
 
+.swiper-wrapper {
+  border: #ea5949 1px solid;
+}
+
 .reviews_card {
-  flex-direction: column;
+  border: yellow 1px solid;
+  position: relative;
   flex-shrink: 1;
-  align-items: flex-start;
-  justify-content: space-between;
   width: 419px;
   height: 478px;
   /* перевести в проценты */
