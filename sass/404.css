@@ -40,40 +40,11 @@ body {
   text-decoration: none;
 }
 
-/*Кнопка*/
-.header__caption-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background: #2a7d83;
-  font-family: "TSRemarker", sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 125%;
-  letter-spacing: -0.01em;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.test {
-  display: flex;
-  justify-content: space-between;
-  font-family: "CaveatRegular", sans-serif;
-  color: #ea5949;
-  font-size: 64px;
-}
-
-.test1 {
-  font-family: "TSRemarker", sans-serif;
-  color: #3e396f;
-  font-size: 32px;
-}
-
+/* Была высота 90vh */
 .header {
+  border: 1px solid red;
   width: 96%;
-  height: 90vh;
+  height: 30vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 10% 10% 1fr;
@@ -205,6 +176,127 @@ body {
 }
 
 .header__caption-btn { /*Кнопка*/
-  width: 70%;
-  height: 55px;
+  width: 405px;
+  height: 53px;
+}
+
+/* 404 */
+.error {
+  display: flex;
+}
+
+/*.container__error{
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/error_layer.png);
+    opacity: 0.2px;
+    margin-top: 300px;
+    height: 741px;
+    width: 887px;
+    background-size: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .h2__title{
+        font-family: $main-font;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: $darkblue;
+    }
+    .404{
+        font-family: $main-font;
+        color: $darkblue;
+        font-size: 500px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -0.01em;
+        text-align: center;
+    }
+}*/
+/* My block
+.error__container{
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/error_layer.png);
+    /*opacity: 0.2;
+    height: 741px;
+    width: 887px;
+    background-size: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.error__title{
+    font-family: $main-font;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $darkblue;
+}
+.error__404{
+    font-family: $main-font;
+    color: $darkblue;
+    font-size: 500px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -0.01em;
+    text-align: center;
+} */
+/* Last Attempt */
+.error {
+  display: flex;
+  width: 98%;
+  height: 69vh;
+  border: 1px solid blue;
+  justify-content: center;
+}
+
+.error__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/error_layer.png);
+  opacity: 0.2;
+}
+.error__container .error__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*.error__pic{
+      display: $df;
+      width:70%;
+
+      opacity: 0.2;
+      margin: 0 auto;
+      margin-top: 10%;
+
+
+  }*/
+}
+.error__container .error__text .error__title {
+  font-family: "TSRemarker", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #4A2677;
+  display: flex;
+}
+.error__container .error__text .error__404 {
+  font-family: "TSRemarker", sans-serif;
+  color: #4A2677;
+  font-size: 500px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  display: flex;
 }/*# sourceMappingURL=404.css.map */
