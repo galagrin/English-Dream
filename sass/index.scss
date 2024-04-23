@@ -34,32 +34,32 @@ $tablet: 768px;
 $mobile: 360px;
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-  max-width: 1600px;
-  margin: 0 auto;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 /*Кнопка*/
 %button {
-  display: $df;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background: $darkcyan;
-  font-family: $main-font;
-  font-weight: 400;
-  font-size: $main-size;
-  line-height: 125%;
-  letter-spacing: -0.01em;
-  text-align: center;
-  color: $white;
-  text-decoration: none;
+    display: $df;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: $darkcyan;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: $main-size;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
 }
 
 // Header styles start
@@ -97,14 +97,15 @@ body {
     .reviews_inscription,
     .reviews_slider,
     .reviews_card,
-    .swiper-wrapper,
+    // .swiper-wrapper,
     .swiper-slide{
     display: $df;
     }
     
     .reviews_content,
-    .reviews_inscription,
-    .swiper-wrapper{
+    .reviews_inscription
+    // .swiper-wrapper
+    {
     align-items: center;
     justify-content: center;
     }
@@ -145,11 +146,12 @@ body {
     
     .reviews_slider{
     // border: palegreen 1px solid;
-    width: 100%;
-    height: 80%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    max-width: 1600px;
+    width: 90%;
+    // height: 80%;
+    // flex-direction: row;
+    // justify-content: space-around;
+    // align-items: center;
     // padding-left: 0%;
     }
 
@@ -157,35 +159,48 @@ body {
         // border: #ea5949 1px solid;
     // }
     
-    .reviews_card,
-    .swiper-slide{
+    .reviews_card{
     // border: yellow 1px solid;
     flex-direction: column;
     flex-shrink: 1;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: $mint;
-    border-radius: 44px;
+    // background-color: $mint;
+    // border-radius: 44px;
     width: 419px;
     height: 478px;
     /* перевести в проценты */
-    padding: 2%;
+    // padding: 2%;
     }
     
     
     .reviews_content{
         width: 100%;
     }
-    .reviews_text{
+
+    .one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 478px;
         width: 419px;
+        background-color: $mint;
+        border-radius: 44px;
+    }
+
+    .reviews_text{
+        margin: 48px 30px 0 30px;
+    }
+
+    .reviews_signature{
+        margin: 0 30px 48px 30px;
     }
     
     .reviews_text,
     .reviews_signature{
     font-family: $main-font;
     font-weight: 400;
-    font-size: $main-size;
+    font-size: 24px;
     line-height: 117%;
     color: #000;
     }
