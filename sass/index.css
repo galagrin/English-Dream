@@ -24,6 +24,144 @@ body {
 }
 
 /*Кнопка*/
+.studio768 {
+  display: grid;
+  background-color: #eaf4f1;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.studio__title768 {
+  color: #2a7d83;
+  font-family: "CaveatRegular", sans-serif;
+  font-size: 2rem;
+  place-self: center;
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+.studio__img768 {
+  max-width: 100%;
+  display: block;
+  grid-column: 1/4;
+  grid-row: 2/11;
+  padding: 5%;
+}
+
+.studio__text_director768 {
+  color: orange;
+  font-family: "CaveatRegular", sans-serif;
+  font-size: 2rem;
+  grid-column: 4/7;
+  grid-row: 3/4;
+  place-self: center;
+}
+
+.studio__text_idea768 {
+  color: rgb(74, 38, 119);
+  grid-column: 4/7;
+  grid-row: 4/5;
+  place-self: center;
+  margin-left: 2%;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 1.5rem;
+}
+
+.studio__text_idea768_2 {
+  color: rgb(74, 38, 119);
+  grid-column: 4/6;
+  grid-row: 5/6;
+  place-self: center;
+  margin-right: 15%;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 1.5rem;
+}
+
+.studio__text_ENGLISH768 {
+  color: #ea5949;
+  grid-column: 5/7;
+  grid-row: 5/6;
+  justify-self: end;
+  align-self: center;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 2rem;
+  padding-right: 10%;
+}
+
+.studio__text_dream768 {
+  color: rgb(74, 38, 119);
+  grid-column: 4/7;
+  grid-row: 6/7;
+  place-self: center;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 1.5rem;
+}
+
+.studio__text_dream768_2 {
+  color: rgb(74, 38, 119);
+  grid-column: 4/7;
+  grid-row: 7/8;
+  place-self: center;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 1.5rem;
+}
+
+.studio__text_15768 {
+  color: #3e396f;
+  grid-column: 4/5;
+  grid-row: 8/9;
+  place-self: center;
+  margin-left: 12%;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 2rem;
+}
+
+.studio__text_yers768 {
+  color: #ea5949;
+  grid-column: 4/5;
+  grid-row: 9/10;
+  place-self: center;
+  margin-left: 12%;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 1.5rem;
+}
+
+.studio__text_12000768 {
+  color: #3e396f;
+  grid-column: 5/6;
+  grid-row: 8/9;
+  place-self: center;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 2rem;
+}
+
+.studio__text_lessons768 {
+  color: #ea5949;
+  grid-column: 5/6;
+  grid-row: 9/10;
+  place-self: center;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 1.5rem;
+}
+
+.studio__text_500768 {
+  color: #3e396f;
+  grid-column: 6/7;
+  grid-row: 8/9;
+  place-self: center;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 2rem;
+}
+
+.studio__text_students768 {
+  color: #ea5949;
+  grid-column: 6/7;
+  grid-row: 9/10;
+  place-self: center;
+  font-family: "TSRemarker", sans-serif;
+  font-size: 1.5rem;
+}
+
 .studio {
   display: grid;
   background-color: #eaf4f1;
@@ -138,4 +276,94 @@ body {
   place-self: center;
   font-family: "TSRemarker", sans-serif;
   font-size: 2.25rem;
+}
+
+@media screen and (min-width: 1100px) and (max-width: 2600px) {
+  .studio768 {
+    display: none;
+  }
+  .studio {
+    display: grid;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1099px) {
+  .studio {
+    display: none;
+  }
+  .studio768 {
+    display: grid;
+  }
+}
+@media screen and (max-width: 499px) {
+  .studio768 {
+    display: none;
+  }
+  .studio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .studio__title {
+    font-size: 2rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .studio__img {
+    max-width: 100%;
+    display: block;
+    padding: 7%;
+    grid-column: 1/4;
+    grid-row: 2/7;
+  }
+  .studio__text_director {
+    font-size: 2rem;
+    grid-column: 1/4;
+    grid-row: 7/8;
+  }
+  .studio__text_idea {
+    font-size: 1rem;
+    grid-column: 1/4;
+    grid-row: 8/9;
+  }
+  .studio__text_ENGLISH {
+    font-size: 2rem;
+    grid-column: 1/4;
+    grid-row: 9/10;
+    place-self: center;
+  }
+  .studio__text_dream {
+    font-size: 1rem;
+    grid-column: 1/4;
+    grid-row: 10/11;
+  }
+  .studio__text_15 {
+    font-size: 1.25rem;
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .studio__text_yers {
+    font-size: 1.25rem;
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+  .studio__text_12000 {
+    font-size: 1.25rem;
+    grid-column: 2/3;
+    grid-row: 11/12;
+  }
+  .studio__text_lessons {
+    font-size: 1.25rem;
+    grid-column: 2/3;
+    grid-row: 12/13;
+  }
+  .studio__text_500 {
+    font-size: 1.25rem;
+    grid-column: 3/4;
+    grid-row: 11/12;
+  }
+  .studio__text_students {
+    font-size: 1.25rem;
+    grid-column: 3/4;
+    grid-row: 12/13;
+  }
 }/*# sourceMappingURL=index.css.map */
