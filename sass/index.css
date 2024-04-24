@@ -498,6 +498,14 @@ body {
     width: 243px;
     height: 68px;
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
 }
 @media screen and (max-width: 360px) {
   .reviews {
@@ -517,5 +525,13 @@ body {
   .reviews_text,
   .reviews_signature {
     font-size: 24px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */
