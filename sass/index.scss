@@ -613,6 +613,37 @@ body {
 }
 
 // Медиазапросы секции отзывы
+@media screen and (max-width: 1380px){
+    .one{
+        width: 350px;
+        height: 450px;
+        // перевести в проценты?
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .one{
+        width: 300px;
+        height: 400px;
+        // перевести в проценты?
+    }
+
+    .reviews_text,
+    .reviews_signature{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .one{
+        width: 350px;
+        height: 450px;
+        // перевести в проценты?
+    }
+}
+
+
+
 @media screen and (max-width: 768px) {
     .one{
         width: 442px;
@@ -636,13 +667,24 @@ body {
     }
 }
 
-@media screen and (min-width: 768px){
-    .swiper-button-next:after{
-        content: url(/assets/images/button-next.svg)!important;
+@media screen and (min-width: 400px) and (max-width:768px){
+    .one{
+        width: 250px;
+        height: 500px;
+        // перевести в проценты?
     }
 
-    .swiper-button-prev:after{
-        content: url(/assets/images/button-prev.svg) !important;
+    .reviews_button__big{
+        width: 243px;
+        height: 68px;
+        }
+}
+
+@media screen and (min-width: 361px) and (max-width:400px){
+    .one{
+        width: 270px;
+        height: 520px;
+        // перевести в проценты?
     }
 }
 
@@ -650,12 +692,7 @@ body {
     .reviews{
         height: 950px;
         max-width: 360px;
-    }
-    
-    // .mySwiper1{
-        // max-width: 360px;
-    // }
-    
+    } 
     .one{
         width: 260px;
         height: 628px;
@@ -684,5 +721,15 @@ body {
     .swiper-button-next:after,
     .swiper-button-prev:after{
         display: none;
+    }
+}
+
+@media screen and (min-width: 770px){
+    .swiper-button-next:after{
+        content: url(/assets/images/button-next.svg)!important;
+    }
+
+    .swiper-button-prev:after{
+        content: url(/assets/images/button-prev.svg) !important;
     }
 }
