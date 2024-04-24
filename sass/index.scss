@@ -313,7 +313,9 @@ body {
     // background-color: $mint;
     // border-radius: 44px;
     width: 419px;
+    // width: 47%;
     height: 478px;
+    // height: 51%;
     /* перевести в проценты */
     // padding: 2%;
     }
@@ -347,14 +349,6 @@ body {
     font-size: 24px;
     line-height: 117%;
     color: #000;
-    }
-
-    .swiper-button-next:after{
-        content: url(/assets/images/button-next.svg)!important;
-    }
-
-    .swiper-button-prev:after{
-        content: url(/assets/images/button-prev.svg) !important;
     }
     
     .reviews_button,
@@ -620,7 +614,7 @@ body {
 
 // Медиазапросы секции отзывы
 @media screen and (max-width: 768px) {
-    .reviews_card{
+    .one{
         width: 442px;
         height: 490px;
         // перевести в проценты?
@@ -642,13 +636,28 @@ body {
     }
 }
 
+@media screen and (min-width: 768px){
+    .swiper-button-next:after{
+        content: url(/assets/images/button-next.svg)!important;
+    }
+
+    .swiper-button-prev:after{
+        content: url(/assets/images/button-prev.svg) !important;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .reviews{
         height: 950px;
+        max-width: 360px;
     }
     
-    .reviews_card{
-        width: 257px;
+    // .mySwiper1{
+        // max-width: 360px;
+    // }
+    
+    .one{
+        width: 260px;
         height: 628px;
         // перевести в проценты?
     }
