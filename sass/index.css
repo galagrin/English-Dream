@@ -534,6 +534,10 @@ body {
     width: 243px;
     height: 68px;
   }
+  .reviews_text,
+  .reviews_signature {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 361px) and (max-width: 400px) {
   .one {
