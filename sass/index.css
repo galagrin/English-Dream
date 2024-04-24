@@ -24,6 +24,24 @@ body {
 }
 
 /*Кнопка*/
+.reviews_button,
+.button,
+.reviews_sent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #2a7d83;
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
 .teamtitle {
   text-align: center;
   padding-bottom: 99px;
@@ -162,6 +180,117 @@ body {
 
 .swiper-slide:nth-child(3n) {
   width: 70%;
+}
+
+.reviews {
+  background-color: #fff;
+  max-width: 1600px;
+  width: 100%;
+  height: 80%;
+}
+
+.reviews_content,
+.reviews_title,
+.reviews_inscription,
+.reviews_slider,
+.reviews_card,
+.swiper-slide {
+  display: flex;
+}
+
+.reviews_content,
+.reviews_inscription {
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews_content {
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+  padding: 135px 40px 100px 0px;
+  /* попробовать заменить на относительные единицы */
+  flex-direction: column;
+}
+
+.reviews_title {
+  width: 20%;
+  height: 8%;
+  padding-bottom: 5%;
+}
+
+.reviews_inscription {
+  width: 100%;
+  height: 100%;
+  padding: 3% 10% 3% 2%;
+  font-family: "CaveatRegular", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #2a7d83;
+}
+
+.reviews_slider {
+  max-width: 1600px;
+  width: 90%;
+}
+
+.swiper-slide-first {
+  margin-left: 1.5%;
+}
+
+.reviews_card {
+  flex-shrink: 1;
+  width: 419px;
+  height: 478px;
+  /* перевести в проценты */
+}
+
+.reviews_content {
+  width: 100%;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 478px;
+  width: 419px;
+  background-color: #eaf4f1;
+  border-radius: 44px;
+}
+
+.reviews_text {
+  margin: 48px 30px 0 30px;
+}
+
+.reviews_signature {
+  margin: 0 30px 48px 30px;
+}
+
+.reviews_text,
+.reviews_signature {
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 117%;
+  color: #000;
+}
+
+.swiper-button-next:after {
+  content: url(/assets/images/button-next.svg) !important;
+}
+
+.swiper-button-prev:after {
+  content: url(/assets/images/button-prev.svg) !important;
+}
+
+.reviews_button__big {
+  width: 419px;
+  height: 98px;
+  margin-top: 3%;
 }
 
 @media screen and (max-width: 1287px) {
@@ -359,124 +488,4 @@ body {
   .swiper-slide:nth-child(4) {
     width: 80%;
   }
-}
-.reviews_button,
-.button,
-.reviews_sent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background: #2a7d83;
-  font-family: "TSRemarker", sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 125%;
-  letter-spacing: -0.01em;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.reviews {
-  background-color: #fff;
-  max-width: 1600px;
-  width: 100%;
-  height: 80%;
-}
-
-.reviews_content,
-.reviews_title,
-.reviews_inscription,
-.reviews_slider,
-.reviews_card,
-.swiper-slide {
-  display: flex;
-}
-
-.reviews_content,
-.reviews_inscription {
-  align-items: center;
-  justify-content: center;
-}
-
-.reviews_content {
-  max-width: 1600px;
-  width: 100%;
-  height: 100%;
-  padding: 135px 40px 100px 0px;
-  /* попробовать заменить на относительные единицы */
-  flex-direction: column;
-}
-
-.reviews_title {
-  width: 20%;
-  height: 8%;
-  padding-bottom: 5%;
-}
-
-.reviews_inscription {
-  width: 100%;
-  height: 100%;
-  padding: 3% 10% 3% 2%;
-  font-family: "CaveatRegular", sans-serif;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 78%;
-  letter-spacing: -0.01em;
-  text-align: center;
-  color: #2a7d83;
-}
-
-.reviews_slider {
-  max-width: 1600px;
-  width: 90%;
-}
-
-.swiper-slide-first {
-  margin-left: 1.5%;
-}
-
-.reviews_card {
-  flex-shrink: 1;
-  width: 419px;
-  height: 478px;
-  /* перевести в проценты */
-}
-
-.reviews_content {
-  width: 100%;
-}
-
-.one {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 478px;
-  width: 419px;
-  background-color: #eaf4f1;
-  border-radius: 44px;
-}
-
-.reviews_text {
-  margin: 48px 30px 0 30px;
-}
-
-.reviews_signature {
-  margin: 0 30px 48px 30px;
-}
-
-.reviews_text,
-.reviews_signature {
-  font-family: "TSRemarker", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 117%;
-  color: #000;
-}
-
-.reviews_button__big {
-  width: 419px;
-  height: 98px;
-  margin-top: 3%;
 }/*# sourceMappingURL=index.css.map */
