@@ -647,8 +647,12 @@ body {
 @media screen and (max-width: 768px) {
     .one{
         width: 442px;
-        height: 490px;
+        height: 498px;
         // перевести в проценты?
+    }
+    .reviews_text,
+    .reviews_signature{
+        font-size: 24px;
     }
 
     .reviews_button__big{
@@ -667,7 +671,7 @@ body {
     }
 }
 
-@media screen and (min-width: 400px) and (max-width:768px){
+@media screen and (min-width: 400px) and (max-width:767px){
     .one{
         width: 250px;
         height: 500px;
@@ -724,7 +728,7 @@ body {
     }
 }
 
-@media screen and (min-width: 770px){
+@media screen and (min-width: 768px){
     .swiper-button-next:after{
         content: url(/assets/images/button-next.svg)!important;
     }
