@@ -498,4 +498,24 @@ body {
     width: 243px;
     height: 68px;
   }
+}
+@media screen and (max-width: 360px) {
+  .reviews {
+    height: 950px;
+  }
+  .reviews_card {
+    width: 257px;
+    height: 628px;
+  }
+  .reviews_button__big {
+    width: 202px;
+    height: 56px;
+  }
+  .reviews_inscription {
+    font-size: 32px;
+  }
+  .reviews_text,
+  .reviews_signature {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=index.css.map */
