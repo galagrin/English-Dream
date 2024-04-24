@@ -618,4 +618,16 @@ body {
 
 }
 
-
+// Медиазапросы секции отзывы
+@media screen and (max-width: 768px) {
+    .reviews_card{
+        width: 442px;
+        height: 490px;
+        // перевести в проценты?
+    }
+    
+    .reviews_button__big{
+        width: 243px;
+        height: 68px;
+        }
+}
