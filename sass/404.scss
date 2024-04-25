@@ -66,13 +66,12 @@ body{
 // Header styles start
 /* Была высота 90vh */
 .header {
-    border: 1px solid red;
     width: 96%;
-    height: 30vh;
+    height: 34vh;
     display: $dg;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 10% 10% 1fr;
-    margin: 2%;
+    margin: 2px;
 }
 
 .header__logo {
@@ -206,106 +205,44 @@ body{
     width: 405px;
     height: 53px;
 }
-/* 404 */
-.error{
-    display: $df;
-}
-/*.container__error{
-    background-repeat: no-repeat;
-    background-image: url(../assets/images/error_layer.png);
-    opacity: 0.2px;
-    margin-top: 300px;
-    height: 741px;
-    width: 887px;
-    background-size: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .h2__title{
-        font-family: $main-font;
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: -0.01em;
-        text-align: center;
-        color: $darkblue;
-    }
-    .404{
-        font-family: $main-font;
-        color: $darkblue;
-        font-size: 500px;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: -0.01em;
-        text-align: center;
-    }
-}*/
-/* My block
-.error__container{
-    background-repeat: no-repeat;
-    background-image: url(../assets/images/error_layer.png);
-    /*opacity: 0.2;
-    height: 741px;
-    width: 887px;
-    background-size: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
-.error__title{
-    font-family: $main-font;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: $darkblue;
-}
-.error__404{
-    font-family: $main-font;
-    color: $darkblue;
-    font-size: 500px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: -0.01em;
-    text-align: center;
-} */
 
-/* Last Attempt */
+/* BLOCK 404 */
 .error{
     display: $df;
     width: 98%;
-    height: 69vh;
-    border: 1px solid blue;
+    height: 65vh;
     justify-content: center;
 }
 .error__container{
     display: $df;
     flex-direction: column;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: url(../assets/images/error_layer.png);
-    opacity: 0.2;
+    height: 69vh;
 
+    &::before{
+        content: '';
+        background-image: url(../assets/images/error_layer.png);
+        width: 70vw;
+        height: 53vh;
+        margin: auto;
+        display: $df;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin-top: 23%;
+    }
     
     .error__text{
 
         height: 100%;
         display: $df;
         flex-direction: column;
-        /*.error__pic{
-            display: $df;
-            width:70%;
-    
-            opacity: 0.2;
-            margin: 0 auto;
-            margin-top: 10%;
-            
-            
-        }*/
+        justify-content: 
+        space-between;
+        position: relative; 
+
         .error__title{
             font-family: $main-font;
             font-size: 40px;
