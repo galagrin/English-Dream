@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="./assets/images/main-logo.svg" type="image/svg+xml">
     <!-- <link href="sass/index.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./sass/normalize.css">
@@ -11,6 +12,7 @@
     <!-- <link href="sass/fonts.css" rel="stylesheet"> -->
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <title>English Dream</title>
 </head>
@@ -239,11 +241,106 @@
         <!-- speaking club end -->
 
 
-        <!-- oтзывы start -->
-        <section>
+    <!-- oтзывы start -->
+    <section class="reviews" id="section-reviews">
+        <div class="reviews_content">
+            <div class="reviews_title">
+                <h2 class="reviews_inscription">
+                    отзывы
+                </h2>
+            </div>
+            <div class="reviews_slider swiper mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="reviews_card swiper-slide swiper-slide-first">
+                        <div class="card_wrapper">
+                            <p class="reviews_text">
+                            После месяца занятий — вижу положительные изменения у Демида. Он читает, переводит, знает гораздо больше слов. Он говорил, что вы берёте и школьную программу (вроде даже немного наперёд), поэтому когда ему задают домашку — он делает самостоятельно, без нервов, правда очень быстро! но пару раз проверяла — все знает, что задано! 
+                        </p>
+                        <p class="reviews_signature">
+                            Вера (мама Демида 8 лет , Москва)
+                        </p>
+                    </div>
+                    </div>
 
-        </section>
-        <!-- oтзывы end -->
+                    <div class="reviews_card swiper-slide">
+                        <div class="card_wrapper">
+                        <p class="reviews_text">
+                            Искала преподавателя для ребенка на лето, когда ребенок на даче. Чтобы обязательно очные занятия у нас. Виктория полностью оправдала ожидания. Время зря не тратит, каждая минута с пользой, занятия сбалансированные, и устная речь, и грамматика. Очень все пунктуально.
+                        </p>
+                        <p class="reviews_signature">
+                            Галина (мама Даниила 11 лет, Москва)
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="reviews_card swiper-slide">
+                        <div class="card_wrapper">
+                        <p class="reviews_text">
+                            Очень нравятся занятия с Викторией! Обратилась с определённым запросом, Виктория всё супер понятно объясняет, помогает, если возникают трудности. После занятий появляется мотивация двигаться дальше, и поднимается настроение Спасибо! :)
+                        </p>
+                        <p class="reviews_signature">
+                            Мария 34 года, Москва
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="reviews_card swiper-slide">
+                        <div class="card_wrapper">
+                        <p class="reviews_text">
+                            После наших занятий по подготовке к IELTS я успешно сдала экзамены и поступила в два университета Италии, Сиенский и Ca Foscari в Венеции! Моя мечта сбылась! Спасибо огромное за Ваш труд!
+                        </p>
+                        <p class="reviews_signature">
+                            Алуа 18 лет, Караганда
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="reviews_card swiper-slide">
+                        <div class="card_wrapper">
+                        <p class="reviews_text">
+                            Виктория, добрый день, хочу поблагодарить вас за уроки, уверенно чувствую себя с разговорным языком при переезде в Варшаву. 
+                        </p>
+                        <p class="reviews_signature">
+                            Андрей 28 лет, Варшава
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="reviews_card swiper-slide">
+                        <div class="card_wrapper">
+                        <p class="reviews_text">
+                            Хотела поблагодарить Викторию за прекрасную подготовку к олимпиаде по английскому языку, Даша заняла 1-ое место в областной Олимпиаде. 
+                        </p>
+                        <p class="reviews_signature">
+                            Наталья (мама Даши 10 лет, Караганда)
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="reviews_card swiper-slide">
+                        <div class="card_wrapper">
+                        <p class="reviews_text">
+                            Все четко и профессионально. Ребенок занимается с удовольствием.
+                        </p>
+                        <p class="reviews_signature">
+                            Мария (мама Кирилла 12 лет, Москва)
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> 
+            </div>
+            <div class="reviews_button reviews_button__big">
+                <a href="https://forms.gle/GbCKPXt2ZUX4GVLC6" class="button">
+                    <p class="reviews_sent">
+                        оставить отзыв
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- oтзывы end -->
 
     </main>
     <!-- footer start -->
@@ -252,6 +349,56 @@
     </footer>
     <!-- footer end -->
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+            centeredSlidesBounds: true,
+            // pagination: {
+                // el: ".swiper-pagination",
+                // type: "fraction",
+            // },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+        340: {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 60,
+        },
+        360: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 60,
+        },
+
+        768: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 200,
+            
+        },
+
+        1024: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+        }
+    },
+        });
+    
+        var appendNumber = 4;
+        var prependNumber = 1;
+        </script>
+    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

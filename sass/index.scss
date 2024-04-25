@@ -571,6 +571,124 @@ body {
 
 // отзывы  styles start
 
+.reviews{
+    background-color: $white;
+    // border: black 1px solid;
+    max-width: 1600px;
+    width: 100%;
+    height: 80%;
+    }
+    
+    .reviews_content,
+    .reviews_title,
+    .reviews_inscription,
+    .reviews_slider,
+    .reviews_card,
+    .swiper-slide{
+    display: $df;
+    }
+    
+    .reviews_content,
+    .reviews_inscription{
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .reviews_content{
+    // border: blue 1px solid;
+    max-width: 1600px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    }
+    
+
+    .reviews_title{
+    // border: red 1px solid;
+    width: 20%;
+    height: 8%;
+    padding-bottom: 5%;
+    }
+    
+    
+    .reviews_inscription{
+    // border: green 1px solid;
+    width: 100%;
+    height: 100%;
+    padding: 3% 10% 3% 2%;
+    font-family: $title;
+    font-weight: 400;
+    font-size: $title-size;
+    line-height: 78%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $darkcyan;
+    }
+    
+    .reviews_slider{
+    // border: palegreen 1px solid;
+    max-width: 1600px;
+    width: 90%;
+    }
+
+    .swiper-slide-first{
+        margin-left: 1.5%;
+    }
+    
+    
+    .reviews_card{
+    // border: yellow 1px solid;
+    flex-shrink: 1;
+    width: 419px;
+    height: 478px;
+    }
+    
+    .reviews_content{
+        width: 100%;
+    }
+
+    .card_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 478px;
+        width: 419px;
+        background-color: $mint;
+        border-radius: 44px;
+    }
+
+    .reviews_text{
+        margin: 48px 30px 0 30px;
+    }
+
+    .reviews_signature{
+        margin: 0 30px 48px 30px;
+    }
+    
+    .reviews_text,
+    .reviews_signature{
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000;
+    }
+    
+    .reviews_button,
+    .button,
+    .reviews_sent{
+    @extend%button
+    }
+    
+    .reviews_button__big{
+    width: 243px;
+    height: 67px;
+    margin-top: 3%;
+    font-size: 40px;
+    padding-top: 1%;
+    }
+    
+
 // отзывы  styles end
 
 // footer styles start
@@ -814,4 +932,126 @@ body {
 
 }
 
+// Медиазапросы секции отзывы
+@media screen and (max-width: 1380px){
+    .card_wrapper{
+        width: 350px;
+        height: 450px;
+    }
+}
 
+@media screen and (max-width: 1160px){
+    .card_wrapper{
+        width: 300px;
+        height: 400px;
+    }
+
+    .reviews_text,
+    .reviews_signature{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .card_wrapper{
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card_wrapper{
+        width: 442px;
+        height: 498px;
+    }
+    .reviews_text,
+    .reviews_signature{
+        font-size: 24px;
+    }
+
+    .reviews_button__big{
+        width: 243px;
+        height: 68px;
+        }
+    
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width:767px){
+    .card_wrapper{
+        width: 250px;
+        height: 500px;
+    }
+
+    .reviews_button__big{
+        width: 243px;
+        height: 68px;
+        }
+
+        .reviews_text,
+        .reviews_signature{
+            font-size: 20px;
+        }
+}
+
+@media screen and (min-width: 361px) and (max-width:400px){
+    .card_wrapper{
+        width: 270px;
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .reviews{
+        height: 950px;
+        max-width: 360px;
+    } 
+    .card_wrapper{
+        width: 260px;
+        height: 628px;
+    }
+
+    .reviews_button__big{
+        width: 202px;
+        height: 56px;
+        }
+    
+    .reviews_inscription{
+        font-size: 32px;
+    }
+
+    .reviews_text,
+    .reviews_signature{
+        font-size: 24px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 768px){
+    .swiper-button-next:after{
+        content: url(/assets/images/button-next.svg)!important;
+    }
+
+    .swiper-button-prev:after{
+        content: url(/assets/images/button-prev.svg) !important;
+    }
+}
