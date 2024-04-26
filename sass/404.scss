@@ -221,7 +221,9 @@ body{
     &::before{
         content: '';
         background-image: url(../assets/images/error_layer.png);
-        width: 70vw;
+        background-position: center;
+        background-size: 65vw;
+        /*width: 70vw;*/
         height: 53vh;
         margin: auto;
         display: $df;
@@ -232,6 +234,8 @@ body{
         bottom: 0;
         right: 0;
         margin-top: 23%;
+        background-repeat: no-repeat;
+
     }
     
     .error__text{
