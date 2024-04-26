@@ -25,7 +25,7 @@ body {
 }
 
 /*Кнопка*/
-.button__small {
+.button_small {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,98 +43,100 @@ body {
 
 .courses {
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 120px;
+  max-width: 1600px;
 }
 
-.courses_container {
-  margin: 0;
-}
-
-.courses_title {
+.courses__title {
   font-family: "CaveatRegular", sans-serif;
   font-weight: 400;
   font-size: 64px;
   line-height: 78%;
   text-align: center;
   color: #2a7d83;
-  padding-bottom: 43px;
+  padding-bottom: 68px;
 }
 
-.courses_wrapper {
-  font-family: "TSRemarker", sans-serif;
-  text-transform: uppercase;
+.courses__container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-top: 87px;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.courses__container .swiper-slide {
+  max-width: 100%;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.courses__item {
+  max-width: 100%;
   display: flex;
-  justify-content: space-between;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  padding-top: 84px;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  left: auto;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  color: #fff;
-  background-color: #2a7d83;
-  border-radius: 60%;
-  padding: 9px 14px;
-  font-weight: 700;
-  font-size: 26px;
-}
-
-.courses_item {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .course-circle {
-  width: 170px;
-  height: 170px;
+  width: 10.6vw;
+  height: 10.6vw;
   border-radius: 50%;
   background-color: #2a7d83;
   position: absolute;
   z-index: 0;
-  top: -78px;
-  right: -30px;
+  top: -84px;
 }
 
-.course-circle_text {
+.course-circle__text {
   font-size: 2.5vw;
+  font-family: "TSRemarker", sans-serif;
   font-weight: 400;
   line-height: 125%;
   letter-spacing: -0.01em;
   text-align: center;
+  text-transform: uppercase;
   color: #fff;
   padding-top: 3.4rem;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  margin: 0 20px;
+}
+
+.swiper-button-next:after {
+  content: url(/English-Dream/assets/images/button-next.svg);
+}
+
+.swiper-button-prev:after {
+  content: url(/English-Dream/assets/images/button-prev.svg);
+}
+
 .course-content {
-  background-color: #eaf4f1;
-  border-radius: 4.4rem;
-  padding: 32px 29px 36px;
+  font-family: "TSRemarker", sans-serif;
   font-weight: 400;
   font-size: 1.5vw;
   line-height: 117%;
   color: #000;
+  background-color: #eaf4f1;
+  border-radius: 4.4rem;
+  padding: 32px 29px 36px;
   max-width: 347px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   z-index: 1;
 }
 
-.course-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 100%;
-}
-
-.course_title {
+.course__title {
   font-weight: 400;
   font-size: 2vw;
   line-height: 156%;
@@ -143,11 +145,11 @@ body {
   color: #2a7d83;
 }
 
-.course_text {
+.course__text {
   padding-top: 18px;
 }
 
-.course_subtitle {
+.course__subtitle {
   font-weight: 400;
   color: #2a7d83;
   padding-top: 18px;
@@ -160,14 +162,10 @@ body {
   list-style-type: none;
 }
 
-.course-list_item:before {
+.course-list__item:before {
   content: "—";
   position: relative;
   left: -5px;
-}
-
-.course-duration {
-  padding: 21px 0;
 }
 
 .course-footer {
@@ -177,28 +175,13 @@ body {
   align-items: flex-start;
 }
 
-.button__small {
-  font-size: 3.6rem;
+.course-duration {
+  padding: 21px 0;
+}
+
+.button_small {
+  font-size: 2.25vw;
   line-height: 78%;
   padding: 15px 30px 7px;
   align-self: center;
-}
-
-@media screen and (max-width: 768px) {
-  .course-circle_text {
-    font-size: "TSRemarker", sans-serif;
-    line-height: 156%;
-  }
-  .course_title {
-    font-size: 3.13vw;
-    line-height: 208%;
-  }
-  .course-content {
-    font-size: 2.6vw;
-    line-height: 140%;
-  }
-  .button__small {
-    font-size: 3.13vw;
-    line-height: 117%;
-  }
 }/*# sourceMappingURL=index.css.map */
