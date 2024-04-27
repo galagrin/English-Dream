@@ -123,7 +123,7 @@ body {
     // position: sticky; top: 0;
     // background-color: rgb(255, 255, 255, 0.8);
     position: fixed;
-    top: 100px;
+    top: 40px;
     right: 40px;
     z-index: 4;
 }
@@ -737,14 +737,14 @@ body {
 .swiper__photo img{
     max-width: 225px;
 }
-.swiper-slide:nth-child(1) {
+.team-slide:nth-child(1) {
     width: 70%;
 }
-.swiper-slide:nth-child(2n) {
+.team-slide:nth-child(2n) {
     width: 70%;
 }
 
-.swiper-slide:nth-child(3n) {
+.team-slide:nth-child(3n) {
     width: 70%;
 }
 
@@ -768,9 +768,7 @@ body {
     .reviews_title,
     .reviews_inscription,
     .reviews_slider,
-    .reviews_card
-    // .swiper-slide
-    {
+    .reviews_card{
     display: $df;
     }
     
@@ -929,6 +927,14 @@ body {
     color: $indigo;
 }
 // footer styles end
+/*Адаптивность для большого экрана*/
+@media screen and (min-width: 1700px) and (max-width: 4000px){
+.header__menu {
+    top: 40px;
+    right: 10%;
+    z-index: 4;
+}
+}
 
 /*Адаптивность для планшета и маленького десктопа начало*/
 
@@ -1036,7 +1042,7 @@ body {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 4;
+    z-index: 10;
 }
 
 .menu__btn > span,
@@ -1067,7 +1073,7 @@ body {
     top: 0;
     right: -100%;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     padding: 80px 0;
     padding-right: 0;
     padding-bottom: 1%;
@@ -1225,20 +1231,20 @@ body {
     //     width: 100%;
 
     // }
-    .swiper-slide:nth-child(1) {
+    .team-slide:nth-child(1) {
         width: 70%;
         padding-left: 27px;
     }
     
-    .swiper-slide:nth-child(2n) {
+    .team-slide:nth-child(2n) {
         width: 70%;
     }
     
-    .swiper-slide:nth-child(3n) {
+    .team-slide:nth-child(3n) {
         width: 70%;
 
     }
-    .swiper-slide:nth-child(4){
+    .team-slide:nth-child(4){
         padding-right: 27px;
     }
 }
@@ -1260,31 +1266,31 @@ body {
     // .swiper {
     //     width: 100%;
     // }
-    .swiper-slide:nth-child(1) {
+    .team-slide:nth-child(1) {
         width: 80%;
     }
     
-    .swiper-slide:nth-child(2n) {
+    .team-slide:nth-child(2n) {
         width: 80%;
     } 
     
-    .swiper-slide:nth-child(3n) {
+    .team-slide:nth-child(3n) {
         width: 80%;
 
     } 
 }
 
 @media screen and (max-width: 565px){
-    .swiper-slide:nth-child(1) {
+    .team-slide:nth-child(1) {
         width: 85%;
         padding-left: 10px;
     } 
     
-    .swiper-slide:nth-child(2n) {
+    .team-slide:nth-child(2n) {
         width: 85%;
     } 
     
-    .swiper-slide:nth-child(3n) {
+    .team-slide:nth-child(3n) {
         width: 85%;
 
     } 
@@ -1292,20 +1298,20 @@ body {
 
 
 @media screen and (max-width: 528px){
-    .swiper-slide:nth-child(1) {
+    .team-slide:nth-child(1) {
         width: 85%;
         padding-left: 10px;
     }
     
-    .swiper-slide:nth-child(2n) {
+    .team-slide:nth-child(2n) {
         width: 85%;
     }
     
-    .swiper-slide:nth-child(3n) {
+    .team-slide:nth-child(3n) {
         width: 85%;
 
     }
-    .swiper-slide:nth-child(4){
+    .team-slide:nth-child(4){
         padding-right: 27px;
     }
 }
@@ -1359,52 +1365,52 @@ body {
         max-width: 123px;
     }
 
-    .swiper-slide:nth-child(1) {
+    .team-slide:nth-child(1) {
         width: 65%;
         padding-left: 11px;
     }
 
-    .swiper-slide:nth-child(2n) {
+    .team-slide:nth-child(2n) {
         width: 65%;
     }
     
-    .swiper-slide:nth-child(3n) {
+    .team-slide:nth-child(3n) {
         width: 65%;
 
     }
-    .swiper-slide:nth-child(4){
+    .team-slide:nth-child(4){
         padding-right: 11px;
     }
 }
 @media screen and (max-width: 440px){
-    .swiper-slide:nth-child(1) {
+    .team-slide:nth-child(1) {
         width: 70%;
     }
 
-    .swiper-slide:nth-child(2n) {
+    .team-slide:nth-child(2n) {
         width: 70%;
     }
     
-    .swiper-slide:nth-child(3n) {
+    .team-slide:nth-child(3n) {
         width: 70%;
     }
 
 }
 @media screen and (max-width: 330px){
-    .swiper-slide:nth-child(1) {
+    .team-slide:nth-child(1) {
         width: 74%;
     }
 
-    .swiper-slide:nth-child(2n) {
+    .team-slide:nth-child(2n) {
         width: 74%;
         margin-left: 10px;
 
     }
-    .swiper-slide:nth-child(3n) {
+    .team-slide:nth-child(3n) {
         width: 74%;
         margin-left: 10px;
     }
-    .swiper-slide:nth-child(4){
+    .team-slide:nth-child(4){
         width: 80%;
 
     }
