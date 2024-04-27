@@ -743,7 +743,6 @@ body {
 }
 
 .reviews_slider {
-  max-width: 1600px;
   width: 100%;
 }
 
@@ -1298,7 +1297,6 @@ body {
 @media screen and (max-width: 360px) {
   .reviews {
     height: 950px;
-    max-width: 360px;
   }
   .card_wrapper {
     width: 260px;
