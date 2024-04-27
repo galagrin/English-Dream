@@ -670,11 +670,11 @@ body {
 .swipesection {
     display: none;
 }
-.swiper{
-    width: 769px;
-    margin: 0 auto;
+// .swiper{
+//     width: 769px;
+//     margin: 0 auto;
 
-}
+// }
 .mySwiper{
     max-width: 769px;
     width: 100%;
@@ -1209,10 +1209,10 @@ body {
         font-size: 48px ;
         padding-top: 120px;
     } 
-    .swiper {
-        width: 100%;
+    // .swiper {
+    //     width: 100%;
 
-    }
+    // }
     .swiper-slide:nth-child(1) {
         width: 70%;
         padding-left: 27px;
@@ -1232,7 +1232,7 @@ body {
 }
 @media screen and (min-width: 800px){
     .swipesection,
-    .swiper,
+    // .swiper,
     .swiper-button-next,
     .swiper-button-prev,
     .swiper-pagination {
@@ -1245,9 +1245,9 @@ body {
 }
 
 @media screen and (max-width: 645px){
-    .swiper {
-        width: 100%;
-    }
+    // .swiper {
+    //     width: 100%;
+    // }
     .swiper-slide:nth-child(1) {
         width: 80%;
 
@@ -1306,11 +1306,11 @@ body {
         padding-top: 62px;
         padding-bottom: 54px;
     }
-    .swiper{
-        width: 500px;
-        margin: 0 auto;
+    // .swiper{
+    //     width: 500px;
+    //     margin: 0 auto;
     
-    }
+    // }
     .mySwiper{
         max-width: 500px;
         // width: 90%;
