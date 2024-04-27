@@ -616,6 +616,7 @@ body {
   text-align: center;
   color: $darkcyan;
   padding-bottom: 68px;
+  padding-top: 136px;
 }
 
 .courses__container {
@@ -657,6 +658,17 @@ body {
   right: -1.88vw;
 }
 
+.course-circle-ext {
+  width: 10.6vw;
+  height: 10.6vw;
+  border-radius: 50%;
+  background-color: $darkcyan;
+  position: absolute;
+  z-index: -5;
+  top: -5.25vw;
+  right: -1.88vw;
+}
+
 .course-circle__text {
   font-size: 2.5vw;
   font-family: $main-font;
@@ -666,7 +678,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  padding-top: 3.4rem;
+  padding-top: 33px;
 }
 
 // Стрелки
@@ -676,11 +688,12 @@ body {
 }
 
 .swiper-button-next:after {
-  content: url(/assets/images/button-next.svg);
+  content: url('/English-Dream/assets/images/button-next.svg');
+  // content: url(./assets/images/button-next.svg);
 }
 
 .swiper-button-prev:after {
-  content: url(/assets/images/button-prev.svg);
+  content: url('/English-Dream/assets/images/button-prev.svg');
 }
 
 .course-content {
@@ -810,7 +823,7 @@ body {
     max-width: 743px;
     padding-top: 74px;
     box-sizing: border-box;
-    overflow: visible;
+    overflow: hidden;
   }
 
   .course-circle {
@@ -823,7 +836,7 @@ body {
   .course-circle__text {
     font-size: 4.17vw;
     line-height: 156%;
-    padding-top: 3.4rem;
+    padding-top: 33px;
   }
 
   .course__title {
@@ -854,32 +867,36 @@ body {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 430px) {
   .courses {
     margin: 0;
     padding-left: 11px;
   }
 
   .courses__title {
-    padding-bottom: 35px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    margin-right: 11px;
+    font-size: 8.89vw;
   }
 
   .courses__container {
     max-width: 349px;
     padding-top: 89px;
+    // overflow: visible;
   }
 
   .course-circle {
     width: 30.28vw;
     height: 30.28vw;
-    top: -18.6vw;
-    right: -8.61vw; //31px
+    top: -14vw;
+    right: -7vw; //31px
   }
 
   .course-circle__text {
     font-size: 6.67vw; //24px
     line-height: 208%;
-    padding-top: 25px;
+    padding-top: 15px;
   }
 
   .course__title {
@@ -904,6 +921,13 @@ body {
     padding: 9px 31px;
   }
 }
+
+@media screen and (max-width: 319px) {
+    .courses {
+      width: 309px;
+    }
+  }
+
 // курсы styles end
 
 // наша команда styles start
@@ -1038,16 +1062,16 @@ body {
 .swiper__photo img{
     max-width: 225px;
 }
-.swiper-slide:nth-child(1) {
-    width: 70%;
-}
-.swiper-slide:nth-child(2n) {
-    width: 70%;
-}
+// .swiper-slide:nth-child(1) {
+//     width: 70%;
+// }
+// .swiper-slide:nth-child(2n) {
+//     width: 70%;
+// }
 
-.swiper-slide:nth-child(3n) {
-    width: 70%;
-}
+// .swiper-slide:nth-child(3n) {
+//     width: 70%;
+// }
 
 // наша команда styles end
 

@@ -102,13 +102,14 @@
 
       <!--курсы start -->
       <section class="courses">
-        <h2 class="courses__title">курсы</h2>
+        <h2 class="courses__title">курсы</h2>      
+
         <div class="courses__container swiper-container sliderCourses">
           <!-- <div class="swiper-container sliderCourses"> -->
           <div class="courses__wrapper swiper-wrapper">
             <div class="courses__slide swiper-slide">
               <div class="courses__item">
-                <div class="course-circle">
+                <div class="course-circle course-circle_last">
                   <p class="course-circle__text">от 3-5 лет</p>
                 </div>
 
@@ -683,20 +684,32 @@
 
         breakpoints: {
           320: {
-            slidesPerView: 1.35,
-            spaceBetween: 45,
+            slidesPerView: 1.2,
+            spaceBetween: 20,
           },
-           755: {
+          360: {
+            slidesPerView: 1.2,
+            spaceBetween: 35,
+          },
+          430: {
+            slidesPerView: 1.6,
+            spaceBetween: 50,
+          },
+           600: {
             slidesPerView: 1.5,
-            spaceBetween: 80,
+            spaceBetween: 60,
           },
           768: {
             slidesPerView: 1.4,
             spaceBetween: 80,
           },
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
           1130: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 30,
           },
           1220: {
             slidesPerView: 3,
