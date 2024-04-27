@@ -44,7 +44,6 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
-
 /*Кнопка*/
 %button {
     display: $df;
@@ -64,6 +63,180 @@ body {
 
 // Header styles start
 
+.header {
+    width: 100%;
+    height: 90vh;
+    display: $dg;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 13% 10% 1fr;
+   
+    padding: 2%;
+}
+
+.header__logo {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/logo-back.svg);
+    background-size: 70%;
+}
+
+
+.header__logo-image-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: $df;
+    padding-left: 10%;
+    padding-top: 1%;
+    // margin-left: 5%;
+    
+    // position: sticky; top: 0;
+    position: fixed; 
+}
+
+.header__logo-image:hover {
+    box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
+}
+
+// .header__position {
+//     position: fixed;
+// }
+
+.header__logo-image-container.top-of-page {  /*добавление фона меню при скролле*/
+    background-color :  rgb(255, 255, 255, 0.8);
+    width: 100%;
+    grid-row: 1;
+   
+}
+
+.header__menu {
+    // padding-left: 2%;
+   
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: $df;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+    // position: sticky; top: 0;
+    // background-color: rgb(255, 255, 255, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+// .menu {
+  
+// }
+.header__menu-item {
+    list-style-type: none;
+    
+}
+
+.header__menu-link {
+    text-decoration: none;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: $main-size;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: $blue;
+    // position: fixed;
+   
+    
+   
+}
+
+// .header__menu-item {
+// //     position: fixed;
+// // }
+// .header__menu:nth-child(1) {
+//     left: 500px;
+//     top: 0%;
+// }
+
+// .header__menu:nth-child(2n) {
+//     left: 600px;
+// }
+// .header__menu:nth-child(3n) {
+//     left: 700px;
+// }
+// .header__menu:nth-child(6n) {
+//     right: 700px;
+// }
+
+.header__menu-link:visited {
+    color: $blue;
+}
+
+.header__menu-link:hover {
+    color: $red;
+    box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+.header__menu-gamburger {
+    opacity: 0;
+}
+
+
+.header__caption {
+    grid-column: 1/2;
+    grid-row: 3;
+    display: $df;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__link-social {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-image: url(/assets/images/home-page.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    display: $df;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header__caption-title {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 59%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $red;
+}
+
+.header__caption-text {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 125%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $darkblue;
+}
+
+.header__caption-text_min {
+    font-size: $main-size;
+}
+
+.header__caption-btn {   /*Кнопка*/
+    @extend %button;
+    width: 70%;
+    height: 55px;
+}
 // header styles end
 
 // О студии styles start
@@ -498,11 +671,11 @@ body {
 .swipesection {
     display: none;
 }
-.swiper{
-    width: 769px;
-    margin: 0 auto;
+// .swiper{
+//     width: 769px;
+//     margin: 0 auto;
 
-}
+// }
 .mySwiper{
     max-width: 769px;
     width: 100%;
@@ -572,9 +745,422 @@ body {
 
 // отзывы  styles start
 
+.reviews{
+    background-color: $white;
+    // border: black 1px solid;
+    max-width: 1600px;
+    width: 100%;
+    height: 80%;
+    }
+    
+    .reviews_content,
+    .reviews_title,
+    .reviews_inscription,
+    .reviews_slider,
+    .reviews_card,
+    .swiper-slide{
+    display: $df;
+    }
+    
+    .reviews_content,
+    .reviews_inscription{
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .reviews_content{
+    // border: blue 1px solid;
+    max-width: 1600px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    }
+    
+
+    .reviews_title{
+    // border: red 1px solid;
+    width: 20%;
+    height: 8%;
+    padding-bottom: 5%;
+    }
+    
+    
+    .reviews_inscription{
+    // border: green 1px solid;
+    width: 100%;
+    height: 100%;
+    padding: 3% 10% 3% 2%;
+    font-family: $title;
+    font-weight: 400;
+    font-size: $title-size;
+    line-height: 78%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $darkcyan;
+    }
+    
+    .reviews_slider{
+    // border: palegreen 1px solid;
+    max-width: 1600px;
+    width: 90%;
+    }
+
+    .swiper-slide-first{
+        margin-left: 1.5%;
+    }
+    
+    
+    .reviews_card{
+    // border: yellow 1px solid;
+    flex-shrink: 1;
+    width: 419px;
+    height: 478px;
+    }
+    
+    .reviews_content{
+        width: 100%;
+    }
+
+    .card_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 478px;
+        width: 419px;
+        background-color: $mint;
+        border-radius: 44px;
+    }
+
+    .reviews_text{
+        margin: 48px 30px 0 30px;
+    }
+
+    .reviews_signature{
+        margin: 0 30px 48px 30px;
+    }
+    
+    .reviews_text,
+    .reviews_signature{
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000;
+    }
+    
+    .reviews_button,
+    .button,
+    .reviews_sent{
+    @extend%button
+    }
+    
+    .reviews_button__big{
+    width: 243px;
+    height: 67px;
+    margin-top: 3%;
+    font-size: 40px;
+    padding-top: 1%;
+    }
+    
+
 // отзывы  styles end
 
 // footer styles start
+.footer {
+    width: 100%;
+    display: $df;
+    background-color: $mint;
+    flex-direction: column;
+}
+
+.footer__upper-container, .footer__lower-container {
+    width: 90%;
+    display: $df;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.footer__upper-container-logo {
+    max-width: 70%;
+}
+
+.footer__lower-container-contacts_info, .footer__lower-container-contacts_mail, .footer__upper-container-contacts {
+    text-align: right;
+}
+
+.footer__lower-container-contacts_info, .footer__lower-container-contacts_mail {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: $main-size;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    color: $indigo;
+}
+
+.footer__lower-container-contacts_mail {
+    text-decoration: none;
+}
+.footer__lower-container-contacts_mail:hover {
+    color: $red;
+}
+
+.footer__upper-container-contacts {
+    font-family: $title;
+    font-weight: 400;
+    font-size: $title-size;
+    line-height: 78%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: $indigo;
+}
+// footer styles end
+
+/*Адаптивность для планшета и маленького десктопа начало*/
+
+@media screen and (min-width: 1023px) and (max-width: 1410px){
+
+.header__caption-btn {   /*Кнопка*/
+    font-size: 1.35em;
+}
+}
+
+@media screen and (min-width: 681px) and (max-width: 1023px){
+.header__menu-link, .footer__lower-container-contacts_info, .footer__lower-container-contacts_mail  {
+    font-size: 1.125em;
+}
+
+.header__caption-title {
+    font-size: 3.125em;
+}
+
+.header__caption-text {
+    font-size: 2em;
+}
+
+.header__caption-text_min {
+    font-size: 1.25em;
+}
+
+.header__caption-btn {   /*Кнопка*/
+    font-size: 1.25em;
+}
+
+.footer__upper-container-contacts {
+    font-size: 3.125em;
+}
+.footer__upper-container-logo {
+    max-width: 17%;
+}
+}
+
+@media screen and (min-width: 427px) and (max-width: 680px){
+
+.header__menu-link, .footer__lower-container-contacts_info, .footer__lower-container-contacts_mail {
+    font-size: 0.8em;
+}
+
+.header__caption-title {
+    font-size: 2em;
+}
+
+.header__caption-text {
+    font-size: 1.5em;
+}
+
+.header__caption-text_min {
+    font-size: 1.25em;
+}
+.header__caption-btn {   /*Кнопка*/
+    font-size: 1.1em;
+}
+
+.footer__upper-container-contacts {
+    font-size: 2em;
+}
+
+.footer__upper-container-logo {
+    max-width: 17%;
+}
+}
+/*Адаптивность для планшета и и маленького десктопа  конец*/
+
+/*Адаптивность для мобильного начало*/
+@media screen  and (max-width: 426px){
+/*Хедер старт*/
+/*Гамбургер меню старт*/
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu{
+    visibility: visible;
+    right: 0;
+}
+
+.menu__btn {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:$blue;
+    transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    padding-right: 0;
+    padding-bottom: 1%;
+    list-style: none;
+    background-color: $mint;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+}
+.header__menu-gamburger {
+    opacity: 1;
+    display: block;
+    padding: 1%;
+    text-decoration: none;
+    transition-duration: .25s;
+    text-align: center;
+    font-size: 2em;
+    color: $darkcyan;
+    font-family: $title;
+}
+
+.header__menu-item {
+    display: block;
+    padding: 3%;
+    text-decoration: none;
+    transition-duration: .25s;
+    text-align: center;
+}
+
+.header__menu-item:hover {
+    background-color:  rgb(255, 255, 255, 0.8);
+    }
+
+/*Гамбургер меню конец*/
+
+.header__logo {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    background-size: 50%;
+}
+    
+.header__logo-image-container {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: sticky; top: 0;
+}
+
+.header__logo-image-container.top-of-page {
+    background-color :  rgb(255, 255, 255, 0.8);
+}
+
+.header__link-social_icon {
+    width: 70%;
+}
+
+.header__caption-title {
+    font-size: 1.5em;
+}
+
+.header__caption-text {
+    font-size: 0.9375em;
+}
+
+.header__caption-btn {   /*Кнопка на мобильном*/
+    @extend %button;
+    font-size: 1em;
+    width: 100%;
+    height: 55px;
+}
+
+.header {
+    box-sizing: border-box;
+    height: 50vh;
+    grid-template-columns: 48% 52%;
+}
+
+.header__logo-image {
+    width: 70%;
+}
+
+.header__menu-link {
+    font-size: 1em;
+}
+/*Хедер конец/
+
+/*Футер старт*/
+.footer__upper-container-logo {
+    max-width: 30%;
+}
+
+.footer__lower-container-contacts_info, .footer__lower-container-contacts_mail {
+    font-size: 1em;
+}
+
+.footer__upper-container-contacts {
+    font-size: 2em;
+}
+
+.footer__lower-container_social-link-icon {
+    width: 30%;
+}
+/*Футер конец*/
+}
+/*Адаптивность для мобильного конец*/
 
 // footer club styles end
 
@@ -624,10 +1210,10 @@ body {
         font-size: 48px ;
         padding-top: 120px;
     } 
-    .swiper {
-        width: 100%;
+    // .swiper {
+    //     width: 100%;
 
-    }
+    // }
     .swiper-slide:nth-child(1) {
         width: 70%;
         padding-left: 27px;
@@ -647,7 +1233,7 @@ body {
 }
 @media screen and (min-width: 800px){
     .swipesection,
-    .swiper,
+    // .swiper,
     .swiper-button-next,
     .swiper-button-prev,
     .swiper-pagination {
@@ -660,9 +1246,9 @@ body {
 }
 
 @media screen and (max-width: 645px){
-    .swiper {
-        width: 100%;
-    }
+    // .swiper {
+    //     width: 100%;
+    // }
     .swiper-slide:nth-child(1) {
         width: 80%;
 
@@ -721,11 +1307,11 @@ body {
         padding-top: 62px;
         padding-bottom: 54px;
     }
-    .swiper{
-        width: 500px;
-        margin: 0 auto;
+    // .swiper{
+    //     width: 500px;
+    //     margin: 0 auto;
     
-    }
+    // }
     .mySwiper{
         max-width: 500px;
         // width: 90%;
@@ -815,4 +1401,126 @@ body {
 
 }
 
+// Медиазапросы секции отзывы
+@media screen and (max-width: 1380px){
+    .card_wrapper{
+        width: 350px;
+        height: 450px;
+    }
+}
 
+@media screen and (max-width: 1160px){
+    .card_wrapper{
+        width: 300px;
+        height: 400px;
+    }
+
+    .reviews_text,
+    .reviews_signature{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .card_wrapper{
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card_wrapper{
+        width: 442px;
+        height: 498px;
+    }
+    .reviews_text,
+    .reviews_signature{
+        font-size: 24px;
+    }
+
+    .reviews_button__big{
+        width: 243px;
+        height: 68px;
+        }
+    
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width:767px){
+    .card_wrapper{
+        width: 250px;
+        height: 500px;
+    }
+
+    .reviews_button__big{
+        width: 243px;
+        height: 68px;
+        }
+
+        .reviews_text,
+        .reviews_signature{
+            font-size: 20px;
+        }
+}
+
+@media screen and (min-width: 361px) and (max-width:400px){
+    .card_wrapper{
+        width: 270px;
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .reviews{
+        height: 950px;
+        max-width: 360px;
+    } 
+    .card_wrapper{
+        width: 260px;
+        height: 628px;
+    }
+
+    .reviews_button__big{
+        width: 202px;
+        height: 56px;
+        }
+    
+    .reviews_inscription{
+        font-size: 32px;
+    }
+
+    .reviews_text,
+    .reviews_signature{
+        font-size: 24px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 768px){
+    .swiper-button-next:after{
+        content: url(/assets/images/button-next.svg)!important;
+    }
+
+    .swiper-button-prev:after{
+        content: url(/assets/images/button-prev.svg) !important;
+    }
+}
