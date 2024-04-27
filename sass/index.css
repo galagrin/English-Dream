@@ -89,7 +89,7 @@ body {
   text-decoration: none;
   justify-content: space-between;
   position: fixed;
-  top: 100px;
+  top: 40px;
   right: 40px;
   z-index: 4;
 }
@@ -939,7 +939,7 @@ body {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 4;
+    z-index: 10;
   }
   .menu__btn > span,
   .menu__btn > span::before,
