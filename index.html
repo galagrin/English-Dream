@@ -10,7 +10,10 @@
     />
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- <link href="sass/index.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./sass/normalize.css" />
     <link rel="stylesheet" href="./sass/index.css" />
@@ -228,6 +231,8 @@
     <!-- footer end -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
       var swiper = new Swiper(".sliderCourses", {
         navigation: {
@@ -246,7 +251,7 @@
 
         //количество слайдов для показа
         slidesPerView: 3,
-        spaceBetween:20,
+        spaceBetween: 15,
 
         //переключать слайды по клику на них
         slideToClickedSlide: true,
@@ -254,22 +259,52 @@
         //бесконечный слайдер
         loop: true,
 
-        // breakpoints: {
-        //   360: {
-        //     slidesPerView: 1.1,
-        //   },
-        //   768: {
-        //     slidesPerView: 1.4,
-        //   },
-        //   1024: {
+        breakpoints: {
+          320: {
+            slidesPerView: 1.35,
+            spaceBetween: 45,
+          },
+           755: {
+            slidesPerView: 1.5,
+            spaceBetween: 80,
+          },
+          768: {
+            slidesPerView: 1.4,
+            spaceBetween: 80,
+          },
+          1130: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1220: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          }
+          //   // 360: {
+          //   //   slidesPerView: 1.4,
+          //   // },
+          //   // 1024: {
 
-        //   },
-
-        // },
+          //   // },
+        },
 
         // centeredSlides: true,
         // spaceBetween: 5,
         // slidesPerView: auto,
+      });
+
+      jQuery(document).ready(function ($) {
+        $(function () {
+          var column = 0;
+          $('.course-content')
+            .each(function () {
+              h = $(this).height();
+              if (h > column) {
+                column = h;
+              }
+            })
+            .height(column);
+        });
       });
     </script>
   </body>
