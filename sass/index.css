@@ -48,7 +48,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 13% 10% 1fr;
-  padding: 2%;
+  padding-top: 0%;
+  margin-bottom: 5%;
 }
 
 .header__logo {
@@ -76,6 +77,8 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   grid-row: 1;
+  position: fixed;
+  z-index: 3;
 }
 
 .header__menu {
@@ -86,8 +89,9 @@ body {
   text-decoration: none;
   justify-content: space-between;
   position: fixed;
-  left: 0;
-  top: 0;
+  top: 40px;
+  right: 40px;
+  z-index: 4;
 }
 
 .header__menu-item {
@@ -102,7 +106,10 @@ body {
   line-height: 156%;
   letter-spacing: -0.01em;
   text-align: left;
+  align-self: center;
   color: #2d4176;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 .header__menu-link:visited {
@@ -786,6 +793,7 @@ body {
   display: flex;
   background-color: #eaf4f1;
   flex-direction: column;
+  margin-top: 5%;
 }
 
 .footer__upper-container, .footer__lower-container {
@@ -889,7 +897,7 @@ body {
 }
 /*Адаптивность для планшета и и маленького десктопа  конец*/
 /*Адаптивность для мобильного начало*/
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 600px) {
   /*Хедер старт*/
   /*Гамбургер меню старт*/
   #menu__toggle {
@@ -920,7 +928,7 @@ body {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 10;
   }
   .menu__btn > span,
   .menu__btn > span::before,
@@ -956,6 +964,10 @@ body {
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     transition-duration: 0.25s;
   }
+  .header__menu-fixed{
+    display: flex;
+    flex-direction: column;
+  }
   .header__menu-gamburger {
     opacity: 1;
     display: block;
@@ -986,8 +998,7 @@ body {
   .header__logo-image-container {
     grid-column: 1/3;
     grid-row: 1/2;
-    position: sticky;
-    top: 0;
+    position: fixed;
   }
   .header__logo-image-container.top-of-page {
     background-color: rgba(255, 255, 255, 0.8);
