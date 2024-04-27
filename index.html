@@ -323,12 +323,6 @@
             </section>
             <!-- speaking club end -->
 
-
-            <!-- oтзывы start -->
-            <section>
-
-            </section>
-            <!-- oтзывы end -->
             <!-- oтзывы start -->
             <section class="reviews" id="section-reviews">
                 <div class="reviews_content">
@@ -419,30 +413,30 @@
                                 </div>
                             </div>
 
-                            <div class="reviews_card swiper-slide">
-                                <div class="card_wrapper">
-                                    <p class="reviews_text">
-                                        Все четко и профессионально. Ребенок занимается с удовольствием.
-                                    </p>
-                                    <p class="reviews_signature">
-                                        Мария (мама Кирилла 12 лет, Москва)
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                    <div class="reviews_card swiper-slide">
+                        <div class="card_wrapper">
+                        <p class="reviews_text">
+                            Все четко и профессионально. Ребенок занимается с удовольствием.
+                        </p>
+                        <p class="reviews_signature">
+                            Мария (мама Кирилла 12 лет, Москва)
+                        </p>
                     </div>
-                    <div class="reviews_button reviews_button__big">
-                        <a href="https://forms.gle/GbCKPXt2ZUX4GVLC6" class="button">
-                            <p class="reviews_sent">
-                                оставить отзыв
-                            </p>
-                        </a>
                     </div>
                 </div>
-            </section>
-            <!-- oтзывы end -->
+                <!-- <div class="swiper-button-next"></div> -->
+                <!-- <div class="swiper-button-prev"></div>  -->
+            </div>
+            <div class="reviews_button reviews_button__big">
+                <a href="https://forms.gle/GbCKPXt2ZUX4GVLC6" class="button">
+                    <p class="reviews_sent">
+                        оставить отзыв
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- oтзывы end -->
 
     </main>
     <!-- footer start -->
@@ -495,7 +489,7 @@
                 prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                340: {
+                280: {
                     slidesPerView: 1,
                     centeredSlides: true,
                     spaceBetween: 60,
@@ -503,7 +497,7 @@
                 360: {
                     slidesPerView: 2,
                     centeredSlides: true,
-                    spaceBetween: 60,
+                    spaceBetween: 200,
                 },
 
                 768: {
@@ -513,16 +507,23 @@
 
                 },
 
+        912: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 10,
+        },
+
                 1024: {
                     slidesPerView: 3,
                     centeredSlides: true,
                     spaceBetween: 30,
                 }
-            },
+        
+    },
         });
 
-        var appendNumber = 4;
-        var prependNumber = 1;
+        // var appendNumber = 4;
+        // var prependNumber = 1;
     </script>
 
     <!-- Swiper JS -->
