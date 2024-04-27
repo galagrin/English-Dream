@@ -89,9 +89,18 @@ body {
   text-decoration: none;
   justify-content: space-between;
   position: fixed;
-  top: 40px;
+  top: 100px;
   right: 40px;
   z-index: 4;
+}
+
+.header__menu-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 30%;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
 }
 
 .header__menu-item {
@@ -697,8 +706,7 @@ body {
 .reviews_title,
 .reviews_inscription,
 .reviews_slider,
-.reviews_card,
-.swiper-slide {
+.reviews_card {
   display: flex;
 }
 
@@ -736,7 +744,7 @@ body {
 
 .reviews_slider {
   max-width: 1600px;
-  width: 90%;
+  width: 100%;
 }
 
 .swiper-slide-first {
@@ -747,10 +755,6 @@ body {
   flex-shrink: 1;
   width: 419px;
   height: 478px;
-}
-
-.reviews_content {
-  width: 100%;
 }
 
 .card_wrapper {
@@ -897,7 +901,7 @@ body {
 }
 /*Адаптивность для планшета и и маленького десктопа  конец*/
 /*Адаптивность для мобильного начало*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 426px) {
   /*Хедер старт*/
   /*Гамбургер меню старт*/
   #menu__toggle {
@@ -928,7 +932,7 @@ body {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 4;
   }
   .menu__btn > span,
   .menu__btn > span::before,
@@ -963,10 +967,6 @@ body {
     background-color: #eaf4f1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     transition-duration: 0.25s;
-  }
-  .header__menu-fixed{
-    display: flex;
-    flex-direction: column;
   }
   .header__menu-gamburger {
     opacity: 1;

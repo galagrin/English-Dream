@@ -768,8 +768,9 @@ body {
     .reviews_title,
     .reviews_inscription,
     .reviews_slider,
-    .reviews_card,
-    .swiper-slide{
+    .reviews_card
+    // .swiper-slide
+    {
     display: $df;
     }
     
@@ -813,7 +814,7 @@ body {
     .reviews_slider{
     // border: palegreen 1px solid;
     max-width: 1600px;
-    width: 90%;
+    width: 100%;
     }
 
     .swiper-slide-first{
@@ -827,10 +828,7 @@ body {
     width: 419px;
     height: 478px;
     }
-    
-    .reviews_content{
-        width: 100%;
-    }
+
 
     .card_wrapper{
         display: flex;
