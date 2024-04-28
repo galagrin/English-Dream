@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "CaveatRegular";
+  font-weight: 400;
+  src: url(../assets/fonts/Caveat-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "TSRemarker";
+  font-weight: 400;
+  src: url(../assets/fonts/TSRemarkerRegular.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/*Кнопка*/
+.header__caption-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #2a7d83;
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Была высота 90vh */
+.header {
+  width: 96%;
+  height: 34vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 10% 10% 1fr;
+  margin: 2px;
+}
+
+.header__logo {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/logo-back.svg);
+  background-size: 70%;
+}
+
+.header__logo-image-container {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  padding-left: 10%;
+  position: sticky;
+  top: 0;
+  -webkit-backdrop-filter: 200px;
+          backdrop-filter: 200px;
+}
+
+.header__logo-image-container.top-of-page {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header__menu {
+  grid-column: 2/3;
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.header__menu-item {
+  list-style-type: none;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 156%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #2d4176;
+}
+
+.header__menu-link:visited {
+  color: #2d4176;
+}
+
+.header__menu-link:hover {
+  color: #ea5949;
+}
+
+.header__caption {
+  grid-column: 1/2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__link-social {
+  width: 100%;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 2/4;
+  background-image: url(/assets/images/home-page.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header__caption-title {
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  line-height: 59%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #ea5949;
+}
+
+.header__caption-text {
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #4A2677;
+}
+
+.header__caption-text_min {
+  font-size: 32px;
+}
+
+.header__caption-btn { /*Кнопка*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 70%;
+  height: 55px;
+  background: #2a7d83;
+  font-family: "TSRemarker", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__caption-btn { /*Кнопка*/
+  width: 405px;
+  height: 53px;
+}
+
+/* BLOCK 404 */
+.error {
+  display: flex;
+  width: 98%;
+  height: 65vh;
+  justify-content: center;
+}
+
+.error__container {
+  display: flex;
+  flex-direction: column;
+  height: 69vh;
+}
+.error__container::before {
+  content: "";
+  background-image: url(../assets/images/error_layer.png);
+  background-position: center;
+  background-size: 65vw;
+  /*width: 70vw;*/
+  height: 53vh;
+  margin: auto;
+  display: flex;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: 23%;
+  background-repeat: no-repeat;
+}
+.error__container .error__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.error__container .error__text .error__title {
+  font-family: "TSRemarker", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #4A2677;
+  display: flex;
+}
+.error__container .error__text .error__404 {
+  font-family: "TSRemarker", sans-serif;
+  color: #4A2677;
+  font-size: 500px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  display: flex;
+}/*# sourceMappingURL=404.css.map */
