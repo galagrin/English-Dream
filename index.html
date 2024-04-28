@@ -21,91 +21,133 @@
     <!-- <link href="sass/fonts.css" rel="stylesheet"> -->
 
     <title>English Dream</title>
-      <script src="/assets/js/index.js" defer></script>
-</head>
+    <script src="/assets/js/index.js" defer></script>
+  </head>
 
   <body class="body">
     <!-- header start -->
 
     <header class="header">
-        <div class="header__logo">
-            <div class="header__logo-image-container">
-                <a href="#header__caption-title"><img src="./assets/images/main-logo.svg" class="header__logo-image"
-                        alt="logo"></a>
-            </div>
+      <div class="header__logo">
+        <div class="header__logo-image-container">
+          <a href="#header__caption-title"
+            ><img
+              src="./assets/images/main-logo.svg"
+              class="header__logo-image"
+              alt="logo"
+          /></a>
         </div>
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
+      </div>
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="header__menu menu">
+        <li class="header__menu-gamburger">Меню</li>
+        <li class="header__menu-item">
+          <a href="#about_studio" class="header__menu-link">о студии</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#..." class="header__menu-link">курсы</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#teamtitle" class="header__menu-link">команда</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#section-reviews" class="header__menu-link">отзывы</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#speaking_club" class="header__menu-link">speaking club</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#contacts" class="header__menu-link">контакты</a>
+        </li>
+      </ul>
+      <div class="header__caption">
+        <h1 class="header__caption-title" id="header__caption-title">
+          ENGLISH DREAM
+        </h1>
+        <p class="header__caption-text">Языковая студия для детей</p>
 
-            <span></span>
-        </label>
-        <ul class="header__menu menu">
-
-            <li class="header__menu-gamburger">Меню</li>
-            <li class="header__menu-item"><a href="#about_studio" class="header__menu-link">о студии</a></li>
-            <li class="header__menu-item"><a href="#..." class="header__menu-link">курсы</a></li>
-            <li class="header__menu-item"><a href="#teamtitle" class="header__menu-link">команда</a></li>
-            <li class="header__menu-item"><a href="#section-reviews" class="header__menu-link">отзывы</a></li>
-            <li class="header__menu-item"><a href="#speaking_club" class="header__menu-link">speaking club</a></li>
-            <li class="header__menu-item"><a href="#contacts" class="header__menu-link">контакты</a></li>
-
-        </ul>
-        <div class="header__caption">
-            <h1 class="header__caption-title" id="header__caption-title">ENGLISH DREAM</h1>
-            <p class="header__caption-text">Языковая студия для детей</p>
-
-            <p class="header__caption-text header__caption-text_min">Исполняем мечту и учим на результат</p>
-            <a href="https://forms.gle/GbCKPXt2ZUX4GVLC6" target="_blank" class="header__caption-btn">Записаться на
-                вводное занятие</a>
-        </div>
-        <div class="header__link-social">
-            <a href="https://www.instagram.com/english.dream2024" target="_blank"><img src="./assets/images/insta-2.svg"
-                    alt="instagram-logo" class="header__link-social_icon"></a>
-            <a href="https://t.me/englishdream2024" target="_blank"><img src="./assets/images/tg-2.svg"
-                    alt="telegram-logo" class="header__link-social_icon"></a>
-        </div>
+        <p class="header__caption-text header__caption-text_min">
+          Исполняем мечту и учим на результат
+        </p>
+        <a
+          href="https://forms.gle/GbCKPXt2ZUX4GVLC6"
+          target="_blank"
+          class="header__caption-btn"
+          >Записаться на вводное занятие</a
+        >
+      </div>
+      <div class="header__link-social">
+        <a href="https://www.instagram.com/english.dream2024" target="_blank"
+          ><img
+            src="./assets/images/insta-2.svg"
+            alt="instagram-logo"
+            class="header__link-social_icon"
+        /></a>
+        <a href="https://t.me/englishdream2024" target="_blank"
+          ><img
+            src="./assets/images/tg-2.svg"
+            alt="telegram-logo"
+            class="header__link-social_icon"
+        /></a>
+      </div>
     </header>
     <!-- header end  -->
 
     <main>
-        <!-- о студии start -->
-        <section class="studio">
-            <h2 class="studio__title" id="about_studio">о студии</h2>
-            <img src="./assets/images/director.png" alt="director" class="studio__img">
-            <div class="studio__text_director">Я - Афанасьева Виктория,</div>
-            <div class="studio__text_idea">руководитель и идейный вдохновитель языковой студии</div>
-            <div class="studio__text_ENGLISH">«ENGLISH DREAM»</div>
-            <div class="studio__text_dream">исполняю английскую мечту своих студентов уже более 15 лет!</div>
-            <div class="studio__text_15">15+</div>
-            <div class="studio__text_yers">лет практики</div>
-            <div class="studio__text_12000">+12 000</div>
-            <div class="studio__text_lessons">занятий</div>
-            <div class="studio__text_500">500+</div>
-            <div class="studio__text_students">учеников</div>
-        </section>
+      <!-- о студии start -->
+      <section class="studio">
+        <h2 class="studio__title" id="about_studio">о студии</h2>
+        <img
+          src="./assets/images/director.png"
+          alt="director"
+          class="studio__img"
+        />
+        <div class="studio__text_director">Я - Афанасьева Виктория,</div>
+        <div class="studio__text_idea">
+          руководитель и идейный вдохновитель языковой студии
+        </div>
+        <div class="studio__text_ENGLISH">«ENGLISH DREAM»</div>
+        <div class="studio__text_dream">
+          исполняю английскую мечту своих студентов уже более 15 лет!
+        </div>
+        <div class="studio__text_15">15+</div>
+        <div class="studio__text_yers">лет практики</div>
+        <div class="studio__text_12000">+12 000</div>
+        <div class="studio__text_lessons">занятий</div>
+        <div class="studio__text_500">500+</div>
+        <div class="studio__text_students">учеников</div>
+      </section>
 
-        <section class="studio768">
-            <h2 class="studio__title768">о студии</h2>
-            <img src="./assets/images/director.png" alt="director" class="studio__img768">
-            <div class="studio__text_director768">Я - Афанасьева Виктория,</div>
-            <div class="studio__text_idea768">руководитель и идейный вдохновитель</div>
-            <div class="studio__text_idea768_2">языковой студии</div>
-            <div class="studio__text_ENGLISH768">«ENGLISH DREAM»</div>
-            <div class="studio__text_dream768">исполняю английскую мечту своих</div>
-            <div class="studio__text_dream768_2">студентов уже более 15 лет!</div>
-            <div class="studio__text_15768">15+</div>
-            <div class="studio__text_yers768">лет практики</div>
-            <div class="studio__text_12000768">+12000</div>
-            <div class="studio__text_lessons768">занятий</div>
-            <div class="studio__text_500768">500+</div>
-            <div class="studio__text_students768">учеников</div>
-        </section>
-        <!-- о студии end -->
-
+      <section class="studio768">
+        <h2 class="studio__title768">о студии</h2>
+        <img
+          src="./assets/images/director.png"
+          alt="director"
+          class="studio__img768"
+        />
+        <div class="studio__text_director768">Я - Афанасьева Виктория,</div>
+        <div class="studio__text_idea768">
+          руководитель и идейный вдохновитель
+        </div>
+        <div class="studio__text_idea768_2">языковой студии</div>
+        <div class="studio__text_ENGLISH768">«ENGLISH DREAM»</div>
+        <div class="studio__text_dream768">исполняю английскую мечту своих</div>
+        <div class="studio__text_dream768_2">студентов уже более 15 лет!</div>
+        <div class="studio__text_15768">15+</div>
+        <div class="studio__text_yers768">лет практики</div>
+        <div class="studio__text_12000768">+12000</div>
+        <div class="studio__text_lessons768">занятий</div>
+        <div class="studio__text_500768">500+</div>
+        <div class="studio__text_students768">учеников</div>
+      </section>
+      <!-- о студии end -->
 
       <!--курсы start -->
       <section class="courses">
-        <h2 class="courses__title">курсы</h2>      
+        <h2 class="courses__title">курсы</h2>
 
         <div class="courses__container swiper-container sliderCourses">
           <!-- <div class="swiper-container sliderCourses"> -->
@@ -286,194 +328,267 @@
       </section>
       <!--курсы end -->
 
-            <!--наша команда start -->
-            <section>
-                <div class="teamtitle" id="teamtitle"> наша команда</div>
-                <div class="teamcards_container">
-                    <div class="teamcards">
-                        <div class="teamcard__wrapper">
-
-                            <!-- первая карточка команды -->
-                            <div class="teamcard__content">
-                                <div class="teamcard__photo">
-                                    <img src="./assets/images/teacher-Viktoriya.png" alt="фото Виктории">
-                                </div>
-                                <div class="teamcard__text">
-                                    <h2>Виктория Афанасьева</h2>
-                                    <ul>
-                                        <li>Основатель и идейный вдохновитель языковой студии «ENGLISH DREAM»;</li>
-                                        <li>Стаж более 15 лет;</li>
-                                        <li>дипломированный специалист;</li>
-                                        <li>автор методических пособий;</li>
-                                        <li>профи в подготовке к IELTS, TOEFL, PTE;</li>
-                                        <li>спец в обучении VYL и YL;</li>
-                                        <li>2 Master degrees; </li>
-                                        <li>Global International Training Center in England (TEFL & TESOL
-                                            certificate);</li>
-                                        <li>Cambridge University (CELTA certificate);</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- вторая карточка команды -->
-                            <div class="teamcard__content">
-                                <div class="teamcard__photo">
-                                    <img src="./assets/images/teacher-Ekaterina.png" alt="фото Екатерины">
-                                </div>
-                                <div class="teamcard__text">
-                                    <h2>Екатерина Трунина</h2>
-                                    <ul>
-                                        <li>Стаж преподавания английского языка более 15 лет;</li>
-                                        <li>Преподаватель-методист в языковом центре «Progress» более 8 лет;</li>
-                                        <li>специалист в обучении дошкольников, школьников;</li>
-                                        <li>специалист подготовки к экзаменам Cambridge English (YEL, KET, PET,
-                                            FCE);</li>
-                                        <li>автор методических пособий;</li>
-                                        <li>соавтор образовательной платформы</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Третья карточка команды -->
-                            <div class="teamcard__content">
-                                <div class="teamcard__photo">
-                                    <img src="./assets/images/teacher-Liubov.png" alt="фото Любови">
-                                </div>
-                                <div class="teamcard__text">
-                                    <h2>Лубовь Шулик</h2>
-                                    <ul>
-                                        <li>Дипломированный Преподаватель китайского языка;</li>
-                                        <li>Окончила Дальневосточный государственный гуманитарный университет по
-                                            специальности лингвист-переводчик (г. Хабаровск);</li>
-                                        <li>Во время обучения в университете проходила полугодовую языковую
-                                            стажировку в Китае г. Харбин в Политехническом университете (HIT);</li>
-                                        <li>После окончания университета и получения диплома училась год в Китае, г.
-                                            Тяньцзинь, Тяньцзиньский университет( 天津 大学);</li>
-                                        <li>2023 году - языковая стажировка в Китае г. Харбин, Хэйлунцзянский
-                                            университет (黑龙江大学)</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Четвертая карточка команды -->
-                            <div class="teamcard__content">
-                                <div class="teamcard__photo">
-                                    <img src="./assets/images/teacher-Julia.png" alt="фото Юлии">
-                                </div>
-                                <div class="teamcard__text">
-                                    <h2>Юлия Макарова</h2>
-                                    <ul>
-                                        <li>Опыт преподавания английского языка в языковых школах Москвы 10 лет;
-                                        </li>
-                                        <li>Современная Гуманитарная Академия, г. Москва. Бакалавр лингвистики
-                                            (специализация: преподавание иностранных языков);</li>
-                                        <li>Кембриджский сертификат FCE;</li>
-                                        <li>МГУ им. Ломоносова. Магистр по направлению PR (Факультет лингвистики);
-                                        </li>
-                                        <li>Специалист в обучении школьников</li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <!--наша команда start -->
+      <section>
+        <div class="teamtitle" id="teamtitle">наша команда</div>
+        <div class="teamcards_container">
+          <div class="teamcards">
+            <div class="teamcard__wrapper">
+              <!-- первая карточка команды -->
+              <div class="teamcard__content">
+                <div class="teamcard__photo">
+                  <img
+                    src="./assets/images/teacher-Viktoriya.png"
+                    alt="фото Виктории"
+                  />
                 </div>
-
-            </section>
-            <!-- SWIPER -->
-            <section class="swipesection">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <!-- первая карточка команды -->
-                        <div class="swiper-slide team-slide">
-                            <div class="swiper__photo">
-                                <img src="./assets/images/teacher-Viktoriya.png" alt="фото Виктории">
-                            </div>
-                            <div class="swiper__text">
-                                <h2>Виктория Афанасьева</h2>
-                                <ul>
-                                    <li>Основатель и идейный вдохновитель языковой студии «ENGLISH DREAM»;</li>
-                                    <li>Стаж более 15 лет;</li>
-                                    <li>дипломированный специалист;</li>
-                                    <li>автор методических пособий;</li>
-                                    <li>профи в подготовке к IELTS, TOEFL, PTE;</li>
-                                    <li>спец в обучении VYL и YL;</li>
-                                    <li>2 Master degrees; </li>
-                                    <li>Global International Training Center in England (TEFL & TESOL certificate);
-                                    </li>
-                                    <li>Cambridge University (CELTA certificate);</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- вторая карточка команды -->
-                        <div class="swiper-slide team-slide">
-                            <div class="swiper__photo">
-                                <img src="./assets/images/teacher-Ekaterina.png" alt="фото Екатерины">
-                            </div>
-                            <div class="swiper__text">
-                                <h2>Екатерина Трунина</h2>
-                                <ul>
-                                    <li>Стаж преподавания английского языка более 15 лет;</li>
-                                    <li>Преподаватель-методист в языковом центре «Progress» более 8 лет;</li>
-                                    <li>специалист в обучении дошкольников, школьников;</li>
-                                    <li>специалист подготовки к экзаменам Cambridge English (YEL, KET, PET, FCE);
-                                    </li>
-                                    <li>автор методических пособий;</li>
-                                    <li>соавтор образовательной платформы</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Третья карточка команды -->
-                        <div class="swiper-slide team-slide">
-                            <div class="swiper__photo">
-                                <img src="./assets/images/teacher-Liubov.png" alt="фото Любови">
-                            </div>
-                            <div class="swiper__text">
-                                <h2>Лубовь Шулик</h2>
-                                <ul>
-                                    <li>Дипломированный Преподаватель китайского языка;</li>
-                                    <li>Окончила Дальневосточный государственный гуманитарный университет по
-                                        специальности лингвист-переводчик (г. Хабаровск);</li>
-                                    <li>Во время обучения в университете проходила полугодовую языковую стажировку в
-                                        Китае г. Харбин в Политехническом университете (HIT);</li>
-                                    <li>После окончания университета и получения диплома училась год в Китае, г.
-                                        Тяньцзинь, Тяньцзиньский университет( 天津 大学);</li>
-                                    <li>2023 году - языковая стажировка в Китае г. Харбин, Хэйлунцзянский
-                                        университет (黑龙江大学)</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Четвертая карточка команды -->
-                        <div class="swiper-slide team-slide">
-                            <div class="swiper__photo">
-                                <img src="./assets/images/teacher-Julia.png" alt="фото Юлии">
-                            </div>
-                            <div class="swiper__text">
-                                <h2>Юлия Макарова</h2>
-                                <ul>
-                                    <li>Опыт преподавания английского языка в языковых школах Москвы 10 лет;</li>
-                                    <li>Современная Гуманитарная Академия, г. Москва. Бакалавр лингвистики
-                                        (специализация: преподавание иностранных языков);</li>
-                                    <li>Кембриджский сертификат FCE;</li>
-                                    <li>МГУ им. Ломоносова. Магистр по направлению PR (Факультет лингвистики);</li>
-                                    <li>Специалист в обучении школьников</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="teamcard__text">
+                  <h2>Виктория Афанасьева</h2>
+                  <ul>
+                    <li>
+                      Основатель и идейный вдохновитель языковой студии «ENGLISH
+                      DREAM»;
+                    </li>
+                    <li>Стаж более 15 лет;</li>
+                    <li>дипломированный специалист;</li>
+                    <li>автор методических пособий;</li>
+                    <li>профи в подготовке к IELTS, TOEFL, PTE;</li>
+                    <li>спец в обучении VYL и YL;</li>
+                    <li>2 Master degrees;</li>
+                    <li>
+                      Global International Training Center in England (TEFL &
+                      TESOL certificate);
+                    </li>
+                    <li>Cambridge University (CELTA certificate);</li>
+                  </ul>
                 </div>
+              </div>
 
-            </section>
+              <!-- вторая карточка команды -->
+              <div class="teamcard__content">
+                <div class="teamcard__photo">
+                  <img
+                    src="./assets/images/teacher-Ekaterina.png"
+                    alt="фото Екатерины"
+                  />
+                </div>
+                <div class="teamcard__text">
+                  <h2>Екатерина Трунина</h2>
+                  <ul>
+                    <li>Стаж преподавания английского языка более 15 лет;</li>
+                    <li>
+                      Преподаватель-методист в языковом центре «Progress» более
+                      8 лет;
+                    </li>
+                    <li>специалист в обучении дошкольников, школьников;</li>
+                    <li>
+                      специалист подготовки к экзаменам Cambridge English (YEL,
+                      KET, PET, FCE);
+                    </li>
+                    <li>автор методических пособий;</li>
+                    <li>соавтор образовательной платформы</li>
+                  </ul>
+                </div>
+              </div>
 
+              <!-- Третья карточка команды -->
+              <div class="teamcard__content">
+                <div class="teamcard__photo">
+                  <img
+                    src="./assets/images/teacher-Liubov.png"
+                    alt="фото Любови"
+                  />
+                </div>
+                <div class="teamcard__text">
+                  <h2>Лубовь Шулик</h2>
+                  <ul>
+                    <li>Дипломированный Преподаватель китайского языка;</li>
+                    <li>
+                      Окончила Дальневосточный государственный гуманитарный
+                      университет по специальности лингвист-переводчик (г.
+                      Хабаровск);
+                    </li>
+                    <li>
+                      Во время обучения в университете проходила полугодовую
+                      языковую стажировку в Китае г. Харбин в Политехническом
+                      университете (HIT);
+                    </li>
+                    <li>
+                      После окончания университета и получения диплома училась
+                      год в Китае, г. Тяньцзинь, Тяньцзиньский университет( 天津
+                      大学);
+                    </li>
+                    <li>
+                      2023 году - языковая стажировка в Китае г. Харбин,
+                      Хэйлунцзянский университет (黑龙江大学)
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-            <!--наша команда end-->
+              <!-- Четвертая карточка команды -->
+              <div class="teamcard__content">
+                <div class="teamcard__photo">
+                  <img
+                    src="./assets/images/teacher-Julia.png"
+                    alt="фото Юлии"
+                  />
+                </div>
+                <div class="teamcard__text">
+                  <h2>Юлия Макарова</h2>
+                  <ul>
+                    <li>
+                      Опыт преподавания английского языка в языковых школах
+                      Москвы 10 лет;
+                    </li>
+                    <li>
+                      Современная Гуманитарная Академия, г. Москва. Бакалавр
+                      лингвистики (специализация: преподавание иностранных
+                      языков);
+                    </li>
+                    <li>Кембриджский сертификат FCE;</li>
+                    <li>
+                      МГУ им. Ломоносова. Магистр по направлению PR (Факультет
+                      лингвистики);
+                    </li>
+                    <li>Специалист в обучении школьников</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SWIPER -->
+      <section class="swipesection">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- первая карточка команды -->
+            <div class="swiper-slide team-slide">
+              <div class="swiper__photo">
+                <img
+                  src="./assets/images/teacher-Viktoriya.png"
+                  alt="фото Виктории"
+                />
+              </div>
+              <div class="swiper__text">
+                <h2>Виктория Афанасьева</h2>
+                <ul>
+                  <li>
+                    Основатель и идейный вдохновитель языковой студии «ENGLISH
+                    DREAM»;
+                  </li>
+                  <li>Стаж более 15 лет;</li>
+                  <li>дипломированный специалист;</li>
+                  <li>автор методических пособий;</li>
+                  <li>профи в подготовке к IELTS, TOEFL, PTE;</li>
+                  <li>спец в обучении VYL и YL;</li>
+                  <li>2 Master degrees;</li>
+                  <li>
+                    Global International Training Center in England (TEFL &
+                    TESOL certificate);
+                  </li>
+                  <li>Cambridge University (CELTA certificate);</li>
+                </ul>
+              </div>
+            </div>
 
+            <!-- вторая карточка команды -->
+            <div class="swiper-slide team-slide">
+              <div class="swiper__photo">
+                <img
+                  src="./assets/images/teacher-Ekaterina.png"
+                  alt="фото Екатерины"
+                />
+              </div>
+              <div class="swiper__text">
+                <h2>Екатерина Трунина</h2>
+                <ul>
+                  <li>Стаж преподавания английского языка более 15 лет;</li>
+                  <li>
+                    Преподаватель-методист в языковом центре «Progress» более 8
+                    лет;
+                  </li>
+                  <li>специалист в обучении дошкольников, школьников;</li>
+                  <li>
+                    специалист подготовки к экзаменам Cambridge English (YEL,
+                    KET, PET, FCE);
+                  </li>
+                  <li>автор методических пособий;</li>
+                  <li>соавтор образовательной платформы</li>
+                </ul>
+              </div>
+            </div>
 
-            <!-- speaking club start -->
-            <section class="speaking" id="speaking_club">
+            <!-- Третья карточка команды -->
+            <div class="swiper-slide team-slide">
+              <div class="swiper__photo">
+                <img
+                  src="./assets/images/teacher-Liubov.png"
+                  alt="фото Любови"
+                />
+              </div>
+              <div class="swiper__text">
+                <h2>Лубовь Шулик</h2>
+                <ul>
+                  <li>Дипломированный Преподаватель китайского языка;</li>
+                  <li>
+                    Окончила Дальневосточный государственный гуманитарный
+                    университет по специальности лингвист-переводчик (г.
+                    Хабаровск);
+                  </li>
+                  <li>
+                    Во время обучения в университете проходила полугодовую
+                    языковую стажировку в Китае г. Харбин в Политехническом
+                    университете (HIT);
+                  </li>
+                  <li>
+                    После окончания университета и получения диплома училась год
+                    в Китае, г. Тяньцзинь, Тяньцзиньский университет( 天津
+                    大学);
+                  </li>
+                  <li>
+                    2023 году - языковая стажировка в Китае г. Харбин,
+                    Хэйлунцзянский университет (黑龙江大学)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Четвертая карточка команды -->
+            <div class="swiper-slide team-slide">
+              <div class="swiper__photo">
+                <img src="./assets/images/teacher-Julia.png" alt="фото Юлии" />
+              </div>
+              <div class="swiper__text">
+                <h2>Юлия Макарова</h2>
+                <ul>
+                  <li>
+                    Опыт преподавания английского языка в языковых школах Москвы
+                    10 лет;
+                  </li>
+                  <li>
+                    Современная Гуманитарная Академия, г. Москва. Бакалавр
+                    лингвистики (специализация: преподавание иностранных
+                    языков);
+                  </li>
+                  <li>Кембриджский сертификат FCE;</li>
+                  <li>
+                    МГУ им. Ломоносова. Магистр по направлению PR (Факультет
+                    лингвистики);
+                  </li>
+                  <li>Специалист в обучении школьников</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--наша команда end-->
+
+      <!-- speaking club start -->
+      <section class="speaking" id="speaking_club">
                 <div class="card">
                     <div class="card__text card__text-rotate-28">есть женский клуб</div>
                     <div class="card__text card__text-rotate-25">еженедельно</div>
@@ -507,209 +622,222 @@
                     </div>
                 </div>
             </section>
-            <!-- speaking club end -->
+      <!-- speaking club end -->
 
-            <!-- oтзывы start -->
-            <section class="reviews" id="section-reviews">
-                <div class="reviews_content">
-                    <div class="reviews_title">
-                        <h2 class="reviews_inscription">
-                            отзывы
-                        </h2>
-                    </div>
-                    <div class="reviews_slider swiper mySwiper1">
-                        <div class="swiper-wrapper">
-                            <div class="reviews_card swiper-slide swiper-slide-first">
-                                <div class="card_wrapper">
-                                    <p class="reviews_text">
-                                        После месяца занятий — вижу положительные изменения у Демида. Он читает,
-                                        переводит, знает гораздо больше слов. Он говорил, что вы берёте и школьную
-                                        программу (вроде даже немного наперёд), поэтому когда ему задают домашку —
-                                        он делает самостоятельно, без нервов, правда очень быстро! но пару раз
-                                        проверяла — все знает, что задано!
-                                    </p>
-                                    <p class="reviews_signature">
-                                        Вера (мама Демида 8 лет , Москва)
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="reviews_card swiper-slide">
-                                <div class="card_wrapper">
-                                    <p class="reviews_text">
-                                        Искала преподавателя для ребенка на лето, когда ребенок на даче. Чтобы
-                                        обязательно очные занятия у нас. Виктория полностью оправдала ожидания.
-                                        Время зря не тратит, каждая минута с пользой, занятия сбалансированные, и
-                                        устная речь, и грамматика. Очень все пунктуально.
-                                    </p>
-                                    <p class="reviews_signature">
-                                        Галина (мама Даниила 11 лет, Москва)
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="reviews_card swiper-slide">
-                                <div class="card_wrapper">
-                                    <p class="reviews_text">
-                                        Очень нравятся занятия с Викторией! Обратилась с определённым запросом,
-                                        Виктория всё супер понятно объясняет, помогает, если возникают трудности.
-                                        После занятий появляется мотивация двигаться дальше, и поднимается
-                                        настроение Спасибо! :)
-                                    </p>
-                                    <p class="reviews_signature">
-                                        Мария 34 года, Москва
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="reviews_card swiper-slide">
-                                <div class="card_wrapper">
-                                    <p class="reviews_text">
-                                        После наших занятий по подготовке к IELTS я успешно сдала экзамены и
-                                        поступила в два университета Италии, Сиенский и Ca Foscari в Венеции! Моя
-                                        мечта сбылась! Спасибо огромное за Ваш труд!
-                                    </p>
-                                    <p class="reviews_signature">
-                                        Алуа 18 лет, Караганда
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="reviews_card swiper-slide">
-                                <div class="card_wrapper">
-                                    <p class="reviews_text">
-                                        Виктория, добрый день, хочу поблагодарить вас за уроки, уверенно чувствую
-                                        себя с разговорным языком при переезде в Варшаву.
-                                    </p>
-                                    <p class="reviews_signature">
-                                        Андрей 28 лет, Варшава
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="reviews_card swiper-slide">
-                                <div class="card_wrapper">
-                                    <p class="reviews_text">
-                                        Хотела поблагодарить Викторию за прекрасную подготовку к олимпиаде по
-                                        английскому языку, Даша заняла 1-ое место в областной Олимпиаде.
-                                    </p>
-                                    <p class="reviews_signature">
-                                        Наталья (мама Даши 10 лет, Караганда)
-                                    </p>
-                                </div>
-                            </div>
-
-                    <div class="reviews_card swiper-slide">
-                        <div class="card_wrapper">
-                        <p class="reviews_text">
-                            Все четко и профессионально. Ребенок занимается с удовольствием.
-                        </p>
-                        <p class="reviews_signature">
-                            Мария (мама Кирилла 12 лет, Москва)
-                        </p>
-                    </div>
-                    </div>
+      <!-- oтзывы start -->
+      <section class="reviews" id="section-reviews">
+        <div class="reviews_content">
+          <div class="reviews_title">
+            <h2 class="reviews_inscription">отзывы</h2>
+          </div>
+          <div class="reviews_slider swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="reviews_card swiper-slide swiper-slide-first">
+                <div class="card_wrapper">
+                  <p class="reviews_text">
+                    После месяца занятий — вижу положительные изменения у
+                    Демида. Он читает, переводит, знает гораздо больше слов. Он
+                    говорил, что вы берёте и школьную программу (вроде даже
+                    немного наперёд), поэтому когда ему задают домашку — он
+                    делает самостоятельно, без нервов, правда очень быстро! но
+                    пару раз проверяла — все знает, что задано!
+                  </p>
+                  <p class="reviews_signature">
+                    Вера (мама Демида 8 лет , Москва)
+                  </p>
                 </div>
-                <!-- <div class="swiper-button-next"></div> -->
-                <!-- <div class="swiper-button-prev"></div>  -->
-            </div>
-            <div class="reviews_button reviews_button__big">
-                <a href="https://forms.gle/GbCKPXt2ZUX4GVLC6" class="button">
-                    <p class="reviews_sent">
-                        оставить отзыв
-                    </p>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- oтзывы end -->
+              </div>
 
+              <div class="reviews_card swiper-slide">
+                <div class="card_wrapper">
+                  <p class="reviews_text">
+                    Искала преподавателя для ребенка на лето, когда ребенок на
+                    даче. Чтобы обязательно очные занятия у нас. Виктория
+                    полностью оправдала ожидания. Время зря не тратит, каждая
+                    минута с пользой, занятия сбалансированные, и устная речь, и
+                    грамматика. Очень все пунктуально.
+                  </p>
+                  <p class="reviews_signature">
+                    Галина (мама Даниила 11 лет, Москва)
+                  </p>
+                </div>
+              </div>
+
+              <div class="reviews_card swiper-slide">
+                <div class="card_wrapper">
+                  <p class="reviews_text">
+                    Очень нравятся занятия с Викторией! Обратилась с
+                    определённым запросом, Виктория всё супер понятно объясняет,
+                    помогает, если возникают трудности. После занятий появляется
+                    мотивация двигаться дальше, и поднимается настроение
+                    Спасибо! :)
+                  </p>
+                  <p class="reviews_signature">Мария 34 года, Москва</p>
+                </div>
+              </div>
+
+              <div class="reviews_card swiper-slide">
+                <div class="card_wrapper">
+                  <p class="reviews_text">
+                    После наших занятий по подготовке к IELTS я успешно сдала
+                    экзамены и поступила в два университета Италии, Сиенский и
+                    Ca Foscari в Венеции! Моя мечта сбылась! Спасибо огромное за
+                    Ваш труд!
+                  </p>
+                  <p class="reviews_signature">Алуа 18 лет, Караганда</p>
+                </div>
+              </div>
+
+              <div class="reviews_card swiper-slide">
+                <div class="card_wrapper">
+                  <p class="reviews_text">
+                    Виктория, добрый день, хочу поблагодарить вас за уроки,
+                    уверенно чувствую себя с разговорным языком при переезде в
+                    Варшаву.
+                  </p>
+                  <p class="reviews_signature">Андрей 28 лет, Варшава</p>
+                </div>
+              </div>
+
+              <div class="reviews_card swiper-slide">
+                <div class="card_wrapper">
+                  <p class="reviews_text">
+                    Хотела поблагодарить Викторию за прекрасную подготовку к
+                    олимпиаде по английскому языку, Даша заняла 1-ое место в
+                    областной Олимпиаде.
+                  </p>
+                  <p class="reviews_signature">
+                    Наталья (мама Даши 10 лет, Караганда)
+                  </p>
+                </div>
+              </div>
+
+              <div class="reviews_card swiper-slide">
+                <div class="card_wrapper">
+                  <p class="reviews_text">
+                    Все четко и профессионально. Ребенок занимается с
+                    удовольствием.
+                  </p>
+                  <p class="reviews_signature">
+                    Мария (мама Кирилла 12 лет, Москва)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div>  -->
+          </div>
+          <div class="reviews_button reviews_button__big">
+            <a href="https://forms.gle/GbCKPXt2ZUX4GVLC6" class="button">
+              <p class="reviews_sent">оставить отзыв</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- oтзывы end -->
     </main>
     <!-- footer start -->
     <footer class="footer">
-        <div class="footer__upper-container">
-            <img src="./assets/images/footer-logo.svg" class="footer__upper-container-logo" alt="logo">
-            <p class="footer__upper-container-contacts" id="contacts">контакты</p>
-        </div>
+      <div class="footer__upper-container">
+        <img
+          src="./assets/images/footer-logo.svg"
+          class="footer__upper-container-logo"
+          alt="logo"
+        />
+        <p class="footer__upper-container-contacts" id="contacts">контакты</p>
+      </div>
 
-        <img src="./assets/images/footer-line.svg" class="footer__line" alt="line">
-        <div class="footer__lower-container">
-            <div class="footer__lower-container_social-link">
-                <a href="https://www.instagram.com/english.dream2024" target="_blank"><img
-                        src="./assets/images/insta-2.svg" alt="instagram-logo"
-                        class="footer__lower-container_social-link-icon"></a>
-                <a href="https://t.me/englishdream2024" target="_blank"><img src="./assets/images/tg-2.svg"
-                        alt="telegram-logo" class="footer__lower-container_social-link-icon"></a>
-            </div>
-            <div class="footer__lower-container-contacts">
-                <p class="footer__lower-container-contacts_info">ИП Афанасьева Виктория Сергеевна</p>
-                <a href="mailto:english_dream2024@mail.ru"
-                    class="footer__lower-container-contacts_mail">english_dream2024@mail.ru</a>
-            </div>
+      <img
+        src="./assets/images/footer-line.svg"
+        class="footer__line"
+        alt="line"
+      />
+      <div class="footer__lower-container">
+        <div class="footer__lower-container_social-link">
+          <a href="https://www.instagram.com/english.dream2024" target="_blank"
+            ><img
+              src="./assets/images/insta-2.svg"
+              alt="instagram-logo"
+              class="footer__lower-container_social-link-icon"
+          /></a>
+          <a href="https://t.me/englishdream2024" target="_blank"
+            ><img
+              src="./assets/images/tg-2.svg"
+              alt="telegram-logo"
+              class="footer__lower-container_social-link-icon"
+          /></a>
         </div>
+        <div class="footer__lower-container-contacts">
+          <p class="footer__lower-container-contacts_info">
+            ИП Афанасьева Виктория Сергеевна
+          </p>
+          <a
+            href="mailto:english_dream2024@mail.ru"
+            class="footer__lower-container-contacts_mail"
+            >english_dream2024@mail.ru</a
+          >
+        </div>
+      </div>
     </footer>
     <!-- footer end -->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
     <!-- Initialize Swiper -->
     <script>
-        // const elementToRemove = document.querySelector('.header__menu-fixed');
-        // if (window.innerWidth < 427){
-        //     elementToRemove.classList.add('hidden');
-        //     console.log(1)
-        // }
-        var swiper = new Swiper(".mySwiper1", {
-            slidesPerView: 3,
+      // const elementToRemove = document.querySelector('.header__menu-fixed');
+      // if (window.innerWidth < 427){
+      //     elementToRemove.classList.add('hidden');
+      //     console.log(1)
+      // }
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        centeredSlidesBounds: true,
+        // pagination: {
+        // el: ".swiper-pagination",
+        // type: "fraction",
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          280: {
+            slidesPerView: 1,
             centeredSlides: true,
-            spaceBetween: 30,
-            centeredSlidesBounds: true,
-            // pagination: {
-            // el: ".swiper-pagination",
-            // type: "fraction",
-            // },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                280: {
-                    slidesPerView: 1,
-                    centeredSlides: true,
-                    spaceBetween: 60,
-                },
-                360: {
-                    slidesPerView: 2,
-                    centeredSlides: true,
-                    spaceBetween: 200,
-                },
+            spaceBetween: 60,
+          },
+          360: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 200,
+          },
 
-                768: {
-                    slidesPerView: 2,
-                    centeredSlides: true,
-                    spaceBetween: 200,
+          768: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 200,
+          },
 
-                },
-
-        912: {
+          912: {
             slidesPerView: 2,
             centeredSlides: true,
             spaceBetween: 10,
+          },
+
+          1024: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+          },
         },
+      });
 
-                1024: {
-                    slidesPerView: 3,
-                    centeredSlides: true,
-                    spaceBetween: 30,
-                }
-        
-    },
-        });
-
-        // var appendNumber = 4;
-        // var prependNumber = 1;
+      // var appendNumber = 4;
+      // var prependNumber = 1;
     </script>
 
     <!-- Swiper JS -->
@@ -717,14 +845,14 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -765,12 +893,16 @@
             slidesPerView: 1.2,
             spaceBetween: 35,
           },
-          430: {
-            slidesPerView: 1.6,
+          400: {
+            slidesPerView: 1.3,
+            spaceBetween: 40,
+          },
+          500: {
+            slidesPerView: 1.3,
             spaceBetween: 50,
           },
-           600: {
-            slidesPerView: 1.5,
+          600: {
+            slidesPerView: 1.4,
             spaceBetween: 60,
           },
           768: {
@@ -779,22 +911,16 @@
           },
           1000: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 25,
           },
           1130: {
             slidesPerView: 3,
             spaceBetween: 30,
           },
-          1220: {
+          1380: {
             slidesPerView: 3,
-            spaceBetween: 40,
-          }
-          //   // 360: {
-          //   //   slidesPerView: 1.4,
-          //   // },
-          //   // 1024: {
-
-          //   // },
+            spaceBetween: 30,
+          },
         },
 
         // centeredSlides: true,
@@ -805,7 +931,7 @@
       jQuery(document).ready(function ($) {
         $(function () {
           var column = 0;
-          $('.course-content')
+          $(".course-content")
             .each(function () {
               h = $(this).height();
               if (h > column) {

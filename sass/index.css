@@ -90,7 +90,7 @@ body {
   text-decoration: none;
   justify-content: space-between;
   position: fixed;
-  top: 100px;
+  top: 40px;
   right: 40px;
   z-index: 4;
 }
@@ -564,7 +564,6 @@ body {
 }
 .courses {
   margin: 0 auto;
-  padding: 0 120px;
   max-width: 1600px;
 }
 
@@ -733,13 +732,17 @@ body {
     font-size: 36px;
   }
 }
-@media screen and (max-width: 1129px) {
+@media screen and (max-width: 1370px) {
+  .courses {
+    margin: 0;
+    padding: 0 15px;
+  }
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 703px) and (max-width: 999px) {
   .courses {
     margin: 0;
     padding: 0 0 0 25px;
@@ -749,9 +752,8 @@ body {
   }
   .courses__container {
     max-width: 743px;
-    padding-top: 74px;
+    padding-top: 85px;
     box-sizing: border-box;
-    overflow: hidden;
   }
   .course-circle {
     width: 22.14vw;
@@ -787,19 +789,67 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 501px) and (max-width: 702px) {
+  .courses {
+    margin: 0;
+    padding: 0 0 0 25px;
+  }
+  .courses__title {
+    padding-top: 100px;
+    padding-bottom: 48px;
+    font-size: 8.89vw;
+  }
+  .courses__container {
+    max-width: 743px;
+    padding-top: 77px;
+    box-sizing: border-box;
+  }
+  .course-circle {
+    width: 24.14vw;
+    height: 24.14vw;
+    top: -10.93vw;
+    right: -6.77vw;
+  }
+  .course-circle__text {
+    font-size: 5.33vw;
+    line-height: 156%;
+    padding-top: 20px;
+  }
+  .course__title {
+    font-size: 4.33vw;
+    line-height: 208%;
+  }
+  .course-content {
+    font-size: 3.67vw;
+    line-height: 140%;
+    max-width: 470px;
+  }
+  .course-list__item:before {
+    left: 0;
+    margin-right: 5px;
+  }
+  .button_small {
+    font-size: 4vw;
+    line-height: 117%;
+    padding: 13px 66px 13px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .courses {
     margin: 0;
     padding-left: 11px;
   }
   .courses__title {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 50px;
     margin-right: 11px;
     font-size: 8.89vw;
   }
   .courses__container {
-    max-width: 349px;
     padding-top: 89px;
   }
   .course-circle {
@@ -1625,7 +1675,7 @@ body {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 4;
+    z-index: 10;
   }
   .menu__btn > span,
   .menu__btn > span::before,

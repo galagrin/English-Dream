@@ -601,7 +601,7 @@ body {
 // Курсы styles start
 .courses {
   margin: 0 auto;
-  padding: 0 120px;
+  // padding: 0 120px;
   max-width: 1600px;
 }
 
@@ -685,12 +685,12 @@ body {
 }
 
 .swiper-button-next:after {
-  content: url('/English-Dream/assets/images/button-next.svg');
+  content: url("/English-Dream/assets/images/button-next.svg");
   // content: url(./assets/images/button-next.svg);
 }
 
 .swiper-button-prev:after {
-  content: url('/English-Dream/assets/images/button-prev.svg');
+  content: url("/English-Dream/assets/images/button-prev.svg");
 }
 
 .course-content {
@@ -797,16 +797,21 @@ body {
     @extend %button;
     font-size: 36px;
   }
-} 
+}
 
-@media screen and (max-width: 1129px) {
+@media screen and (max-width: 1370px) {
+  .courses {
+    margin: 0;
+    padding: 0 15px;
+  }
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 703px) and (max-width: 999px) {
+  //768
   .courses {
     margin: 0;
     padding: 0 0 0 25px;
@@ -818,9 +823,9 @@ body {
 
   .courses__container {
     max-width: 743px;
-    padding-top: 74px;
+    padding-top: 85px;
     box-sizing: border-box;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   .course-circle {
@@ -864,21 +869,80 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 501px) and (max-width: 702px) {
+  .courses {
+    margin: 0;
+    padding: 0 0 0 25px;
+  }
+
+  .courses__title {
+    padding-top: 100px;
+    padding-bottom: 48px;
+    font-size: 8.89vw;
+  }
+
+  .courses__container {
+    max-width: 743px;
+    padding-top: 77px;
+    box-sizing: border-box;
+    // overflow: visible;
+  }
+
+  .course-circle {
+    width: 24.14vw;
+    height: 24.14vw;
+    top: -10.93vw;
+    right: -6.77vw;
+  }
+
+  .course-circle__text {
+    font-size: 5.33vw;
+    line-height: 156%;
+    padding-top: 20px;
+  }
+
+  .course__title {
+    font-size: 4.33vw;
+    line-height: 208%;
+  }
+
+  .course-content {
+    font-size: 3.67vw;
+    line-height: 140%;
+    max-width: 470px;
+  }
+
+  .course-list__item:before {
+    left: 0;
+    margin-right: 5px;
+  }
+
+  .button_small {
+    font-size: 4vw;
+    line-height: 117%;
+    padding: 13px 66px 13px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .courses {
     margin: 0;
     padding-left: 11px;
   }
 
   .courses__title {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 50px;
     margin-right: 11px;
     font-size: 8.89vw;
   }
 
   .courses__container {
-    max-width: 349px;
     padding-top: 89px;
     // overflow: visible;
   }
@@ -920,10 +984,10 @@ body {
 }
 
 @media screen and (max-width: 319px) {
-    .courses {
-      width: 309px;
-    }
+  .courses {
+    width: 309px;
   }
+}
 
 // курсы styles end
 
@@ -1549,77 +1613,73 @@ body {
 
 // отзывы  styles start
 
-.reviews{
-    background-color: $white;
-    // border: black 1px solid;
-    max-width: 1600px;
-    width: 100%;
-    height: 80%;
-    }
-    
-    .reviews_content,
-    .reviews_title,
-    .reviews_inscription,
-    .reviews_slider,
-    .reviews_card{
-    display: $df;
-    }
-    
-    .reviews_content,
-    .reviews_inscription{
-    align-items: center;
-    justify-content: center;
-    }
-    
-    .reviews_content{
-    // border: blue 1px solid;
-    max-width: 1600px;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    }
-    
+.reviews {
+  background-color: $white;
+  // border: black 1px solid;
+  max-width: 1600px;
+  width: 100%;
+  height: 80%;
+}
 
-    .reviews_title{
-    // border: red 1px solid;
-    width: 20%;
-    height: 8%;
-    padding-bottom: 5%;
-    }
-    
-    
-    .reviews_inscription{
-    // border: green 1px solid;
-    width: 100%;
-    height: 100%;
-    padding: 3% 10% 3% 2%;
-    font-family: $title;
-    font-weight: 400;
-    font-size: $title-size;
-    line-height: 78%;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: $darkcyan;
-    }
-    
-    .reviews_slider{
-    // border: palegreen 1px solid;
-    // max-width: 1600px;
-    width: 100%;
-    }
+.reviews_content,
+.reviews_title,
+.reviews_inscription,
+.reviews_slider,
+.reviews_card {
+  display: $df;
+}
 
-    .swiper-slide-first{
-        margin-left: 2.9%;
-    }
-    
-    
-    .reviews_card{
-    // border: yellow 1px solid;
-    flex-shrink: 1;
-    width: 419px;
-    height: 478px;
-    }
+.reviews_content,
+.reviews_inscription {
+  align-items: center;
+  justify-content: center;
+}
 
+.reviews_content {
+  // border: blue 1px solid;
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.reviews_title {
+  // border: red 1px solid;
+  width: 20%;
+  height: 8%;
+  padding-bottom: 5%;
+}
+
+.reviews_inscription {
+  // border: green 1px solid;
+  width: 100%;
+  height: 100%;
+  padding: 3% 10% 3% 2%;
+  font-family: $title;
+  font-weight: 400;
+  font-size: $title-size;
+  line-height: 78%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: $darkcyan;
+}
+
+.reviews_slider {
+  // border: palegreen 1px solid;
+  // max-width: 1600px;
+  width: 100%;
+}
+
+.swiper-slide-first {
+  margin-left: 2.9%;
+}
+
+.reviews_card {
+  // border: yellow 1px solid;
+  flex-shrink: 1;
+  width: 419px;
+  height: 478px;
+}
 
 .card_wrapper {
   display: flex;
