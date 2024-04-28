@@ -145,12 +145,12 @@
       </section>
       <!-- о студии end -->
 
-      <!--курсы start -->
+      <!--курсы start--> 
       <section class="courses">
         <h2 class="courses__title">курсы</h2>
 
         <div class="courses__container swiper-container sliderCourses">
-          <!-- <div class="swiper-container sliderCourses"> -->
+          <!--<div class="swiper-container sliderCourses">-->
           <div class="courses__wrapper swiper-wrapper">
             <div class="courses__slide swiper-slide">
               <div class="courses__item">
@@ -622,7 +622,7 @@
                     </div>
                 </div>
             </section>
-      <!-- speaking club end -->
+       <!--speaking club end --> 
 
       <!-- oтзывы start -->
       <section class="reviews" id="section-reviews">
@@ -791,7 +791,7 @@
       //     elementToRemove.classList.add('hidden');
       //     console.log(1)
       // }
-      var swiper = new Swiper(".mySwiper1", {
+    var swiper = new Swiper(".mySwiper1", {
         slidesPerView: 3,
         centeredSlides: true,
         spaceBetween: 30,
@@ -801,40 +801,53 @@
         // type: "fraction",
         // },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-          280: {
+        280: {
             slidesPerView: 1,
             centeredSlides: true,
             spaceBetween: 60,
-          },
-          360: {
+        },
+        360: {
             slidesPerView: 2,
             centeredSlides: true,
             spaceBetween: 200,
-          },
+        },
 
-          768: {
+        768: {
             slidesPerView: 2,
             centeredSlides: true,
             spaceBetween: 200,
-          },
+        },
 
-          912: {
-            slidesPerView: 2,
-            centeredSlides: true,
-            spaceBetween: 10,
-          },
-
-          1024: {
+        912: {
             slidesPerView: 3,
             centeredSlides: true,
-            spaceBetween: 30,
-          },
+            spaceBetween: 10,
         },
-      });
+
+        1024: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 45,
+        },
+        
+        1400: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 80,
+        },
+
+        1600: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 120,
+        },
+
+        },
+    });
 
       // var appendNumber = 4;
       // var prependNumber = 1;
