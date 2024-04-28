@@ -638,11 +638,11 @@ body {
 }
 
 .swiper-button-next:after {
-  content: url("/English-Dream/assets/images/button-next.svg");
+  content: url("./assets/images/button-next.svg");
 }
 
 .swiper-button-prev:after {
-  content: url("/English-Dream/assets/images/button-prev.svg");
+  content: url("./assets/images/button-prev.svg");
 }
 
 .course-content {
