@@ -1451,7 +1451,7 @@ body {
     font-size: 2rem;
     position: relative;
     top: -25px;
-    left: 150px;
+    left: 180px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1497,7 +1497,7 @@ body {
   .description__text-price {
     position: relative;
     top: -20px;
-    left: 220px;
+    left: 230px;
     width: 4em;
   }
 }
