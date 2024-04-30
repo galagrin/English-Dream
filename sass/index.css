@@ -2157,9 +2157,16 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .reviews_content {
+    height: 963px;
+    justify-content: space-around;
+  }
+  .reviews_card {
+    height: 550px;
+  }
   .card_wrapper {
     width: 442px;
-    height: 498px;
+    height: 550px;
   }
   .reviews_text,
   .reviews_signature {
@@ -2179,9 +2186,15 @@ body {
   }
 }
 @media screen and (min-width: 400px) and (max-width: 767px) {
+  .mySwiper1 {
+    height: 600px;
+  }
   .card_wrapper {
     width: 250px;
-    height: 500px;
+    height: 530px;
+  }
+  .reviews_card {
+    height: 600px;
   }
   .reviews_button__big {
     width: 243px;
@@ -2192,10 +2205,18 @@ body {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .mySwiper1 {
+    height: 700px;
+  }
+  .card_wrapper {
+    height: 630px;
+  }
+}
 @media screen and (min-width: 361px) and (max-width: 400px) {
   .card_wrapper {
     width: 270px;
-    height: 520px;
+    height: 690px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -2204,7 +2225,7 @@ body {
   }
   .card_wrapper {
     width: 260px;
-    height: 628px;
+    height: 693px;
   }
   .reviews_button__big {
     width: 202px;

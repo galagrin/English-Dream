@@ -2331,10 +2331,22 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .card_wrapper {
-    width: 442px;
-    height: 498px;
+  .reviews_content{
+    height: 963px;
+    justify-content: space-around;
   }
+  .reviews_card{
+    height: 550px;
+  }
+  // .reviews_title{
+    // margin-top: 122px;
+    // margin-bottom: 88px;
+  // }
+.card_wrapper {
+    width: 442px;
+    height: 550px;
+    // margin-bottom: 22px;
+}
   .reviews_text,
   .reviews_signature {
     font-size: 24px;
@@ -2357,11 +2369,17 @@ body {
 }
 
 @media screen and (min-width: 400px) and (max-width: 767px) {
+  .mySwiper1{
+    height: 600px;
+  }
   .card_wrapper {
     width: 250px;
-    height: 500px;
+    height: 530px;
   }
+  .reviews_card {
+    height: 600px;
 
+  }
   .reviews_button__big {
     width: 243px;
     height: 68px;
@@ -2372,11 +2390,19 @@ body {
     font-size: 20px;
   }
 }
+@media screen and  (max-width: 500px) {
+  .mySwiper1 {
+    height: 700px;
+  }
+  .card_wrapper {
 
+    height: 630px;
+  }
+}
 @media screen and (min-width: 361px) and (max-width: 400px) {
   .card_wrapper {
     width: 270px;
-    height: 520px;
+    height: 690px;
   }
 }
 
@@ -2387,7 +2413,7 @@ body {
   }
   .card_wrapper {
     width: 260px;
-    height: 628px;
+    height: 693px;
   }
 
   .reviews_button__big {
