@@ -1257,6 +1257,8 @@ body {
     position: relative;
     left: 120px;
     top: 50px;
+    padding-right: 0;
+    width: 500px;
   }
 
   .card__text-rotate-25 {
@@ -1293,18 +1295,23 @@ body {
 
   .chapter {
     position: relative;
-    left: 510px;
-    top: 500px;
+    // left: 510px;
+    padding-left: 465px;
+    top: 525px;
   }
 
   .chapter__title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: justify;
   }
 
   .chapter__title-config {
     position: relative;
     left: -7px;
+  }
+
+  .chapter__title-configure {
+    padding-left: 20px;
   }
 
   .group {
@@ -1349,8 +1356,8 @@ body {
 
   .card__text-rotate-25 {
     position: relative;
-    top: -150px;
-    left: 190px;
+    top: -120px;
+    left: 100px;
     font-size: 30px;
     width: 6em;
     height: 2.3em;
@@ -1365,25 +1372,30 @@ body {
 
   .description__text {
     font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 60px;
   }
 
   .description__text-price {
     font-size: 4rem;
     position: relative;
     left: 460px;
-    bottom: 540px;
+    bottom: 890px;
   }
 }
 
 @media screen and (max-width: 430px) {
   .speaking {
+    width: 425px;
     margin-top: 62px;
   }
 
   .chapter {
     position: relative;
     top: 50px;
-    left: 70px;
+    left: 100px;
+    padding-left: 0;
+    width: 350px;
   }
 
   .chapter__title {
@@ -1393,7 +1405,7 @@ body {
 
   .chapter__title-config {
     position: relative;
-    left: -80px;
+    left: -70px;
   }
 
   .chapter__title-configure {
@@ -1413,8 +1425,10 @@ body {
   .card {
     position: relative;
     top: 600px;
+    width: 200px;
     // (как в макете)
-    left: 130px;
+    left: 110px;
+    display: inline-block;
   }
 
   .card__text-rotate-28 {
@@ -1423,29 +1437,33 @@ body {
   }
   // разобраться
   .card__text-rotate-25 {
-    width: 190px;
+    width: 180px;
     position: relative;
+    bottom: 5px;
     left: 120px;
   }
 
   .description {
-    margin: 0;
-    padding: 45px;
-
+    // margin: 0;
+    width: 350px;
+    // padding: 25px;
+    text-align: start;
+    padding: 0;
     position: relative;
-    top: 100px;
-    right: 10px;
+    top: 60px;
+    left: -15px;
   }
 
   .description__text {
     font-size: 2rem;
+    line-height: 60px;
   }
 
   .description__text-price {
     font-size: 2rem;
     position: relative;
-    top: -25px;
-    left: 140px;
+    top: -45px;
+    left: 160px;
   }
 }
 
@@ -1457,7 +1475,9 @@ body {
   .chapter {
     position: relative;
     top: 50px;
-    left: 70px;
+    left: 125px;
+    padding: 0;
+    width: 300px;
   }
 
   .chapter__title {
@@ -1485,9 +1505,9 @@ body {
 
   .card {
     position: relative;
-    top: 600px;
+    top: 580px;
     // (как в макете)
-    left: 130px;
+    left: 120px;
   }
 
   .card__text-rotate-28 {
@@ -1498,11 +1518,11 @@ body {
   .card__text-rotate-25 {
     // width: 190px;
     position: relative;
-    // left: 120px;
-    // bottom: 50px;
-    padding: 12px;
-    height: 50px;
-    left: 100px;
+    left: 110px;
+    top: -160px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 28px;
   }
 
   .description {
@@ -1533,7 +1553,7 @@ body {
   .chapter {
     position: relative;
     top: 50px;
-    left: 60px;
+    left: 125px;
   }
 
   .chapter__title-config {
@@ -1541,9 +1561,18 @@ body {
     left: -70px;
   }
 
+  .grouping {
+    position: relative;
+    left: -190px;
+  }
+
   .grouping__title {
     // left: 30px;
     padding-left: 10px;
+  }
+
+  .card__text-rotate-28 {
+    padding-top: 5px;
   }
 
   .card__text-rotate-25 {
@@ -1552,6 +1581,7 @@ body {
     padding: 12px;
     height: 50px;
     left: 100px;
+    top: -160px;
 
     // немного отодвигает границы текста от блока
   }
@@ -1566,13 +1596,17 @@ body {
     right: 220px;
   }
 
+  .description {
+  }
+
   .description__text {
     font-size: 1.8rem;
   }
 
   .description__text-price {
     position: relative;
-    left: 120px;
+    top: -50px;
+    left: 240px;
     width: 4em;
   }
 }
@@ -1598,7 +1632,7 @@ body {
 
   .card {
     position: relative;
-    left: 100px;
+    left: 110px;
   }
 
   .grouping {
