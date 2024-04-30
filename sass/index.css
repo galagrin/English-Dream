@@ -1378,11 +1378,11 @@ body {
     padding: 0;
     position: relative;
     top: 60px;
-    left: -15px;
+    left: -30px;
   }
   .description__text {
     font-size: 2rem;
-    line-height: 60px;
+    line-height: 50px;
   }
   .description__text-price {
     font-size: 2rem;
@@ -1438,20 +1438,20 @@ body {
     height: 28px;
   }
   .description {
-    margin: 0;
-    padding: 45px;
+    padding: 10px;
     position: relative;
-    top: 100px;
-    right: 5px;
+    top: 40px;
+    left: -50px;
   }
   .description__text {
     font-size: 2rem;
+    line-height: 50px;
   }
   .description__text-price {
     font-size: 2rem;
     position: relative;
     top: -25px;
-    left: 140px;
+    left: 150px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1496,8 +1496,8 @@ body {
   }
   .description__text-price {
     position: relative;
-    top: -50px;
-    left: 240px;
+    top: -20px;
+    left: 220px;
     width: 4em;
   }
 }
@@ -2159,7 +2159,8 @@ body {
 @media screen and (max-width: 768px) {
   .reviews_content {
     height: 963px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .reviews_card {
     height: 550px;

@@ -1451,12 +1451,12 @@ body {
     padding: 0;
     position: relative;
     top: 60px;
-    left: -15px;
+    left: -30px;
   }
 
   .description__text {
     font-size: 2rem;
-    line-height: 60px;
+    line-height: 50px;
   }
 
   .description__text-price {
@@ -1526,23 +1526,27 @@ body {
   }
 
   .description {
-    margin: 0;
-    padding: 45px;
+    // margin: 0;
+    padding: 10px;
     position: relative;
-    top: 100px;
-    right: 5px;
+    top: 40px;
+    left: -50px;
   }
 
   .description__text {
     font-size: 2rem;
+    line-height: 50px;
   }
 
   .description__text-price {
     font-size: 2rem;
     position: relative;
     top: -25px;
-    left: 140px;
+    left: 150px;
   }
+}
+
+@media screen and (max-width: 390px) {
 }
 
 @media screen and (max-width: 375px) {
@@ -1596,17 +1600,14 @@ body {
     right: 220px;
   }
 
-  .description {
-  }
-
   .description__text {
     font-size: 1.8rem;
   }
 
   .description__text-price {
     position: relative;
-    top: -50px;
-    left: 240px;
+    top: -20px;
+    left: 220px;
     width: 4em;
   }
 }
@@ -2331,22 +2332,22 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .reviews_content{
+  .reviews_content {
     height: 963px;
     justify-content: space-around;
   }
-  .reviews_card{
+  .reviews_card {
     height: 550px;
   }
   // .reviews_title{
-    // margin-top: 122px;
-    // margin-bottom: 88px;
+  // margin-top: 122px;
+  // margin-bottom: 88px;
   // }
-.card_wrapper {
+  .card_wrapper {
     width: 442px;
     height: 550px;
     // margin-bottom: 22px;
-}
+  }
   .reviews_text,
   .reviews_signature {
     font-size: 24px;
@@ -2369,7 +2370,7 @@ body {
 }
 
 @media screen and (min-width: 400px) and (max-width: 767px) {
-  .mySwiper1{
+  .mySwiper1 {
     height: 600px;
   }
   .card_wrapper {
@@ -2378,7 +2379,6 @@ body {
   }
   .reviews_card {
     height: 600px;
-
   }
   .reviews_button__big {
     width: 243px;
@@ -2390,12 +2390,11 @@ body {
     font-size: 20px;
   }
 }
-@media screen and  (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mySwiper1 {
     height: 700px;
   }
   .card_wrapper {
-
     height: 630px;
   }
 }
