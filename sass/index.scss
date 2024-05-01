@@ -79,7 +79,7 @@ body {
   grid-column: 1/2;
   grid-row: 1/4;
   background-repeat: no-repeat;
-  background-image: url(/assets/images/logo-back.svg);
+  background-image: url('../assets/images/logo-back.svg');
   background-size: 70%;
 }
 
@@ -95,9 +95,9 @@ body {
   position: fixed;
 }
 
-.header__logo-image:hover {
-  box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
-}
+// .header__logo-image:hover {
+//   box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
+// }
 
 // .header__position {
 //     position: fixed;
@@ -181,7 +181,7 @@ body {
 
 .header__menu-link:hover {
   color: $red;
-  box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
+  // box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
 }
 
 #menu__toggle {
