@@ -1581,6 +1581,35 @@ body {
 }
 
 @media screen and (max-width: 390px) {
+  .speaking {
+    padding: 0;
+    width: 390px;
+  }
+
+  .chapter {
+    position: relative;
+    left: 100px;
+  }
+
+  .grouping {
+    position: relative;
+    left: -205px;
+  }
+
+  .card__text-rotate-25 {
+    position: relative;
+    left: 87px;
+  }
+
+  .description {
+    position: relative;
+    left: -60px;
+  }
+
+  .description__text-price {
+    position: relative;
+    left: 160px;
+  }
 }
 
 @media screen and (max-width: 375px) {
