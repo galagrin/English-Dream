@@ -1546,6 +1546,14 @@ body {
   padding-top: 1%;
 }
 
+.reviews_button__big:hover {
+  background-color: #27686C;
+}
+
+.reviews_sent:hover {
+  background-color: #27686C;
+}
+
 .footer {
   width: 100%;
   display: flex;
