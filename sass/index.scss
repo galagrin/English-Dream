@@ -81,7 +81,7 @@ body {
   grid-column: 1/2;
   grid-row: 1/4;
   background-repeat: no-repeat;
-  background-image: url('../assets/images/logo-back.svg');
+  background-image: url("../assets/images/logo-back.svg");
   background-size: 70%;
 }
 
@@ -208,7 +208,7 @@ body {
   height: 100%;
   grid-column: 2/3;
   grid-row: 2/4;
-  background-image: url('../assets/images/home-page.svg');
+  background-image: url("../assets/images/home-page.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
@@ -250,10 +250,10 @@ body {
 }
 
 .header__caption-btn:hover {
-  background-color: #27686C;
+  background-color: #27686c;
 }
 
-.header__link-social_icon-back{
+.header__link-social_icon-back {
   display: $df;
   justify-content: center;
   align-items: center;
@@ -1161,6 +1161,7 @@ body {
 .speaking {
   margin-top: 136px;
   background-color: $mint;
+  height: 900px;
 }
 .card {
   display: $df;
@@ -1584,24 +1585,26 @@ body {
 
 @media screen and (max-width: 375px) {
   .speaking {
-    margin-top: 62px;
+    padding: 0;
+    width: 375px;
     height: 1800px;
+    margin-top: 62px;
   }
 
   .chapter {
     position: relative;
     top: 50px;
-    left: 125px;
+    left: 95px;
   }
 
   .chapter__title-config {
     position: relative;
-    left: -70px;
+    left: -75px;
   }
 
   .grouping {
     position: relative;
-    left: -190px;
+    left: -220px;
   }
 
   .grouping__title {
@@ -1614,11 +1617,9 @@ body {
   }
 
   .card__text-rotate-25 {
-    // margin-bottom: 25px;
-    // только он поднимает блок "еженедльно"
-    padding: 12px;
-    height: 50px;
-    left: 100px;
+    height: 40px;
+    width: 160px;
+    left: 95px;
     top: -160px;
 
     // немного отодвигает границы текста от блока
@@ -1634,6 +1635,11 @@ body {
     right: 220px;
   }
 
+  .description {
+    position: relative;
+    left: -70px;
+  }
+
   .description__text {
     font-size: 1.8rem;
   }
@@ -1641,24 +1647,32 @@ body {
   .description__text-price {
     position: relative;
     top: -20px;
-    left: 230px;
+    left: 185px;
     width: 4em;
   }
 }
 
 @media screen and (max-width: 360px) {
   .speaking {
+    padding: 0;
+    width: 360px;
     margin-top: 62px;
   }
 
   .chapter {
     position: relative;
-    right: 170px;
+    // right: 170px;
+    left: 85px;
     top: 50px;
   }
 
   .chapter__title {
     font-size: 2.1rem;
+  }
+
+  .chapter__title-config {
+    position: relative;
+    left: -65px;
   }
 
   .chapter__title-configure {
@@ -1670,8 +1684,13 @@ body {
     left: 110px;
   }
 
+  .card__text-rotate-25 {
+    position: relative;
+    left: 85px;
+  }
+
   .grouping {
-    margin-left: 100px;
+    margin-left: 92px;
   }
 
   .description {
@@ -1852,7 +1871,7 @@ body {
   color: $indigo;
 }
 
-.footer__lower-container-contacts_mail:hover{
+.footer__lower-container-contacts_mail:hover {
   text-decoration: underline;
 }
 
@@ -1863,7 +1882,7 @@ body {
   width: fit-content;
 }
 
-.footer__link-social_icon-back{
+.footer__link-social_icon-back {
   display: $df;
   justify-content: center;
   align-items: center;
@@ -1967,10 +1986,11 @@ body {
   }
 }
 /*Адаптивность для планшета и и маленького десктопа  конец*/
-@media screen and (max-width: 768px) { /*[ховеры на планшете и ниже*/
-.header__menu-link:hover {
-  color: $blue;
-}
+@media screen and (max-width: 768px) {
+  /*[ховеры на планшете и ниже*/
+  .header__menu-link:hover {
+    color: $blue;
+  }
 }
 
 /*Адаптивность для мобильного начало*/
@@ -2131,7 +2151,7 @@ body {
     font-size: 1em;
   }
 
-  .header__link-social_icon-back{
+  .header__link-social_icon-back {
     width: 12px;
     height: 12px;
   }
@@ -2163,7 +2183,7 @@ body {
     width: 60%;
   }
 
-  .footer__link-social_icon-back{
+  .footer__link-social_icon-back {
     width: 27px;
     height: 27px;
   }
