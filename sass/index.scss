@@ -1827,8 +1827,7 @@ body {
 }
 
 .reviews_button,
-.button,
-.reviews_sent {
+.button{
   @extend%button;
 }
 
@@ -2510,7 +2509,9 @@ body {
 
   .reviews_button__big {
     width: 243px;
-    height: 68px;
+    height: 67px;
+    font-size: 36px;
+    font-weight: 400;
   }
 
   .swiper-button-next,
@@ -2579,6 +2580,8 @@ body {
   .reviews_button__big {
     width: 202px;
     height: 56px;
+    font-size: 24px;
+    font-weight: 400;
   }
 
   .reviews_inscription {
