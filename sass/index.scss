@@ -252,6 +252,25 @@ body {
 .header__caption-btn:hover {
   background-color: #27686C;
 }
+
+.header__link-social_icon-back{
+  display: $df;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #3e396f;
+  width: 40px;
+  height: 40px;
+  margin: 1%;
+}
+
+.header__link-social_icon-back:hover {
+  background-color: #2c275e;
+}
+
+.instagram {
+  width: 90%;
+}
 // header styles end
 
 // О студии styles start
@@ -1837,9 +1856,27 @@ body {
   text-decoration: underline;
 }
 
-// .footer__lower-container_social-link-icon:hover {
-//   color:  black;
-// }
+.footer__lower-container_social-link {
+  display: $df;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
+}
+
+.footer__link-social_icon-back{
+  display: $df;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #3e396f;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.footer__link-social_icon-back:hover {
+  background-color: #2c275e;
+}
 // footer styles end
 /*Адаптивность для большого экрана*/
 @media screen and (min-width: 1700px) and (max-width: 4000px) {
@@ -2093,6 +2130,15 @@ body {
   .header__menu-link {
     font-size: 1em;
   }
+
+  .header__link-social_icon-back{
+    width: 12px;
+    height: 12px;
+  }
+
+  .instagram {
+    width: 90%;
+  }
   /*Хедер конец/
 
 /*Футер старт*/
@@ -2110,7 +2156,16 @@ body {
   }
 
   .footer__lower-container_social-link-icon {
-    width: 30%;
+    width: 85%;
+  }
+
+  .telegram {
+    width: 60%;
+  }
+
+  .footer__link-social_icon-back{
+    width: 27px;
+    height: 27px;
   }
   /*Футер конец*/
 }

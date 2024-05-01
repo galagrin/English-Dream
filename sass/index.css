@@ -194,6 +194,25 @@ body {
   background-color: #27686C;
 }
 
+.header__link-social_icon-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #3e396f;
+  width: 40px;
+  height: 40px;
+  margin: 1%;
+}
+
+.header__link-social_icon-back:hover {
+  background-color: #2c275e;
+}
+
+.instagram {
+  width: 90%;
+}
+
 .studio768 {
   display: grid;
   background-color: #eaf4f1;
@@ -1617,6 +1636,29 @@ body {
   text-decoration: underline;
 }
 
+.footer__lower-container_social-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer__link-social_icon-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #3e396f;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.footer__link-social_icon-back:hover {
+  background-color: #2c275e;
+}
+
 /*Адаптивность для большого экрана*/
 @media screen and (min-width: 1700px) and (max-width: 4000px) {
   .header__menu {
@@ -1829,6 +1871,13 @@ body {
   .header__menu-link {
     font-size: 1em;
   }
+  .header__link-social_icon-back {
+    width: 12px;
+    height: 12px;
+  }
+  .instagram {
+    width: 90%;
+  }
   /*Хедер конец/
 
   /*Футер старт*/
@@ -1843,7 +1892,14 @@ body {
     font-size: 2em;
   }
   .footer__lower-container_social-link-icon {
-    width: 30%;
+    width: 85%;
+  }
+  .telegram {
+    width: 60%;
+  }
+  .footer__link-social_icon-back {
+    width: 27px;
+    height: 27px;
   }
   /*Футер конец*/
 }
