@@ -1475,6 +1475,7 @@ body {
   width: 100%;
   height: 100%;
   flex-direction: column;
+  padding-top: 136px;
 }
 
 .reviews_title {
@@ -2050,6 +2051,7 @@ body {
   .reviews_content {
     height: 963px;
     justify-content: space-around;
+    padding-top: 122px;
   }
   .reviews_card {
     height: 550px;
@@ -2112,6 +2114,9 @@ body {
 @media screen and (max-width: 360px) {
   .reviews {
     height: 950px;
+  }
+  .reviews_content {
+    padding-top: 0;
   }
   .card_wrapper {
     width: 260px;
