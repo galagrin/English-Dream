@@ -265,11 +265,12 @@ body {
   grid-row: 1/2;
 }
 .studio__img768 {
-  max-width: 100%;
+  max-width: 90%;
   display: block;
   grid-column: 1/4;
   grid-row: 2/11;
   padding: 5%;
+  border-radius: 59px;
 }
 .studio__text_director768 {
   color: orange;
@@ -328,8 +329,9 @@ body {
   color: $indigo;
   grid-column: 4/5;
   grid-row: 8/9;
-  place-self: center;
-  margin-left: 12%;
+  justify-self: center;
+  align-self: flex-end;
+  margin-left: 10%;
   font-family: $main-font;
   font-size: 2rem;
 }
@@ -337,16 +339,18 @@ body {
   color: $red;
   grid-column: 4/5;
   grid-row: 9/10;
-  place-self: center;
-  margin-left: 12%;
+  justify-self: center;
+  align-self: start;
+  margin-left: 10%;
   font-family: $main-font;
-  font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 .studio__text_12000768 {
   color: $indigo;
   grid-column: 5/6;
   grid-row: 8/9;
-  place-self: center;
+  justify-self: center;
+  align-self: flex-end;
   font-family: $main-font;
   font-size: 2rem;
 }
@@ -354,15 +358,17 @@ body {
   color: $red;
   grid-column: 5/6;
   grid-row: 9/10;
-  place-self: center;
+  justify-self: center;
+  align-self: start;
   font-family: $main-font;
-  font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 .studio__text_500768 {
   color: $indigo;
   grid-column: 6/7;
   grid-row: 8/9;
-  place-self: center;
+  justify-self: center;
+  align-self: flex-end;
   font-family: $main-font;
   font-size: 2rem;
 }
@@ -370,9 +376,10 @@ body {
   color: $red;
   grid-column: 6/7;
   grid-row: 9/10;
-  place-self: center;
+  justify-self: center;
+  align-self: start;
   font-family: $main-font;
-  font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 
 .studio {
