@@ -15,8 +15,7 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,15 +25,9 @@ body {
 
 /*Кнопка*/
 .header__caption-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
   background: #2a7d83;
   font-family: "TSRemarker", sans-serif;
@@ -68,8 +61,6 @@ body {
 .header__logo-image-container {
   grid-column: 1/2;
   grid-row: 1/2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 10%;
   position: sticky;
@@ -85,17 +76,10 @@ body {
 .header__menu {
   grid-column: 2/3;
   grid-row: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   text-decoration: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   background-color: #fff;
@@ -127,19 +111,10 @@ body {
 .header__caption {
   grid-column: 1/2;
   grid-row: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__link-social {
@@ -151,19 +126,10 @@ body {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .header__caption-title {
@@ -191,15 +157,9 @@ body {
 }
 
 .header__caption-btn { /*Кнопка*/
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
   width: 70%;
   height: 55px;
@@ -221,24 +181,15 @@ body {
 
 /* BLOCK 404 */
 .error {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 98%;
   height: 65vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .error__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 69vh;
 }
 .error__container::before {
@@ -249,8 +200,6 @@ body {
   /*width: 70vw;*/
   height: 53vh;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   opacity: 0.2;
   position: absolute;
@@ -263,16 +212,9 @@ body {
 }
 .error__container .error__text {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
 }
 .error__container .error__text .error__title {
@@ -283,8 +225,6 @@ body {
   letter-spacing: -0.01em;
   text-align: center;
   color: #4A2677;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .error__container .error__text .error__404 {
@@ -295,7 +235,5 @@ body {
   line-height: 50px;
   letter-spacing: -0.01em;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }/*# sourceMappingURL=404.css.map */
