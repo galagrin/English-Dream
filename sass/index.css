@@ -1562,14 +1562,11 @@ body {
   height: 67px;
   margin-top: 3%;
   font-size: 40px;
+  font-weight: 400;
   padding-top: 1%;
 }
 
-.reviews_button:hover {
-  background-color: #27686C;
-}
-
-.reviews_sent:hover {
+.button:hover {
   background-color: #27686C;
 }
 
