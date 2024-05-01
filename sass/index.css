@@ -43,12 +43,14 @@ body {
 }
 
 .header {
+  box-sizing: border-box;
   width: 100%;
   height: 90vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 13% 10% 1fr;
-  padding-top: 0%;
+  padding: 1%;
+  padding-top: 1%;
   margin-bottom: 5%;
 }
 
@@ -186,6 +188,10 @@ body {
   /*Кнопка*/
   width: 70%;
   height: 55px;
+}
+
+.header__caption-btn:hover {
+  background-color: #27686C;
 }
 
 .studio768 {
@@ -1598,6 +1604,10 @@ body {
   color: #3e396f;
 }
 
+.footer__lower-container-contacts_mail:hover {
+  text-decoration: underline;
+}
+
 /*Адаптивность для большого экрана*/
 @media screen and (min-width: 1700px) and (max-width: 4000px) {
   .header__menu {
@@ -1631,6 +1641,7 @@ body {
   .header__caption-btn {
     /*Кнопка*/
     font-size: 1.25em;
+    width: 226px;
   }
   .footer__upper-container-contacts {
     font-size: 3.125em;
@@ -1657,6 +1668,11 @@ body {
   .header__caption-btn {
     /*Кнопка*/
     font-size: 1.1em;
+    width: 226px;
+    height: 56px;
+  }
+  .header__menu-link:hover {
+    color: #2d4176;
   }
   .footer__upper-container-contacts {
     font-size: 2em;
@@ -1666,6 +1682,11 @@ body {
   }
 }
 /*Адаптивность для планшета и и маленького десктопа  конец*/
+@media screen and (max-width: 768px) { /*[ховеры на планшете и ниже*/
+  .header__menu-link:hover {
+    color: #2d4176;
+  }
+}
 /*Адаптивность для мобильного начало*/
 @media screen and (max-width: 426px) {
   /*Хедер старт*/
@@ -1770,6 +1791,9 @@ body {
   .header__logo-image-container.top-of-page {
     background-color: rgba(255, 255, 255, 0.8);
   }
+  .header__link-social {
+    background-position: center;
+  }
   .header__link-social_icon {
     width: 70%;
   }
@@ -1782,8 +1806,8 @@ body {
   .header__caption-btn {
     /*Кнопка на мобильном*/
     font-size: 1em;
-    width: 100%;
-    height: 55px;
+    width: 131px;
+    height: 56px;
   }
   .header {
     box-sizing: border-box;
