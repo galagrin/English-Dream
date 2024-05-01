@@ -1885,9 +1885,12 @@ body {
   .footer__lower-container_social-link-icon {
     width: 85%;
   }
+  .telegram {
+    width: 60%;
+  }
   .footer__link-social_icon-back {
-    width: 12px;
-    height: 12px;
+    width: 27px;
+    height: 27px;
   }
   /*Футер конец*/
 }
