@@ -56,7 +56,7 @@ body {
   grid-column: 1/2;
   grid-row: 1/4;
   background-repeat: no-repeat;
-  background-image: url(/assets/images/logo-back.svg);
+  background-image: url("../assets/images/logo-back.svg");
   background-size: 70%;
 }
 
@@ -69,10 +69,13 @@ body {
   position: fixed;
 }
 
+<<<<<<< HEAD
 .header__logo-image:hover {
   box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
 }
 
+=======
+>>>>>>> cd189f287cc877c2605906414445b8e1fa4a778c
 .header__logo-image-container.top-of-page {
   /*добавление фона меню при скролле*/
   background-color: rgba(255, 255, 255, 0.8);
@@ -128,7 +131,10 @@ body {
 
 .header__menu-link:hover {
   color: #ea5949;
+<<<<<<< HEAD
   box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
+=======
+>>>>>>> cd189f287cc877c2605906414445b8e1fa4a778c
 }
 
 #menu__toggle {
@@ -153,7 +159,7 @@ body {
   height: 100%;
   grid-column: 2/3;
   grid-row: 2/4;
-  background-image: url(/assets/images/home-page.svg);
+  background-image: url("../assets/images/home-page.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
