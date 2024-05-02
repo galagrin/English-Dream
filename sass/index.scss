@@ -1765,6 +1765,7 @@ body {
   width: 100%;
   height: 100%;
   flex-direction: column;
+  padding-top: 136px;
 }
 
 .reviews_title {
@@ -1796,6 +1797,7 @@ body {
 
 .swiper-slide-first {
   margin-left: 2.9%;
+  // border: pink 1px solid;
 }
 
 .reviews_card {
@@ -1833,8 +1835,7 @@ body {
 }
 
 .reviews_button,
-.button,
-.reviews_sent {
+.button{
   @extend%button;
 }
 
@@ -1843,8 +1844,14 @@ body {
   height: 67px;
   margin-top: 3%;
   font-size: 40px;
+  font-weight: 400;
   padding-top: 1%;
 }
+
+.button:hover{
+  background-color: #27686C;
+}
+
 
 // отзывы  styles end
 
@@ -2298,8 +2305,8 @@ body {
 @media screen and (min-width: 800px) {
   .swipesection,
     // .swiper,
-    .swiper-button-next,
-    .swiper-button-prev,
+    // .swiper-button-next,
+    // .swiper-button-prev,
     .swiper-pagination {
     display: none;
   }
@@ -2460,6 +2467,8 @@ body {
     width: 350px;
     height: 450px;
   }
+
+
 }
 
 @media screen and (max-width: 1160px) {
@@ -2485,6 +2494,7 @@ body {
   .reviews_content {
     height: 963px;
     justify-content: space-around;
+    padding-top: 122px;
   }
   .reviews_card {
     height: 550px;
@@ -2505,7 +2515,9 @@ body {
 
   .reviews_button__big {
     width: 243px;
-    height: 68px;
+    height: 67px;
+    font-size: 36px;
+    font-weight: 400;
   }
 
   .swiper-button-next,
@@ -2560,6 +2572,12 @@ body {
     height: 950px;
     // max-width: 360px;
   }
+
+  .reviews_content {
+    padding-top: 0;
+  }
+
+
   .card_wrapper {
     width: 260px;
     height: 693px;
@@ -2568,6 +2586,8 @@ body {
   .reviews_button__big {
     width: 202px;
     height: 56px;
+    font-size: 24px;
+    font-weight: 400;
   }
 
   .reviews_inscription {
@@ -2590,12 +2610,23 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 344px){
+  .reviews_text,
+  .reviews_signature {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
   .swiper-button-next:after {
     content: url(/assets/images/button-next.svg) !important;
   }
 
   .swiper-button-prev:after {
     content: url(/assets/images/button-prev.svg) !important;
+  }
+
+  .swiper-slide-first {
+    padding-left: 2.5%;
   }
 }
