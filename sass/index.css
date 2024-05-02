@@ -70,13 +70,6 @@ body {
   position: fixed;
 }
 
-<<<<<<< HEAD
-.header__logo-image:hover {
-  box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
-}
-
-=======
->>>>>>> cd189f287cc877c2605906414445b8e1fa4a778c
 .header__logo-image-container.top-of-page {
   /*добавление фона меню при скролле*/
   background-color: rgba(255, 255, 255, 0.8);
@@ -132,10 +125,6 @@ body {
 
 .header__menu-link:hover {
   color: #ea5949;
-<<<<<<< HEAD
-  box-shadow: 10px 10px 10px 10px rgba(234, 244, 241, 0.76);
-=======
->>>>>>> cd189f287cc877c2605906414445b8e1fa4a778c
 }
 
 #menu__toggle {
@@ -2274,11 +2263,20 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 344px) {
+  .reviews_text,
+  .reviews_signature {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1550px) {
   .swiper-button-next:after {
     content: url(/assets/images/button-next.svg) !important;
   }
   .swiper-button-prev:after {
     content: url(/assets/images/button-prev.svg) !important;
+  }
+  .swiper-slide-first {
+    padding-left: 2.5%;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -1797,6 +1797,7 @@ body {
 
 .swiper-slide-first {
   margin-left: 2.9%;
+  // border: pink 1px solid;
 }
 
 .reviews_card {
@@ -2466,6 +2467,8 @@ body {
     width: 350px;
     height: 450px;
   }
+
+
 }
 
 @media screen and (max-width: 1160px) {
@@ -2607,12 +2610,23 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 344px){
+  .reviews_text,
+  .reviews_signature {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
   .swiper-button-next:after {
     content: url(/assets/images/button-next.svg) !important;
   }
 
   .swiper-button-prev:after {
     content: url(/assets/images/button-prev.svg) !important;
+  }
+
+  .swiper-slide-first {
+    padding-left: 2.5%;
   }
 }
