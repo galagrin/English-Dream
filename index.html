@@ -150,6 +150,8 @@
         <h2 class="courses__title" id="course">курсы</h2>
 
         <div class="courses__container swiper-container sliderCourses">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
           <!--<div class="swiper-container sliderCourses">-->
           <div class="courses__wrapper swiper-wrapper">
             <div class="courses__slide swiper-slide">
@@ -318,13 +320,8 @@
             </div>
           </div>
 
-          <!-- Стрелки -->
-          <!--<div class="slider-buttons">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-           </div> -->
-        <!--</div>-->
+          <!-- Стрелки -->          
+        </div>
       </section>
       <!--курсы end -->
 
@@ -889,13 +886,15 @@
 
         //количество слайдов для показа
         slidesPerView: 3,
-        spaceBetween: 15,
+        spaceBetween: 30,
 
         //переключать слайды по клику на них
         slideToClickedSlide: true,
 
+        speed: 700,
+
         //бесконечный слайдер
-        loop: true,
+        // loop: true,
 
         breakpoints: {
           320: {
@@ -932,8 +931,12 @@
           },
           1380: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 15,
           },
+          1520: {
+            slidesPerView: 3,
+            spaceBetween: 35,            
+          }
         },
 
         // centeredSlides: true,
