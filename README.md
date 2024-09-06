@@ -6,6 +6,8 @@ This is the website for "English Dream," a language studio for children in Mosco
 
 The "English Dream" website offers a comprehensive look at our language studio, showcasing available courses, team members, and student reviews. It's designed to provide an engaging and informative experience for parents and students interested in language learning.
 
+<img src="./assets/images/Screenshot_EnglishDream.webp" />
+
 ## 💻Features
 
 -   🎨**Responsive Design**: The site is fully responsive and works on various devices.
