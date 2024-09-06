@@ -12,10 +12,10 @@ The "English Dream" website offers a comprehensive look at our language studio, 
 
 -   🎨**Responsive Design**: The site is fully responsive and works on various devices.
 -   📚 **Courses**: Detailed information about different language courses offered.
--   👨‍🏫 **Team Section**: Meet the experienced instructors.
--   📝 **Reviews**: Read testimonials from students and parents.
--   🗣️ **Speaking Club**: Information about our English speaking club.
--   📞 **Contact Information**: Easy access to our contact details and social media links.
+-   👨‍🏫 **Team Section**: Meet the experienced teachers.
+-   📝 **Reviews**: Read reviews from students and parents.
+-   🗣️ **Speaking Club**: Information about English speaking club.
+-   📞 **Contact Information**: Easy access to contact details and social media links.
 
 ## 🖥️ Technologies Used
 
